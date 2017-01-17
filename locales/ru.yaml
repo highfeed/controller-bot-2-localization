@@ -385,6 +385,7 @@ keyboard:
     control_posts: Управление постами
     channels: Каналы
     settings: Настройки
+    feedback: Написать нам
     
   channels:
     add_channel: Добавить новый канал
