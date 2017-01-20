@@ -82,14 +82,14 @@ channels:
       get_admins: |
         Add @${username} to admins of your channel. Please check everything twice and try again.
     
-    Send /feedback to let us know if for some reason it doesn't change anything.
+        Send /feedback to let us know if for some reason it doesn't change anything.
       is_not_creator: |
         Only the creator has the right to add a channel. By the way, don't forget that the сreator can add admins in the channel settings.
       channels_already_added: |
         This channel is already added. Please try another.
         
   control:
-    options: Here it is: ${channel.name}. What do you want to do with the channel?
+    options: Here it is':' ${channel.name}. What do you want to do with the channel?
     
     delete_confirm: |
       Are you sure you want to delete this channel?
@@ -171,7 +171,7 @@ post:
   
   make:
     welcome: |
-      Here it is: ${channel.name}. Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
+      Here it is':' ${channel.name}. Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
       
       You can use built-in formatting options of Telegram clients or HTML-style formatting (type /html to get a hint).
     settings: |
@@ -232,8 +232,7 @@ post:
       The preview of messages sent. 
       
       Go back to @ControllerBot or send /start to create a new post.
-      
-      
+        
   send:
     count_posts: ${pluralize(count, 'message', 'messages', 'messages')} ready to be sent to the channel.
     choose_type: When you want to send the post?
@@ -241,11 +240,11 @@ post:
       Unable to create a new post in ${channel.name}. The next issues found:
       
       ${problems}
-    
+      
       ${from.id == channel.owner_id
         ? 'Go to the channel settings to fix the issues.'
         : 'The creator of the channel should go to the channel settings and fix the issues.'
-    }
+      }
     cancel_send: Sending of the post has been canceled.
     continue_send: You can continue to send me messages.
     confirm_send: >
