@@ -381,8 +381,8 @@ keyboard:
     delete: Delete Message
     
     add_inline: Add URL Buttons
-    save_inline: Save
-    clear_inline: Delete All
+    save_inline: Save URL Buttons
+    clear_inline: Delete URL Buttons
     cancel_inline: Cancel
     
     clear: Delete All 
