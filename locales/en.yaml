@@ -92,7 +92,7 @@ channels:
     options: Here it is: ${channel.name}. What do you want to do with the channel?
     
     delete_confirm: |
-      Are you sure you want delete the channel?
+      Are you sure you want to delete this channel?
       
       All scheduled posts for this channel will be also deleted.
     channel_deleted: Done! The channel is gone.
