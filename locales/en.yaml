@@ -121,7 +121,7 @@ channels:
       
       Is it right? If not, try to send me the name of another city close to you.
     error_timezone: Sorry, I can't find this city. Try to send me the name of another city close to you.
-    error_request_timezone: Something went wrong ':'( Please try again. Send /feedback to let us know if for some reason it doesn't change anything.
+    error_request_timezone: Something went wrong :( Please try again. Send /feedback to let us know if for some reason it doesn't change anything.
     save_timezone: OK, your timezone saved.
     
   admins:
@@ -234,7 +234,7 @@ post:
       Go back to @ControllerBot or send /start to create a new post.
       
       
-  send: 
+  send:
     count_posts: ${pluralize(count, 'message', 'messages', 'messages')} ready to be sent to the channel.
     choose_type: When you want to send the post?
     problems: |
@@ -281,7 +281,7 @@ post:
     error_date: Incorrect date and time. Choose 'Help' to get a hint.
     invalid_date: Incorrect date.
     limit: 'You need to choose a time more than the current by 1 minute or more. The current date and time is ${current_date}'
-    limit_year: Unable to choose a time over than the current by 1 year or more. Who knows what's going to happen... ':')
+    limit_year: Unable to choose a time over than the current by 1 year or more. Who knows what's going to happen... :)
     ok: |
       Scheduled post has been сreated. The post will be sent to <b>«${channel.name}»</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
       
