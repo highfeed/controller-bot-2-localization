@@ -1,3 +1,4 @@
+enable: true
 name: English
   
 bots:
@@ -175,7 +176,7 @@ post:
   
   make:
     welcome: |
-      Here it is':' ${channel.name}. Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
+      Here it is: ${channel.name}. Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
       
       You can use built-in formatting options of Telegram clients or HTML-style formatting (type /html to get a hint).
     settings: |
