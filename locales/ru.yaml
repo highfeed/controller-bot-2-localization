@@ -455,7 +455,7 @@ keyboard:
     
     schedule:
       today: |-
-        ${active ? '🔹 ' : ''} Сегодня
+        ${active ? '🔹 ' : ''}Сегодня
       tomorrow: |-
         ${active ? '🔹 ' : ''}Завтра
       after_tomorrow: |-
