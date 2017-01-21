@@ -322,7 +322,7 @@ settings:
     confirm_delete: |
       ${count 
         ? 'The bot is connected with these channels:\n\n' + channels 
-        : 'The bot isn't connected with any channels.\n'
+        : 'The bot isn\'t connected with any channels.\n'
       }
       Are you sure you want to delete this bot?
     bot_deleted: Done! The bot is gone.
