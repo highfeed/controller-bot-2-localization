@@ -12,7 +12,9 @@ bots:
   help: |
     🔹 Why do I need to connect a bot?
     
-    This allows us to avoid some Bot API limits for a better user experience, speed and stability. You can connect one a bot and use it for all your channels. Send /feedback if any issues appeared when you connect a new bot.
+    This allows us to avoid some Bot API limits for a better user experience, speed and stability. You can connect one a bot and use it for all your channels. 
+    
+    Send /feedback if any issues appeared when you connect a new bot.
 
 start:
   welcome: |
@@ -68,6 +70,8 @@ channels:
   add: 
     select_bot: |
       Choose a bot to send posts to the channel.
+    select_bot_and_help: |
+      
     welcome: |
       To add a channel you should follow these two steps:
     
