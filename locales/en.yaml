@@ -58,8 +58,7 @@ start:
     
     /cancel - cancel the current operation
     
-feedback:
-  Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
+  feedback: Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
 
 channels:
   welcome: |
@@ -91,7 +90,7 @@ channels:
         This channel is already added. Please try another.
         
   control:
-    options: Here it is: ${channel.name}. What do you want to do with the channel?
+    options: 'Here it is: ${channel.name}. What do you want to do with the channel?'
     
     delete_confirm: |
       Are you sure you want to delete this channel?
