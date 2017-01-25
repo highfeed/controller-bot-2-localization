@@ -68,7 +68,9 @@ channels:
     select_bot: |
       Choose a bot to send posts to the channel.
     select_bot_and_help: |
+      To add a new channel you need to connect your own bot first. You can connect one a bot and use it for all your channels. 
       
+      Choose «Connect Bot» and follow the instructions.
     welcome: |
       To add a channel you should follow these two steps:
     
