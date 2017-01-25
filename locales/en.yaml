@@ -390,6 +390,9 @@ keyboard:
       
       disable_web_page_preview_disable: 'Link Preview: ON'
       disable_web_page_preview_enable: 'Link Preview: OFF'
+      
+      parse_mode_markdown: 'Formatting Style: Markdown'
+      parse_mode_html: 'Formatting Style: HTML'
     
     control_channel: Go to Channel Settings
     return_to_channels: « Back to Channels List
