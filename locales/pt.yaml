@@ -89,7 +89,7 @@ channels:
         Este canal já foi adicionado. Tente outro.
         
   control:
-    options: 'Here it is: ${channel.name}. What do you want to do with the channel?'
+    options: 'Aqui está: ${channel.name}. O que você quer fazer com o canal?'
     
     delete_confirm: |
       Tem certeza de que deseja excluir este canal?
@@ -171,7 +171,7 @@ post:
   
   make:
     welcome: |
-      Here it is: ${channel.name}. Me envie uma ou várias mensagens que você deseja incluir na postagem. Pode ser qualquer coisa — um texto, foto, video, até mesmo um sticker.
+      Aqui está: ${channel.name}. Me envie uma ou várias mensagens que você deseja incluir na postagem. Pode ser qualquer coisa — um texto, foto, video, até mesmo um sticker.
       
       Você pode usar /markdown-style ou /HTML-style para formatar suas mensagens.
     settings: |
@@ -227,22 +227,22 @@ post:
     canceled: Criação de mensagem cancelada.
     inline:
       welcome: |
-        Me envie uma lista de botões de URL para a mensagem. Use este formato:
+        Me envie uma lista de botões com URL para a mensagem. Use este formato:
         <pre>Label text - http://www.example.com/
         Another label text - http://www.example2.com/
         </pre>
         Escolha 'Cancel' para voltar a criação de postagem.
       error: |
-        Erros na lista de botões de URL:
+        Erros na lista de botões com URL:
         
         <code>${error}</code>
         
         Corrija todos os erros e envie a mensagem novamente.
       not_keyboard: |
-        A mensagem enviada por você não se encaixa no formato da lista de botões de URL. Certifique-se que tudo esteja correto e tente novamente.
-      save: Lista de botões de URL atualizada. Você já pode continuar a enviar-me mensagens.
-      cleared: Success! Lista de Botões de URL removido.
-      continue: Me envie uma lista de Botões de URL para uma mensagem ou escolha 'Cancel' para voltar a criação de postagem.
+        A mensagem enviada por você não se encaixa no formato da lista de botões com URL. Certifique-se que tudo esteja correto e tente novamente.
+      save: Lista de botões com URL atualizada. Você já pode continuar a enviar-me mensagens.
+      cleared: Success! Lista de Botões com URL removido.
+      continue: Me envie uma lista de Botões com URL para uma mensagem ou escolha 'Cancel' para voltar a criação de postagem.
         
   preview:
     ok: |
@@ -399,9 +399,9 @@ keyboard:
     
     delete: Excluir Mensagem
     
-    add_inline: Adicionar Botões de URL
-    save_inline: Salvar Botões de URL
-    clear_inline: Excluir Botões de URL
+    add_inline: Adicionar Botões com URL
+    save_inline: Salvar Botões com URL
+    clear_inline: Excluir Botões com URL
     cancel_inline: Cancelar
     
     clear: Delete All 
