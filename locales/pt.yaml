@@ -6,21 +6,21 @@ bots:
     Para conectar um bot você precisa seguir os seguintes passos:
     
     1. Abra o @BotFather em seguida insira <code>/newbot</code> escolha um nome e um username para o seu bot.
-    2. Você receberá um token (exemplo: 12345:6789ABCDEF) — encaminhe ou copie-cole este código aqui.
-  wrong_token: Doesn't look like anything to me. Please send me a token from your bot.
-  error_add: Invalid token. Try to get a new one or use a token of another bot.
-  bot_already_added: Looks familiar to me. You already have this bot connected.
+    2. Você receberá um token (exemplo: 12345:6789ABCDEF) — encaminhe ou copie e cole este código aqui.
+  wrong_token: Doesn't look like anything to me. Por favor, me envie o token do seu bot.
+  error_add: Token inválido. Tente obter um novo ou use um token de outro bot.
+  bot_already_added: Isso me parece familiar. Você já tem este bot conectado.
   help: |
     🔹 Por que preciso conectar um bot?
     
-    Para oferecer uma melhor experiência ao usuário, este procedimento é necessário para evitar alguns limites do Bot API, velocidade e estabilidade. Você pode conectar um único bot e usá-lo em todos os seus canais. 
+    Para oferecer uma melhor experiência ao usuário, este procedimento é necessário para evitar alguns limites do Bot API e garantir velocidade e estabilidade. Você pode conectar um único bot e usá-lo em todos os seus canais. 
     
     Envie uma mensagem para @ControllerSupportBot caso ocorra algum problema no momento que você estiver conectando um novo bot.
 start:
   welcome: |
     <b>Controller Bot</b> — excelente bot para proprietários de canais. Auxiliar no envio de mensagens formatadas e na criação de postagens programadas para canais.
     
-    <b>Formatted Posts.</b> Envie mensagens com texto em negrito, itálico, textos monoespaçados e inline links.
+    <b>Formatted Posts.</b> Envie mensagens com texto em negrito, itálico, textos monoespaçados e links inline.
     
     <b>Scheduled Posts.</b> Crie um número ilimitado de postagens programadas para o seu canal.
     
@@ -37,9 +37,9 @@ start:
     
     /rate — avaliar bot
     /help — respostas a perguntas básicas
-  do: OK. What do you want to do?
-  choose_language: Please choose your language.
-  language_changed: OK, your language saved.
+  do: OK. O que você quer fazer?
+  choose_language: Por favor, escolha um idioma.
+  language_changed: OK, idioma salvo.
   rate: |
     Nos avalie com 5 estrelas no Bot Store se você gostou do Controller Bot: t.me/storebot?start=ControllerBot
   help: |
@@ -57,7 +57,7 @@ start:
     
     /cancel - Cancelar a operação atual
     
-  feedback: Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
+  feedback: Envie mensagens para @ControllerSupportBot se tiver dúvidas ou sugestões para o Controller Bot.
 
 channels:
   welcome: |
@@ -72,17 +72,17 @@ channels:
     welcome: |
       Para adicionar um canal você precisa seguir os seguintes passos:
     
-      1. Add @${username} to admins of your channel.   
-      2. Then forward to me any message from your channel (you can also send me its username or ID).
-    ok: Success! The channel has been added.
+      1. Adicione @${username} como um dos administradores do seu canal.   
+      2. Em seguida, me encaminhe qualquer mensagem do seu canal (Você também pode me enviar seu username ou ID).
+    ok: Sucesso! O canal foi adicionado.
     
     error:
       data: |
-        Nos envie qualquer mensagem do seu canal, ou o username, ou seu ID.
+        Nos envie qualquer mensagem do seu canal, username ou ID.
       get_admins: |
         Adicione @${username} como administrador de seu canal. Certifique-se que tudo esteja correto e tente novamente.
     
-        Send /feedback to let us know if for some reason it doesn't change anything.
+        Envie /feedback para nos informar se, por algum motivo, o erro continue.
       is_not_creator: |
         Somente o criador tem o direito de adicionar um canal. Por falar nisso, não se esqueça que o criador pode adicionar administradores nas configurações do canal.
       channels_already_added: |
@@ -149,7 +149,7 @@ channels:
 post:
   select_channel: Escolha um canal para criar uma nova postagem.
   no_channels: Você ainda não adicionou canais.
-  error_check_channel: Ocorreu um erro :( Por favor, tente novamente. Envie /feedback caso o erro continue por algum motivo.
+  error_check_channel: Ocorreu um erro :( Por favor, tente novamente. Envie /feedback para nos informar se, por algum motivo, o erro continue.
   channel_not_found: O canal não existe, ou você não tem acesso a ele. Voltar para @ControllerBot e tente novamente.
   problems: |
     Não é possível criar uma nova postagem em ${channel.name}. The next issues found:
@@ -171,13 +171,13 @@ post:
   
   make:
     welcome: |
-      Here it is: ${channel.name}. Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
+      Here it is: ${channel.name}. Me envie uma ou várias mensagens que você deseja incluir na postagem. Pode ser qualquer coisa — um texto, foto, video, até mesmo um sticker.
       
-      You can use either /markdown-style or /HTML-style formatting in messages.
+      Você pode usar /markdown-style ou /HTML-style para formatar suas mensagens.
     settings: |
-      Options of creating post.
+      Opções para criação de Postagens.
       
-      You can use either /markdown-style or /HTML-style formatting in messages.
+      Você pode usar /markdown-style ou /HTML-style para formatar suas mensagens.
     clear: Sucesso! Todas as mensagens foram excluídas.
     message_deleted: Feito! A mensagem foi excluída.
     not_posts: Você ainda não tem mensagens.
@@ -241,8 +241,8 @@ post:
       not_keyboard: |
         A mensagem enviada por você não se encaixa no formato da lista de botões de URL. Certifique-se que tudo esteja correto e tente novamente.
       save: Lista de botões de URL atualizada. Você já pode continuar a enviar-me mensagens.
-      cleared: Success! Botões de URL list cleared.
-      continue: Send me a list of Botões de URL for the message or choose 'Cancel' to back to creating post.
+      cleared: Success! Lista de Botões de URL removido.
+      continue: Me envie uma lista de Botões de URL para uma mensagem ou escolha 'Cancel' para voltar a criação de postagem.
         
   preview:
     ok: |
