@@ -3,26 +3,26 @@ name: Portuguese
 
 bots:
   welcome: |
-    To connect a bot you should follow these two steps:
+    Para conectar um bot você precisa seguir os seguintes passos:
     
-    1. Open @BotFather, then enter <code>/newbot</code> and choose a name and a username for your bot.
-    2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
+    1. Abra o @BotFather, em seguida insira <code>/newbot</code> escolha um nome e um username para o seu bot.
+    2. Você receberá um token (exemplo: 12345:6789ABCDEF) — me encaminhe ou copie-cole este código para mim.
   wrong_token: Doesn't look like anything to me. Please send me a token from your bot.
   error_add: Invalid token. Try to get a new one or use a token of another bot.
   bot_already_added: Looks familiar to me. You already have this bot connected.
   help: |
-    🔹 Why do I need to connect a bot?
+    🔹 Por que preciso conectar um bot?
     
-    This allows us to avoid some Bot API limits for a better user experience, speed and stability. You can connect one a bot and use it for all your channels. 
+    This allows us to avoid some Bot API limits for a better user experience, velocidade e estabilidade. Você pode conectar um único bot e usá-lo em todos os seus canais. 
     
-    Message us to @ControllerSupportBot if any issues appeared when you connect a new bot.
+    Envie uma mensagem para @ControllerSupportBot caso ocorra algum problema no momento que você estiver conectou um novo bot.
 start:
   welcome: |
-    <b>Controller Bot</b> — excellent bot for channel owners that helps you send formatted posts and create scheduled posts in your channel.
+    <b>Controller Bot</b> — excelente bot para proprietários de canais. Auxiliar no envio de mensagens formatadas e na criação de postagens programadas para canais.
     
-    <b>Formatted Posts.</b> Send posts with bold, italic, fixed-width text and inline links.
+    <b>Formatted Posts.</b> Envie mensagens com texto em negrito, itálico, textos monoespaçado e inline links.
     
-    <b>Scheduled Posts.</b> Create an unlimited number of scheduled posts in your channel.
+    <b>Scheduled Posts.</b> Crie um número ilimitado de postagens programadas para o seu canal.
     
     <b>URL Buttons.</b> Add to any post useful buttons that can open links.
     
@@ -31,46 +31,46 @@ start:
     Bot can send posts silently and disable previews for links, as well as supports all message types (text, document, sticker, audio, video, voice note, location and other).
     
     <b>How to use?</b>
-    Send /addchannel, choose 'Add Channel' and follow the instructions to add a new channel.
+    Envie /addchannel, escolha 'Add Channel' e siga as instruções para adicionar um novo canal.
     
-    Message us to @ControllerSupportBot to report an issue or contact the devs of this bot.
+    Envie uma mensagem para @ControllerSupportBot para relatar um problema ou entrar em contato com um dos desenvolvedores deste bot.
     
-    /rate — rate bot
-    /help — answers to basic questions
+    /rate — avaliar bot
+    /help — respostas a perguntas básicas
   do: OK. What do you want to do?
   choose_language: Please choose your language.
   language_changed: OK, your language saved.
   rate: |
-    Give us 5 stars on Store Bot if you like Controller Bot: t.me/storebot?start=ControllerBot
+    Dê-nos 5 estrelas no Bot Store se você gostou do Controller Bot: t.me/storebot?start=ControllerBot
   help: |
-    Controller Bot helps you send formatted posts and create scheduled posts in your channel
+    Controller Bot ajuda você a enviar mensagens formatadas e criar postagens programadas no seu canal
     
-    /channels - manage channels
-    /addchannel - add a new channel
-    /create - send a new message
-    /manage - manage posts
+    /channels - gerenciador de canais
+    /addchannel - adicionar um novo canal
+    /create - enviar uma nova mensagem
+    /manage - gerenciador de postagens
        
-    /feedback - contact the devs of this bot
+    /feedback - enrtre em contato com um dos desenvolvedores deste bot
     
-    /rate - rate bot
-    /help - answers to basic questions 
+    /rate - avaliar bot
+    /help - respostas a perguntas básicas 
     
-    /cancel - cancel the current operation
+    /cancel - Cancelar a operação atual
     
   feedback: Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
 
 channels:
   welcome: |
-    Add a new channel or edit settings of added ones.
+    Adicionar um novo canal ou editar as configurações existentes.
   add: 
     select_bot: |
-      Choose a bot to send posts to the channel.
+      Escolha um bot para enviar mensagens para o seu canal.
     select_bot_and_help: |
-      To add a new channel you need to connect your own bot first. You can connect one a bot and use it for all your channels. 
+      Para adicionar um novo canal você precisar inicialmente possuir e conectar um bot. Você pode conectar um único bot e usá-lo para todos os seus canais. 
       
-      Choose «Connect Bot» and follow the instructions.
+      Escolha «Connect Bot» e siga as instruções.
     welcome: |
-      To add a channel you should follow these two steps:
+      Para adicionar um canal você precisa seguir os seguintes passos:
     
       1. Add @${username} to admins of your channel.   
       2. Then forward to me any message from your channel (you can also send me its username or ID).
@@ -78,7 +78,7 @@ channels:
     
     error:
       data: |
-        Please forward to me any message from your channel. Or send me its username or ID instead.
+        Envie-me qualquer mensagem do seu canal, ou envie-me seu nome de usuário ou ID em vez disso.
       get_admins: |
         Add @${username} to admins of your channel. Please check everything twice and try again.
     
