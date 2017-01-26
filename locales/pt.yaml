@@ -1,2 +1,441 @@
 enable: false
 name: Portuguese
+
+bots:
+  welcome: |
+    To connect a bot you should follow these two steps:
+    
+    1. Open @BotFather, then enter <code>/newbot</code> and choose a name and a username for your bot.
+    2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
+  wrong_token: Doesn't look like anything to me. Please send me a token from your bot.
+  error_add: Invalid token. Try to get a new one or use a token of another bot.
+  bot_already_added: Looks familiar to me. You already have this bot connected.
+  help: |
+    🔹 Why do I need to connect a bot?
+    
+    This allows us to avoid some Bot API limits for a better user experience, speed and stability. You can connect one a bot and use it for all your channels. 
+    
+    Message us to @ControllerSupportBot if any issues appeared when you connect a new bot.
+start:
+  welcome: |
+    <b>Controller Bot</b> — excellent bot for channel owners that helps you send formatted posts and create scheduled posts in your channel.
+    
+    <b>Formatted Posts.</b> Send posts with bold, italic, fixed-width text and inline links.
+    
+    <b>Scheduled Posts.</b> Create an unlimited number of scheduled posts in your channel.
+    
+    <b>URL Buttons.</b> Add to any post useful buttons that can open links.
+    
+    <b>Admins.</b> You can add admins to help you send new posts and manage scheduled posts in your channel.
+    
+    Bot can send posts silently and disable previews for links, as well as supports all message types (text, document, sticker, audio, video, voice note, location and other).
+    
+    <b>How to use?</b>
+    Send /addchannel, choose 'Add Channel' and follow the instructions to add a new channel.
+    
+    Message us to @ControllerSupportBot to report an issue or contact the devs of this bot.
+    
+    /rate — rate bot
+    /help — answers to basic questions
+  do: OK. What do you want to do?
+  choose_language: Please choose your language.
+  language_changed: OK, your language saved.
+  rate: |
+    Give us 5 stars on Store Bot if you like Controller Bot: t.me/storebot?start=ControllerBot
+  help: |
+    Controller Bot helps you send formatted posts and create scheduled posts in your channel
+    
+    /channels - manage channels
+    /addchannel - add a new channel
+    /create - send a new message
+    /manage - manage posts
+       
+    /feedback - contact the devs of this bot
+    
+    /rate - rate bot
+    /help - answers to basic questions 
+    
+    /cancel - cancel the current operation
+    
+  feedback: Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
+
+channels:
+  welcome: |
+    Add a new channel or edit settings of added ones.
+  add: 
+    select_bot: |
+      Choose a bot to send posts to the channel.
+    select_bot_and_help: |
+      To add a new channel you need to connect your own bot first. You can connect one a bot and use it for all your channels. 
+      
+      Choose «Connect Bot» and follow the instructions.
+    welcome: |
+      To add a channel you should follow these two steps:
+    
+      1. Add @${username} to admins of your channel.   
+      2. Then forward to me any message from your channel (you can also send me its username or ID).
+    ok: Success! The channel has been added.
+    
+    error:
+      data: |
+        Please forward to me any message from your channel. Or send me its username or ID instead.
+      get_admins: |
+        Add @${username} to admins of your channel. Please check everything twice and try again.
+    
+        Send /feedback to let us know if for some reason it doesn't change anything.
+      is_not_creator: |
+        Only the creator has the right to add a channel. By the way, don't forget that the сreator can add admins in the channel settings.
+      channels_already_added: |
+        This channel is already added. Please try another.
+        
+  control:
+    options: 'Here it is: ${channel.name}. What do you want to do with the channel?'
+    
+    delete_confirm: |
+      Are you sure you want to delete this channel?
+      
+      All scheduled posts for this channel will be also deleted.
+    channel_deleted: Done! The channel is gone.
+    
+    select_bot: |
+      ${count 
+        ? 'Choose a bot that will be used to send posts in the channel.' 
+        : 'You have no connected bots yet. Send /addchannel and choose \'Add Channel\' to connect a new one.'
+      }
+    bot_is_not_admin: Add the bot to admins of your channel.
+    current_bot: Unable to choose currently used bot.
+    
+    set_timezone: |
+      <b>Success! The channel has been added.</b>
+      
+      Now send me the name of your city, so I'll be able to determine your time zone. Your time zone is required for the management of scheduled posts.
+    
+    timezone: |
+      Current time zone:
+      ${city ? '🔹 GMT ' + (gmt > 0 ? '+' + gmt : gmt) + '\n🔹 ' + timezone_id + ' — ' + city : '🔹 None'}
+      
+      Send me the name of the city close to you.
+    check_timezone: |
+      🔹 GMT ${timezone.gmtOffset > 0 ? '+' + timezone.gmtOffset : timezone.gmtOffset} (${timezone.timeZoneId})
+      🔹 ${countryName}, ${name}
+      
+      Is it right? If not, try to send me the name of another city close to you.
+    error_timezone: Sorry, I can't find this city. Try to send me the name of another city close to you.
+    error_request_timezone: Something went wrong :( Please try again. Send /feedback to let us know if for some reason it doesn't change anything.
+    save_timezone: OK, your timezone saved.
+    
+  admins:
+    add: Forward to me any message from the user you want to appoint as an admin of the channel.
+    user_is_not_use_bot: |
+      Please ask this user to start @ControllerBot first.
+    you_added_as_admin: > 
+      ${from.first_name}${from.last_name ? ' ' + from.last_name : ''}${from.username ? ' @' + from.username : ''} appointed you as an admin of <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}.
+    you_remove: >
+      ${from.first_name}${from.last_name ? ' ' + from.last_name : ''}${from.username ? ' @' + from.username : ''} removed you from admins of <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}.
+    added: Done! The user has been appointed as an admin. 
+    not_added: This user is already admin of the channel.
+    delete: Choose a user to remove it from admins of the channel. 
+    empty_list: You have no admins in this channel yet.
+    list: |
+      You have ${pluralize(count, 'admin', 'admins', 'admins')} in this channel:
+      
+      ${items}
+     
+    item_btn: |
+      ${user.first_name}${user.last_name ? ' ' + user.last_name : ''}${user.username ? ' @' + user.username : ''}
+    item: |
+      ${index}. ${user.first_name}${user.last_name ? ' ' + user.last_name : ''}${user.username ? ' @' + user.username : ''}
+      
+post:
+  select_channel: Choose a channel to create a new post.
+  no_channels: You have no added channels yet.
+  error_check_channel: Something went wrong :( Please try again. Send /feedback to let us know if for some reason it doesn't change anything.
+  channel_not_found: The channel doesn't exist, or you don't have access to it. Go back to @ControllerBot and try again.
+  problems: |
+    Unable to create a new post in ${channel.name}. The next issues found:
+    
+    ${problems}
+    
+    ${from.id == channel.owner_id
+      ? 'Go to the channel settings to fix the issues.'
+      : 'The creator of the channel should go to the channel settings and fix the issues.'
+    }
+  problem_items: 
+    timezone_is_not_set: 🔹 the time zone isn't set
+    bot_is_not_connection: 🔹 the channel isn't connected with a bot
+    channel_not_found: 🔹 the channel isn't found
+    bot_is_not_admin: 🔹 connected bot isn't added to admins of the channel
+    
+  start: |
+    Go to @ControllerBot to connect a new channel and start creating posts.
+  
+  make:
+    welcome: |
+      Here it is: ${channel.name}. Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
+      
+      You can use either /markdown-style or /HTML-style formatting in messages.
+    settings: |
+      Options of creating post.
+      
+      You can use either /markdown-style or /HTML-style formatting in messages.
+    clear: Success! All messages have been deleted.
+    message_deleted: Done! The message has been deleted.
+    not_posts: You have no any messages yet.
+    not_posts_for_done: You have no any messages yet.
+    preview_sent: The preview of messages sent.
+    error_parse: |
+      Errors in formatting text:
+      
+      <pre>${description}</pre>
+      
+      Please fix all errors and send message again.
+    posts_sent: Success! Messages have been sent.
+    continue_collect: URL buttons list updated. You can continue to send me messages. 
+    html: |
+      <b>bold</b>
+      &lt;b&gt;bold&lt;/b&gt;
+      
+      <i>italic</i>
+      &lt;i&gt;italic&lt;/i&gt;
+      
+      <a href="http://www.example.com/">inline URL</a>
+      &lt;a href=&quot;http://www.example.com/&quot;&gt;inline URL&lt;/a&gt;
+      
+      <code>inline fixed-width code</code>
+      &lt;code&gt;inline fixed-width code&lt;/code&gt;
+      
+      <pre>pre-formatted fixed-width code block</pre>
+      &lt;pre&gt;pre-formatted fixed-width code block&lt;/pre&gt;
+    markdown: |
+      <b>bold text</b>
+      *bold text*
+      
+      <i>italic text</i>
+      _italic text_
+      
+      <a href="http://www.example.com/">text</a>
+      [text](http://www.example.com/)
+      
+      <code>inline fixed-width code</code>
+      `inline fixed-width code`
+      
+      <pre>text 
+      pre-formatted fixed-width code block</pre>
+      ```text 
+      pre-formatted fixed-width code block
+      ```
+    canceled: Creating of the post has been canceled.
+    inline:
+      welcome: |
+        Send me a list of URL buttons for the message. Please use this format:
+        <pre>Label text - http://www.example.com/
+        Another label text - http://www.example2.com/
+        </pre>
+        Choose 'Cancel' to back to creating post.
+      error: |
+        Errors in URL buttons list:
+        
+        <code>${error}</code>
+        
+        Please fix all errors and send message again.
+      not_keyboard: |
+        The message sent by you does not fit the format of URL buttons list. Please check everything twice and try again.
+      save: URL buttons list updated. You can continue to send me messages.
+      cleared: Success! URL buttons list cleared.
+      continue: Send me a list of URL buttons for the message or choose 'Cancel' to back to creating post.
+        
+  preview:
+    ok: |
+      The preview of messages sent. 
+      
+      Go back to @ControllerBot or send /start to create a new post.
+        
+  send:
+    count_posts: ${pluralize(count, 'message', 'messages', 'messages')} ready to be sent to the channel.
+    choose_type: When you want to send the post?
+    problems: |
+      Unable to create a new post in ${channel.name}. The next issues found:
+      
+      ${problems}
+      
+      ${from.id == channel.owner_id
+        ? 'Go to the channel settings to fix the issues.'
+        : 'The creator of the channel should go to the channel settings and fix the issues.'
+      }
+    cancel_send: Sending of the post has been canceled.
+    continue_send: You can continue to send me messages.
+    confirm_send: >
+      Are you sure you want to send <b>${pluralize(posts, 'message', 'messages', 'messages')}</b> to
+      <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}?
+    waiting: 🕒 Sending...
+    ok: Done!
+    
+  schedule:
+    day:
+      today: today
+      tomorrow: tomorrow
+      after_tomorrow: overmorrow
+    welcome: |
+      Send time at which you want to send the post ${day}.
+      Send time+date to enqueue the post at any other day.
+      
+    help: |
+      <b>The following time formats are supported:</b>
+      <pre>6      -> 06:00
+      5 3    -> 05:03
+      15:30  -> 15:30
+      1530   -> 15:30</pre>
+      
+      <b>The following date formats are supported:</b>
+      <pre>6      -> 6 of the current month
+      9 6    -> May 9
+      8 7 17 -> Jun 8, 2017</pre>
+      
+      You can also use colons and dots instead of spaces for separation. 
+      
+      If you send only time, the post will be enqueued at the current day by default. To enqueue the post at any other day send time+date. For example, <code>16 30 6 8 -> 16:30, Aug 6</code>
+    error_date: Incorrect date and time. Choose 'Help' to get a hint.
+    invalid_date: Incorrect date.
+    limit: 'You need to choose a time more than the current by 1 minute or more. The current date and time is ${current_date}'
+    limit_year: Unable to choose a time over than the current by 1 year or more. Who knows what's going to happen... :)
+    ok: |
+      Scheduled post has been сreated. The post will be sent to <b>«${channel.name}»</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
+      
+posts:
+  types:
+    text: text
+    audio: audio
+    document: file
+    photo: photo
+    sticker: sticker
+    video: video
+    voice: voice message
+    contact: contact
+    location: location
+    venue: venue
+  welcome: Choose a channel to edit sent posts or manage scheduled posts.
+  select_type: View or delete scheduled posts.
+  not_schedule_posts: You have no scheduled posts for this channel in yet.
+  choose_scheduled_post: Choose a scheduled post you want to view or delete.
+  view_scheduled_post: |
+    The post will be sent to ${channel.name}${channel.username ? ' @' + channel.username : ''} on ${date}.
+    
+    You have ${pluralize(posts, 'message', 'messages', 'messages')} in this post:
+    ${messages}
+  confirm_delete_post: Are you sure you want to delete this scheduled post?
+  scheduled_post_was_deleted: Done! Scheduled post has been deleted.
+ 
+settings:
+  welcome: Choose what you want to change.
+  
+  bots: 
+    select_bot: |
+      ${count 
+        ? 'Choose a bot you want to delete.' 
+        : 'You have no connected bots yet.'
+      }
+    channel_item: |
+      ${index}. ${name}
+    confirm_delete: |
+      ${count 
+        ? 'The bot is connected with these channels:\n\n' + channels 
+        : 'The bot isn\'t connected with any channels.\n'
+      }
+      Are you sure you want to delete this bot?
+    bot_deleted: Done! The bot is gone.
+
+keyboard:
+  btn:
+    true: Right
+    back: Back
+    back_inline: « Back
+    cancel: Cancel
+    help: Help
+  
+  menu:
+    create_post: Create Post
+    control_posts: Manage Posts
+    channels: Channels
+    settings: Settings
+    feedback: Feedback
+    
+  channels:
+    add_channel: Add Channel
+    add_bot: Connect Bot
+    
+    control:
+      bot: Change Bot
+      timezone: Change Time Zone
+      admins: Manage Admins
+      delete: Delete Channel
+      
+      confirm_delete_yes: Yes
+      confirm_delete_no: No
+      
+      return_to_settings: « Back to Settings
+    
+    admins:
+      add: Add
+      delete: Delete
+      
+  bots:
+    help: Why do I need to connect a bot?
+      
+  post:
+    settings: 
+      disable_notification_disable: 'Silent Broadcast: OFF'
+      disable_notification_enable: 'Silent Broadcast: ON'
+      
+      disable_web_page_preview_disable: 'Link Preview: ON'
+      disable_web_page_preview_enable: 'Link Preview: OFF'
+      
+      parse_mode_markdown: 'Formatting Style: Markdown'
+      parse_mode_html: 'Formatting Style: HTML'
+    
+    control_channel: Go to Channel Settings
+    return_to_channels: « Back to Channels List
+    
+    continue: Continue »
+    
+    delete: Delete Message
+    
+    add_inline: Add URL Buttons
+    save_inline: Save URL Buttons
+    clear_inline: Delete URL Buttons
+    cancel_inline: Cancel
+    
+    clear: Delete All 
+    preview: Preview
+    open_settings: Options
+    done: Send
+    cancel: Cancel
+    
+    send:
+      send_now: Send Now
+      create_scheduled: Enqueue
+      
+      send: Send
+      cancel: Cancel
+    
+    schedule:
+      today: |-
+        ${active ? '🔹 ' : ''}Today
+      tomorrow: |-
+        ${active ? '🔹 ' : ''}Tomorrow
+      after_tomorrow: |-
+        ${active ? '🔹 ' : ''}Overmorrow
+        
+    back_to_controller: Back to Controller Bot
+      
+  settings:
+    bots: Connected Bots
+    delete_bot: Delete Bot
+    language: Change Language
+    
+  posts:
+    edit_sent_posts: Edit Sent Posts
+    view_schedule: Manage Scheduled Posts
+    view: View Post
+    delete: Delete Post
+    yes: Yes
+    cancel: No
