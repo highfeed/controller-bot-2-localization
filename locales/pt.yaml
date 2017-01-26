@@ -5,7 +5,7 @@ bots:
   welcome: |
     Para conectar um bot você precisa seguir os seguintes passos:
     
-    1. Abra o @BotFather em seguida insira <code>/newbot</code> escolha um nome e um username para o seu bot.
+    1. Abra o @BotFather em seguida insira <code>/newbot</code> escolha um nome e username para o seu bot.
     2. Você receberá um token (exemplo: 12345:6789ABCDEF) — encaminhe ou copie e cole este código aqui.
   wrong_token: Doesn't look like anything to me. Por favor, me envie o token do seu bot.
   error_add: Token inválido. Tente obter um novo ou use um token de outro bot.
