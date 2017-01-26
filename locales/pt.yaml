@@ -437,5 +437,5 @@ keyboard:
     view_schedule: Gerenciador Postagens
     view: Visualizar Postagem
     delete: Excluir postagem
-    yes: Yes
-    cancel: No
+    yes: Sim
+    cancel: Não
