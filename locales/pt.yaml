@@ -190,7 +190,7 @@ post:
       
       Corrija todos os erros e envie a mensagem novamente.
     posts_sent: Sucesso! As mensagens foram enviadas.
-    continue_collect: Lista atualizada URL buttons. Você pode continuar enviando mensagens. 
+    continue_collect: Lista atualizada de botões com URL. Você pode continuar enviando mensagens. 
     html: |
       <b>bold</b>
       &lt;b&gt;bold&lt;/b&gt;
@@ -277,7 +277,7 @@ post:
       after_tomorrow: outra data
     welcome: |
       Envie a hora em que você deseja enviar a postagem ${day}.
-      Envie hora+data para bloquear o post em qualquer outro dia.
+      Envie hora+data para bloquear uma postagem especifica.
       
     help: |
       <b>Os seguintes formatos de hora são suportados:</b>
@@ -303,12 +303,12 @@ post:
       
 posts:
   types:
-    text: textos
-    audio: audios
-    document: arquivos
-    photo: fotos
+    text: texto
+    audio: audio
+    document: arquivo
+    photo: foto
     sticker: sticker
-    video: videos
+    video: video
     voice: mensagem de voz
     contact: contato
     location: localização
@@ -369,8 +369,8 @@ keyboard:
       admins: Gerenciador Adminis
       delete: Excluir Canal
       
-      confirm_delete_yes: Yes
-      confirm_delete_no: No
+      confirm_delete_yes: Sim
+      confirm_delete_no: Não
       
       return_to_settings: « Voltar para Configurações
     
@@ -423,7 +423,7 @@ keyboard:
       tomorrow: |-
         ${active ? '🔹 ' : ''}Amanhã
       after_tomorrow: |-
-        ${active ? '🔹 ' : ''}Depois de Amanhã
+        ${active ? '🔹 ' : ''}Outra Data
         
     back_to_controller: Voltar para Controller Bot
       
