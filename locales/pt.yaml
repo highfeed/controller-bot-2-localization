@@ -274,10 +274,10 @@ post:
     day:
       today: hoje
       tomorrow: amanhã
-      after_tomorrow: depois de amanhã
+      after_tomorrow: outra data
     welcome: |
       Envie a hora em que você deseja enviar a postagem ${day}.
-      Enviie hora+data para bloquear o post em qualquer outro dia.
+      Envie hora+data para bloquear o post em qualquer outro dia.
       
     help: |
       <b>Os seguintes formatos de hora são suportados:</b>
