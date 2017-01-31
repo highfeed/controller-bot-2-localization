@@ -7,6 +7,9 @@ bots:
     
     1. Open @BotFather, then enter <code>/newbot</code> and choose a name and a username for your bot.
     2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
+    
+    <b>Warning!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect. 
+  
   wrong_token: Doesn't look like anything to me. Please send me a token from your bot.
   error_add: Invalid token. Try to get a new one or use a token of another bot.
   bot_already_added: Looks familiar to me. You already have this bot connected.
@@ -15,14 +18,7 @@ bots:
     
     This allows us to avoid some Bot API limits for a better user experience, speed and stability. You can connect one a bot and use it for all your channels. 
     
-    Message us to @ControllerSupportBot if any issues appeared when you connect a new bot.
-  bots: 
-    help: |
-      I didn't understand..
-      
-      To control the channels or posts, go to the bot @ControllerBot.
-      
-      Use /start, if you want to create a post in the channels connected to that bot.
+    Message us to @ControllerSupportBot if any issues appeared when you connect your own bot.
 
 start:
   welcome: |
@@ -66,13 +62,18 @@ start:
     
     /cancel - cancel the current operation
     
-  feedback: Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
+  feedback:
+    Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
 
+  bots:
+    help: |
+      Go to @ControllerBot if you want to manage your channels and posts.
+      
+      Send /start to create a new post.
 channels:
   welcome: |
     Add a new channel or edit settings of added ones.
-    
-    Use /addchannel to add your first channel.
+
   add: 
     select_bot: |
       Choose a bot to send posts to the channel.
@@ -100,11 +101,9 @@ channels:
       channels_already_added: |
         This channel is already added. Please try another.
       bot_was_deleted: |
-        Add the channel is impossible, because you deleted your bot @${username} from @BotFather or change his token.
+        Unable to add a channel. @${username} is no longer exist, or its token is revoked. Reconnect this bot or choose another. 
         
-        Select a different bot or add a new one.
-        
-        Message us at @ControllerSupportBot if the problem continues.        
+        Message us to @ControllerSupportBot if any issues appeared when you connect your own bot. 
   control:
     options: 'Here it is: ${channel.name}. What do you want to do with the channel?'
     
@@ -165,7 +164,10 @@ channels:
       
 post:
   select_channel: Choose a channel to create a new post.
-  no_channels: You have no added channels yet.
+  no_channels: |
+    You have no added channels yet.
+    
+    Send /addchannel to add a new one.
   error_check_channel: Something went wrong :( Please try again. Send /feedback to let us know if for some reason it doesn't change anything.
   channel_not_found: The channel doesn't exist, or you don't have access to it. Go back to @ControllerBot and try again.
   problems: |
@@ -179,10 +181,10 @@ post:
     }
   problem_items: 
     timezone_is_not_set: 🔹 the time zone isn't set
-    bot_is_not_connection: 🔹 the channel isn't connected with a bot
+    bot_is_not_connection: 🔹 the channel isn't connected to a bot
     channel_not_found: 🔹 the channel isn't found
-    bot_is_not_admin: 🔹 connected bot isn't added to admins of the channel
-    bot_was_deleted: 🔹 bot removed from @BotFather or change his token 
+    bot_is_not_admin: 🔹 the connected bot isn't added to the channel admins
+    bot_was_deleted: 🔹 the connected bot is no longer exist, or its token is revoked
     
   start: |
     Go to @ControllerBot to connect a new channel and start creating posts.
@@ -193,7 +195,7 @@ post:
       
       You can use either /markdown-style or /HTML-style formatting in messages.
     settings: |
-      Options of creating post.
+      Options of post creating.
       
       You can use either /markdown-style or /HTML-style formatting in messages.
     clear: Success! All messages have been deleted.
@@ -250,7 +252,7 @@ post:
         Another label text - http://www.example2.com/
         </pre>
 
-        Choose 'Cancel' to back to creating post.
+        Choose 'Cancel' to back to creating of the post.
       error: |
         Errors in URL buttons list:
         
@@ -259,9 +261,16 @@ post:
         Please fix all errors and send message again.
       not_keyboard: |
         The message sent by you does not fit the format of URL buttons list. Please check everything twice and try again.
-      save: URL buttons list updated. You can continue to send me messages.
-      cleared: Success! URL buttons list cleared.
-      continue: Send me a list of URL buttons for the message or choose 'Cancel' to back to creating post.
+      save: URL buttons saved. You can continue to send me messages.
+      cleared: Success! URL buttons cleared.
+      continue: Send me a list of URL buttons for the message or choose 'Cancel' to back to creating of the post.
+    reactions:
+      welcome: |
+        Send me one or more emoticons that will be used for emoji like-buttons (up to 6 emoji).
+      not_found_smiles: |
+        Send me one or more emoticons. For example: `👍👎`
+      save: Reactions saved. 
+      notify: Counters will be available after sending.
         
   preview:
     ok: |
@@ -332,12 +341,12 @@ posts:
     contact: contact
     location: location
     venue: venue
-  welcome: Choose a channel to edit sent posts or manage scheduled posts.
+  welcome: Choose a channel to manage scheduled posts.
   select_type: View or delete scheduled posts.
   not_schedule_posts: You have no scheduled posts for this channel in yet.
   choose_scheduled_post: Choose a scheduled post you want to view or delete.
   bot_was_deleted: |
-    You can't see this scheduled post because you removed the bot, through which the post was published.
+    Unable to view this scheduled post because the connected bot used for it creating was deleted. You can connect that bot again to restore the post.
   view_scheduled_post: |
     The post will be sent to ${channel.name}${channel.username ? ' @' + channel.username : ''} on ${date}.
     
@@ -367,7 +376,7 @@ settings:
 
 keyboard:
   btn:
-    true: Right
+    true: Yes, It's Right
     back: Back
     back_inline: « Back
     cancel: Cancel
@@ -424,6 +433,9 @@ keyboard:
     save_inline: Save URL Buttons
     clear_inline: Delete URL Buttons
     cancel_inline: Cancel
+    
+    add_reactions: Add Reactions
+    clear_reactions: Delete Reactions
     
     clear: Delete All 
     preview: Preview
