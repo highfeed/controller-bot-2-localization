@@ -16,6 +16,13 @@ bots:
     This allows us to avoid some Bot API limits for a better user experience, speed and stability. You can connect one a bot and use it for all your channels. 
     
     Message us to @ControllerSupportBot if any issues appeared when you connect a new bot.
+  bots: 
+    help: |
+      I didn't understand..
+      
+      To control the channels or posts, go to the bot @ControllerBot.
+      
+      Use /start, if you want to create a post in the channels connected to that bot.
 
 start:
   welcome: |
@@ -64,7 +71,8 @@ start:
 channels:
   welcome: |
     Add a new channel or edit settings of added ones.
-
+    
+    Use /addchannel to add your first channel.
   add: 
     select_bot: |
       Choose a bot to send posts to the channel.
@@ -91,7 +99,12 @@ channels:
         Only the creator has the right to add a channel. By the way, don't forget that the сreator can add admins in the channel settings.
       channels_already_added: |
         This channel is already added. Please try another.
+      bot_was_deleted: |
+        Add the channel is impossible, because you deleted your bot @${username} from @BotFather or change his token.
         
+        Select a different bot or add a new one.
+        
+        Message us at @ControllerSupportBot if the problem continues.        
   control:
     options: 'Here it is: ${channel.name}. What do you want to do with the channel?'
     
@@ -169,6 +182,7 @@ post:
     bot_is_not_connection: 🔹 the channel isn't connected with a bot
     channel_not_found: 🔹 the channel isn't found
     bot_is_not_admin: 🔹 connected bot isn't added to admins of the channel
+    bot_was_deleted: 🔹 bot removed from @BotFather or change his token 
     
   start: |
     Go to @ControllerBot to connect a new channel and start creating posts.
@@ -322,6 +336,8 @@ posts:
   select_type: View or delete scheduled posts.
   not_schedule_posts: You have no scheduled posts for this channel in yet.
   choose_scheduled_post: Choose a scheduled post you want to view or delete.
+  bot_was_deleted: |
+    You can't see this scheduled post because you removed the bot, through which the post was published.
   view_scheduled_post: |
     The post will be sent to ${channel.name}${channel.username ? ' @' + channel.username : ''} on ${date}.
     
