@@ -270,6 +270,7 @@ post:
       not_found_smiles: |
         Send me one or more emoticons. For example: `👍👎`
       save: Reactions saved. 
+      cleared: Success! Reactions cleared.
       notify: Counters will be available after sending.
         
   preview:
