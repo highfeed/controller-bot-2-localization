@@ -67,9 +67,9 @@ start:
 
   bots:
     help: |
-      Go to @ControllerBot if you want to manage your channels and posts.
+      Doesn't look like anything to me. 
       
-      Send /start to create a new post.
+      Go to @ControllerBot if you want to manage your channels and posts. Send /start to create a new post.
 channels:
   welcome: |
     Add a new channel or edit settings of added ones.
