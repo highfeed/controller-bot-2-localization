@@ -417,6 +417,7 @@ keyboard:
     create_post: Create Post
     control_posts: Manage Posts
     channels: Channels
+    statistics: Stats
     settings: Settings
     feedback: Feedback
     
@@ -503,3 +504,12 @@ keyboard:
     delete: Delete Post
     yes: Yes
     cancel: No
+    
+  statistics:
+    view_periods: View
+    view_via_web: View via Website
+    share: Share
+    
+    periods:
+      one_week: Week
+      one_month: Month
