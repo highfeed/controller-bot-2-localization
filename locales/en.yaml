@@ -52,10 +52,10 @@ start:
     /channels - manage channels
     /addchannel - add a new channel
 
-    /create - send a new message
+    /create - create a new post
     /manage - manage posts
        
-    /feedback - contact the devs of this bot
+    /stats - get stats for a channel
     
     /rate - rate bot
     /help - answers to basic questions 
