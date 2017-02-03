@@ -417,7 +417,7 @@ keyboard:
     create_post: Create Post
     control_posts: Manage Posts
     channels: Channels
-    statistics: Stats
+    statistics: Channel Stats
     settings: Settings
     feedback: Feedback
     
