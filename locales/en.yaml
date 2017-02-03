@@ -376,7 +376,7 @@ settings:
       Are you sure you want to delete this bot?
     bot_deleted: Done! The bot is gone.
 
-stats:
+statistics:
   select_channel: Choose a channel to view stats.
   no_channels: |
     You have no added channels yet.
