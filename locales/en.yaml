@@ -70,6 +70,7 @@ start:
       Doesn't look like anything to me. 
       
       Go to @ControllerBot if you want to manage your channels and posts. Send /start to create a new post.
+
 channels:
   welcome: |
     Add a new channel or edit settings of added ones.
@@ -374,6 +375,35 @@ settings:
       }
       Are you sure you want to delete this bot?
     bot_deleted: Done! The bot is gone.
+
+stats:
+  select_channel: Choose a channel to view stats.
+  no_channels: |
+    You have no added channels yet.
+    
+    Send /addchannel to add a new one.
+  selected_channel: 'Here it is: ${channel.name}. What do you want to do with stats?'
+  select_periods: Choose a period you want to get stats.
+  loading_data: 🕒 Processing the data and rendering graphs...
+  error_load_data: |
+    An error occurred while data processing.
+     
+    Message us to @ControllerSupportBot to report an issue.
+  not_found_data: There's no data for processing at the moment. Please try again later.
+  share_text: |
+    Here's the link to view stats of ${channel.name}${channel.username ? ' @' + channel.username : ''}
+  data: |
+    Stats of ${channel.name}${channel.username ? ' @' + channel.username : ''} for ${period == 'week'
+      ? 'the last 7 days'
+      : 'the last 31 days'
+    }.
+    
+    ${data}
+  chart:
+    title: |
+      Stats for ${channel.name}${channel.username ? ' @' + channel.username : ''}
+    copyright: Powered by @ControllerBot
+    label: members
 
 keyboard:
   btn:
