@@ -383,6 +383,7 @@ statistics:
     
     Send /addchannel to add a new one.
   selected_channel: 'Here it is: ${channel.name}. What do you want to do with stats?'
+  channel_not_found: This channel is not available.
   select_periods: Choose a period you want to get stats.
   loading_data: 🕒 Processing the data and rendering graphs...
   error_load_data: |
