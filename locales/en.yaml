@@ -117,7 +117,7 @@ channels:
     select_bot: |
       ${count 
         ? 'Choose a bot that will be used to send posts in the channel.' 
-        : 'There's no connected bots yet. Send /addchannel and choose \'Add Channel\' to connect a new one.'
+        : 'There\'s no connected bots yet. Send /addchannel and choose \'Add Channel\' to connect a new one.'
       }
     bot_is_not_admin: Add the bot to admins of your channel.
     current_bot: Unable to choose currently used bot.
@@ -152,7 +152,8 @@ channels:
     added: Done! The user has been appointed as an admin. 
     not_added: This user is already admin of the channel.
     delete: Choose a user to remove it from admins of the channel. 
-    empty_list: There's no admins in this channel yet.
+    empty_list: |
+      There's no admins in this channel yet.
     list: |
       You have ${pluralize(count, 'admin', 'admins', 'admins')} in this channel:
       
@@ -201,8 +202,10 @@ post:
       You can use either /markdown-style or /HTML-style formatting in messages.
     clear: Success! All messages have been deleted.
     message_deleted: Done! The message has been deleted.
-    not_posts: There's no any messages yet.
-    not_posts_for_done: There's no any messages yet.
+    not_posts: |
+      There's no any messages yet.
+    not_posts_for_done: |
+      There's no any messages yet.
     preview_sent: The preview of messages sent.
     error_parse: |
       Errors in formatting text:
@@ -345,7 +348,8 @@ posts:
     venue: venue
   welcome: Choose a channel to manage scheduled posts.
   select_type: View or delete scheduled posts.
-  not_schedule_posts: There's no scheduled posts for this channel in yet.
+  not_schedule_posts: |
+    There's no scheduled posts for this channel in yet.
   choose_scheduled_post: Choose a scheduled post you want to view or delete.
   bot_was_deleted: |
     Unable to view this scheduled post because the connected bot used for it creating was deleted. You can connect that bot again to restore the post.
@@ -364,7 +368,7 @@ settings:
     select_bot: |
       ${count 
         ? 'Choose a bot you want to delete.' 
-        : 'There's no connected bots yet.'
+        : 'There\'s no connected bots yet.'
       }
     channel_item: |
       ${index}. ${name}
@@ -390,7 +394,8 @@ statistics:
     An error occurred while data processing.
      
     Message us to @ControllerSupportBot to report an issue.
-  not_found_data: There's no stats data for this channel yet. Come back later.
+  not_found_data: |
+    There's no stats data for this channel yet. Come back later.
   share_text: |
     Here's the link to view stats of ${channel.name}${channel.username ? ' @' + channel.username : ''}
   data: |
