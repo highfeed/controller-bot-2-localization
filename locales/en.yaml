@@ -97,7 +97,7 @@ channels:
         Add @${username} to admins of your channel. Please check everything twice and try again.
     
         Send /feedback to let us know if for some reason it doesn't change anything.
-      is_not_creator: |
+      bot_is_not_admin: |
         Only the creator has the right to add a channel. By the way, don't forget that the сreator can add admins in the channel settings.
       channels_already_added: |
         This channel is already added. Please try another.
