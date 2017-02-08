@@ -100,7 +100,7 @@ channels:
       bot_is_not_admin: |
         Add the bot to admins of your group.
       channels_already_added: |
-        This channel is already added by ${admin.first_name}${admin.last_name ? ' ' + admin.last_name : ''}${admin.username ? ' @' + admin.username : ''}. You can ask this user to appoint you as an admin in the channel settings (Channels — choose the channel — Admins — Add) or delete this channel from Controller Bot so you can add it again by yourself.
+        This channel is already added by ${admin.first_name}${admin.last_name ? ' ' + admin.last_name : ''}${admin.username ? ' @' + admin.username : ''}. You can ask this user to appoint you as an admin in the channel settings (Channels — choose the channel — Manage Admins — Add) or delete this channel from Controller Bot so you can add it again by yourself.
       bot_was_deleted: |
         Unable to add a channel. @${username} is no longer exist, or its token was revoked. Reconnect this bot or choose another. 
         
