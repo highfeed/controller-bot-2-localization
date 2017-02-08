@@ -10,34 +10,36 @@ bots:
     
     <b>Warning!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect. 
   
-  wrong_token: Doesn't look like anything to me. Please send me a token from your bot.
+  wrong_token: Doesn't look like anything to me. Please send me a token of your bot.
   error_add: Invalid token. Try to get a new one or use a token of another bot.
   bot_already_added: Looks familiar to me. You already have this bot connected.
   help: |
     🔹 Why do I need to connect a bot?
     
-    This allows us to avoid some Bot API limits for a better user experience, speed and stability. You can connect one a bot and use it for all your channels. 
+    This avoid some Bot API limits for a better user experience, speed and stability. You can connect one bot and use it for all your channels. 
     
-    Message us to @ControllerSupportBot if any issues appeared when you connect your own bot.
+    Message us at @ControllerSupportBot if any issues appeared when you connect your own bot.
 
 start:
   welcome: |
-    <b>Controller Bot</b> — excellent bot for channel owners that helps you send formatted posts and create scheduled posts in your channel.
+    <b>Controller Bot</b> — excellent bot for channel owners that helps you send formatted posts and create scheduled posts in your channels.
     
     <b>Formatted Posts.</b> Send posts with bold, italic, fixed-width text and inline links.
     
-    <b>Scheduled Posts.</b> Create an unlimited number of scheduled posts in your channel.
+    <b>Scheduled Posts.</b> Create an unlimited number of scheduled posts in your channels.
     
     <b>URL Buttons.</b> Add to any post useful buttons that can open links.
     
-    <b>Admins.</b> You can add admins to help you send new posts and manage scheduled posts in your channel.
+    <b>Admins.</b> Add admins to help you send new posts and manage scheduled posts.
+
+    <b>Stats.</b> Easy collect and track a number of members in your channels for certain periods of time.
     
     Bot can send posts silently and disable previews for links, as well as supports all message types (text, document, sticker, audio, video, voice note, location and other).
     
     <b>How to use?</b>
-    Send /addchannel, choose 'Add Channel' and follow the instructions to add a new channel.
+    Send /addchannel, choose a connected bot or add a new one and follow the instructions to add a new channel.
     
-    Message us to @ControllerSupportBot to report an issue or contact the devs of this bot.
+    Message us at @ControllerSupportBot to report an issue or contact the devs of this bot.
     
     /rate — rate bot
     /help — answers to basic questions
@@ -81,7 +83,7 @@ channels:
     select_bot_and_help: |
       To add a new channel you need to connect your own bot first. You can connect one a bot and use it for all your channels. 
       
-      Choose «Connect Bot» and follow the instructions.
+      Choose «Connect New Bot» and follow the instructions.
     welcome: |
       To add a channel you should follow these two steps:
     
@@ -98,13 +100,13 @@ channels:
     
         Send /feedback to let us know if for some reason it doesn't change anything.
       bot_is_not_admin: |
-        Add the bot to admins of your group.
+        Add @${username} to admins of your group.
       channels_already_added: |
         This channel is already added by ${admin.first_name}${admin.last_name ? ' ' + admin.last_name : ''}${admin.username ? ' @' + admin.username : ''}. You can ask this user to appoint you as an admin in the channel settings (Channels — choose the channel — Manage Admins — Add) or delete this channel from Controller Bot so you can add it again by yourself.
       bot_was_deleted: |
         Unable to add a channel. @${username} is no longer exist, or its token was revoked. Reconnect this bot or choose another. 
         
-        Message us to @ControllerSupportBot if any issues appeared when you connect your own bot. 
+        Message us at @ControllerSupportBot if any issues appeared when you connect your own bot. 
   control:
     options: 'Here it is: ${channel.name}. What do you want to do with the channel?'
     
@@ -117,7 +119,7 @@ channels:
     select_bot: |
       ${count 
         ? 'Choose a bot that will be used to send posts in the channel.' 
-        : 'There\'s no connected bots yet. Send /addchannel and choose \'Add Channel\' to connect a new one.'
+        : 'There\'s no connected bots yet. Send /addchannel and choose \'Add New Channel\' to connect a new one.'
       }
     bot_is_not_admin: Add the bot to admins of your channel.
     current_bot: Unable to choose currently used bot.
@@ -393,7 +395,7 @@ statistics:
   error_load_data: |
     An error occurred while data processing.
      
-    Message us to @ControllerSupportBot to report an issue.
+    Message us at @ControllerSupportBot to report an issue.
   not_found_data: |
     There's no stats data for this channel yet. Come back later.
   share_text: |
@@ -428,8 +430,8 @@ keyboard:
     feedback: Feedback
     
   channels:
-    add_channel: Add Channel
-    add_bot: Connect Bot
+    add_channel: Add New Channel
+    add_bot: Connect New Bot
     
     control:
       bot: Change Bot
@@ -499,7 +501,7 @@ keyboard:
     back_to_controller: Back to Controller Bot
       
   settings:
-    bots: Connected Bots
+    bots: Manage Connected Bots
     delete_bot: Delete Bot
     language: Change Language
     
@@ -513,7 +515,7 @@ keyboard:
     
   statistics:
     view_periods: View
-    view_via_web: View via Website
+    view_via_web: View via Webpage
     share: Share
     
     periods:
