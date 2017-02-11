@@ -36,20 +36,22 @@ start:
     
     Bot can send posts silently and disable previews for links, as well as supports all message types (text, document, sticker, audio, video, voice note, location and other).
     
-    <b>How to use?</b>
+    <b>How to start?</b>
     Send /addchannel, choose a connected bot or add a new one and follow the instructions to add a new channel.
     
-    Message us at @ControllerSupportBot to report an issue or contact the devs of this bot.
+    Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
     
     /rate — rate bot
-    /help — answers to basic questions
+    /help — get a list of commands
   do: OK. What do you want to do?
   choose_language: Please choose your language.
   language_changed: OK, your language saved.
   rate: |
     Give us 5 stars on Store Bot if you like Controller Bot: t.me/storebot?start=ControllerBot
   help: |
-    Controller Bot helps you send formatted posts and create scheduled posts in your channel
+    I can help you send formatted posts and create scheduled posts in your channels.
+
+    You can control me by sending these commands:
     
     /channels - manage channels
     /addchannel - add a new channel
@@ -58,9 +60,9 @@ start:
     /manage - manage posts
        
     /stats - get stats for a channel
+    /feedback - how to contact the devs
     
     /rate - rate bot
-    /help - answers to basic questions 
     
     /cancel - cancel the current operation
     
