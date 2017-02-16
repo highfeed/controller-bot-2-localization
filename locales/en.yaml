@@ -218,7 +218,7 @@ post:
       
       Please fix all errors and send message again.
     posts_sent: Success! Messages have been sent.
-    continue_collect: URL buttons list updated. You can continue to send me messages. 
+    continue_collect: You can continue to send me messages. 
     html: |
       <b>bold</b>
       &lt;b&gt;bold&lt;/b&gt;
