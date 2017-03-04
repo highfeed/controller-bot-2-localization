@@ -112,7 +112,7 @@ channels:
         
         Message us at @ControllerSupportBot if any issues appeared when you connect your own bot. 
   control:
-    options: 'Here it is: <b>${channel.name}</b>. What do you want to do with the channel?'
+    options: 'Here it is: ${channel.name}. What do you want to do with the channel?'
     
     delete_confirm: |
       Are you sure you want to delete this channel?
@@ -179,7 +179,7 @@ post:
   error_check_channel: Something went wrong :( Please try again. Send /feedback to let us know if for some reason it doesn't change anything.
   channel_not_found: The channel doesn't exist, or you don't have access to it. Go back to @ControllerBot and try again.
   problems: |
-    Unable to create a new post in <b>${channel.name}</b>. The next issues found:
+    Unable to create a new post in ${channel.name}. The next issues found:
     
     ${problems}
     
@@ -199,7 +199,7 @@ post:
   
   make:
     welcome: |
-      Here it is: <b>${channel.name}</b>. Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
+      Here it is: ${channel.name}. Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
       
       You can use either /markdown-style or /HTML-style formatting in messages.
     settings: |
@@ -291,7 +291,7 @@ post:
     count_posts: ${pluralize(count, 'message', 'messages', 'messages')} ready to be sent to the channel.
     choose_type: When you want to send the post?
     problems: |
-      Unable to create a new post in <b>${channel.name}</b>. The next issues found:
+      Unable to create a new post in ${channel.name}. The next issues found:
       
       ${problems}
       
@@ -358,7 +358,7 @@ posts:
   bot_was_deleted: |
     Unable to view this scheduled post because the connected bot used for it creating was deleted. You can connect that bot again to restore the post.
   view_scheduled_post: |
-    The post will be sent to <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
+    The post will be sent to ${channel.name}${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
     
     You have ${pluralize(posts, 'message', 'messages', 'messages')} in this post:
     ${messages}
@@ -390,7 +390,7 @@ statistics:
     There is no added channels yet.
     
     Send /addchannel to add a new one.
-  selected_channel: 'Here it is: <b>${channel.name}</b>. What do you want to do with stats?'
+  selected_channel: 'Here it is: ${channel.name}. What do you want to do with stats?'
   channel_not_found: This channel is not available.
   select_periods: Choose a period you want to get stats.
   loading_data: 🕒 Processing the data and rendering graphs...
@@ -403,7 +403,7 @@ statistics:
   share_text: |
     Here is the link to view stats of ${channel.name}${channel.username ? ' @' + channel.username : ''}
   data: |
-    Stats of <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} for ${period == 'week'
+    Stats of ${channel.name}${channel.username ? ' @' + channel.username : ''} for ${period == 'week'
       ? 'the last 7 days'
       : 'the last 31 days'
     }.
@@ -484,6 +484,9 @@ keyboard:
     open_settings: Options
     done: Send
     cancel: Cancel
+
+    silent_enable: 🔈
+    silent_disable: 🔇
     
     send:
       send_now: Send Now

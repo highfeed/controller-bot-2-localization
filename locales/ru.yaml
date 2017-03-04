@@ -535,7 +535,10 @@ keyboard:
     open_settings: Настройки
     done: Далее
     cancel: Отменить пост
-    
+
+    silent_enable: 🔈
+    silent_disable: 🔇
+
     send:
       send_now: Опубликовать
       create_scheduled: Отложить
