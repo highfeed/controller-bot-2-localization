@@ -1,14 +1,14 @@
 enable: false
-name: Persian
+name: فارسی
   
 bots:
   welcome: |
-    To connect a bot you should follow these two steps:
+    برای متصل کردن روبات، باید این دو مرحله را انجام دهید:
     
-    1. Open @BotFather, then enter <code>/newbot</code> and choose a name and a username for your bot.
-    2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
+    ۱. ابتدا @BotFather را باز کنید، سپس <code>/newbot</code> را وارد کنید و یک نام و یک نام کاربری برای روبات خود انتخاب کنید
+    ۲. یک نشانی (مانند: 12345:6789ABCDEF) دریافت میکنید -- آن را برای من بفرستید یا اینجا کپی/پیست کنید
     
-    <b>Warning!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect. 
+    <b>اخطار</b> روبات هایی که برای سرویس های دیگر مانند Chatful و Manybot در حال استفاده هستند متصل نکنید
   
   wrong_token: Doesn't look like anything to me. Please send me a token of your bot.
   error_add: Invalid token. Try to get a new one or use a token of another bot.
