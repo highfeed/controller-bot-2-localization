@@ -3,53 +3,53 @@ name: Italian
   
 bots:
   welcome: |
-    To connect a bot you should follow these two steps:
+    Per connettere un bot devi eseguire questi due passi:
     
-    1. Open @BotFather, then enter <code>/newbot</code> and choose a name and a username for your bot.
-    2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
+    1. Contatta @BotFather, quindi digita <code>/newbot</code> e scegli un nome e uno username per il tuo bot.
+    2. Riceverai un token (e.g. 12345:6789ABCDEF) — inoltramelo o fai copia e incolla qui.
     
-    <b>Warning!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect. 
+    <b>Attenzione!</b> Non connettere bot già connessi ad altri servizi, come Chatfuel, Manybot, ect. 
   
-  wrong_token: Doesn't look like anything to me. Please send me a token of your bot.
-  error_add: Invalid token. Try to get a new one or use a token of another bot.
-  bot_already_added: Looks familiar to me. You already have this bot connected.
+  wrong_token: Non riconosco ciò che hai inviato. Inviami il token del tuo bot.
+  error_add: Token non valido. Prova a richiederne uno nuovo o usa il token di un altro bot.
+  bot_already_added: Riconosco questo Token. Hai già connesso questo bot.
   help: |
-    🔹 Why do I need to connect a bot?
+    🔹 Perché devo connettere un bot?
     
-    This avoid some Bot API limits for a better user experience, speed and stability. You can connect one bot and use it for all your channels. 
+    Questo annulla alcune limitazioni delle API dei Bot, per migliorare la tua user experience, velocità e stabilità. Puoi connettere un solo bot e usarlo per tutti i tuoi canali. 
     
-    Message us at @ControllerSupportBot if any issues appeared when you connect your own bot.
+    Contattaci su @ControllerSupportBot se hai problemi in fase di connessione del tuo bot.
 
 start:
   welcome: |
-    <b>Controller Bot</b> — excellent bot for channel owners that helps you send formatted posts and create scheduled posts in your channels.
+    <b>Controller Bot</b> — Un eccellente bot per gli amministratori di canali, ti aiuta ad inviare messaggi formattati e a programmare post.
     
-    <b>Formatted Posts.</b> Send posts with bold, italic, fixed-width text and inline links.
+    <b>Post Formattati.</b> Invia post con il Grassetto, Corsivo, testo a larghezza fissa e link inline.
     
-    <b>Scheduled Posts.</b> Create an unlimited number of scheduled posts in your channels.
+    <b>Post Programmati.</b> Crea un numero illimitato di post programmati nei tuoi canali.
     
-    <b>URL Buttons.</b> Add to any post inline buttons that can open links.
+    <b>URL Button.</b> Aggiungi ad ogni tuo post dei bottoni inline che possono aprire dei link.
     
-    <b>Admins.</b> Add admins to help you send new posts and manage scheduled posts.
+    <b>Amministratori.</b> Aggiungi amministratori che ti aiutino ad inviare nuovi post e a gestirne la programmazione.
 
-    <b>Stats.</b> Easy collect and track a number of members in your channels for certain periods of time.
+    <b>Statistiche.</b> Raccogli e tieni traccia facilmente del numero di membri nei tuoi canali per un certo lasso di tempo.
 
-    <b>Reactions</b>. Add to your posts emoji-based like buttons and collect reactions of members in your channels.
+    <b>Reactions</b>. Aggiungi dei bottoni con semplici emoji e raccogli le reaction dei membri dei tuoi canali.
     
-    Bot can send posts silently and disable previews for links, as well as accepts all message types and supports built-in formatting options of Telegram clients.
+    Il Bot può inviare dei messaggi senza notifica e disabilitare l'anteprima dei link, inoltre accetta tutti i tipi di messaggi e supporta tutte le opzioni per la formattazione incluse nei client Telegram.
     
-    <b>How to start?</b>
-    Send /addchannel, choose a connected bot or add a new one and follow the instructions to add a new channel.
+    <b>Come cominciare?</b>
+    Invia <code>/addchannel</code>, schegli uno dei bot connessi o aggiungine uno nuovo e segui le istruzioni.
     
-    Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
+    Contattaci su @ControllerSupportBot se hai qualche domanda o problema riguardo Controller Bot.
     
-    /rate — rate bot
-    /help — get a list of commands
-  do: OK. What do you want to do?
-  choose_language: Please choose your language.
-  language_changed: OK, your language saved.
+    <code>/rate</code> — Dai un voto al Bot
+    <code>/help</code> — Ricevi la lista dei comandi
+  do: OK. Cosa vuoi fare?
+  choose_language: Prego, scegli la tua lingua.
+  language_changed: OK, lingua salvata.
   rate: |
-    Give us 5 stars on Store Bot if you like Controller Bot: t.me/storebot?start=ControllerBot
+    Vota 5 stelle su Store Bot se ti piace Controller Bot: t.me/storebot?start=ControllerBot
   help: |
     I can help you send formatted posts and create scheduled posts in your channels.
 
