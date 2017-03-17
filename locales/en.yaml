@@ -22,7 +22,7 @@ bots:
 
 start:
   welcome: |
-    <b>Controller Bot</b> — excellent bot for channel owners that helps you send formatted posts and create scheduled posts in your channels.
+    <b>Controller Bot</b> is a bot for channel owners that helps you create reach posts, view stats and more.
     
     <b>Formatted Posts.</b> Send posts with bold, italic, fixed-width text and inline links.
     
@@ -87,7 +87,7 @@ channels:
     select_bot_and_help: |
       To add a new channel you need to connect your own bot first. You can connect one a bot and use it for all your channels. 
       
-      Choose «Connect New Bot» and follow the instructions.
+      Choose \'Connect Bot\' and follow the instructions.
     welcome: |
       To add a channel you should follow these two steps:
     
@@ -123,7 +123,7 @@ channels:
     select_bot: |
       ${count 
         ? 'Choose a bot that will be used to send posts in the channel.' 
-        : 'There is no connected bots yet. Send /addchannel and choose \'Add New Channel\' to connect a new one.'
+        : 'There is no connected bots yet. Send /addchannel and choose \'Add Channel\' to connect a new one.'
       }
     bot_is_not_admin: Add the bot to admins of your channel.
     current_bot: Unable to choose currently used bot.
@@ -210,7 +210,7 @@ post:
       There is no any messages yet.
     not_posts_for_done: |
       There is no any messages yet.
-    preview_sent: The preview of messages sent.
+    preview_sent: The post preview sent above.
     error_parse: |
       Errors in formatting text:
       
@@ -283,7 +283,7 @@ post:
         
   preview:
     ok: |
-      The preview of messages sent. 
+      The post preview sent above. 
       
       Go back to @ControllerBot or send /start to create a new post.
         
@@ -417,7 +417,7 @@ statistics:
 
 keyboard:
   btn:
-    true: Yes, It is Right
+    true: Yes, It's Right
     back: Back
     back_inline: « Back
     cancel: Cancel
@@ -432,8 +432,8 @@ keyboard:
     feedback: Feedback
     
   channels:
-    add_channel: Add New Channel
-    add_bot: Connect New Bot
+    add_channel: Add Channel
+    add_bot: Connect Bot
     
     control:
       bot: Change Connected Bot
@@ -447,7 +447,7 @@ keyboard:
       return_to_settings: « Back to Settings
     
     admins:
-      add: Add New Admin
+      add: Add Admin
       delete: Dismiss Admin
       
   bots:
