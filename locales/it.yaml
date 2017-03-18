@@ -22,7 +22,7 @@ bots:
 
 start:
   welcome: |
-    <b>Controller Bot</b> — Un eccellente bot per gli amministratori di canali, ti aiuta ad inviare messaggi formattati e a programmare post.
+    <b>Controller Bot</b> — Un eccellente bot per gli amministratori di canali, ti aiuta ad inviare messaggi formattati e a programmarne la pubblicazione.
     
     <b>Post Formattati.</b> Invia post con il Grassetto, Corsivo, testo a larghezza fissa e link inline.
     
@@ -32,136 +32,136 @@ start:
     
     <b>Amministratori.</b> Aggiungi amministratori che ti aiutino ad inviare nuovi post e a gestirne la programmazione.
 
-    <b>Statistiche.</b> Raccogli e tieni traccia facilmente del numero di membri nei tuoi canali per un certo lasso di tempo.
+    <b>Statistiche.</b> Raccogli statistiche e tieni facilmente traccia del numero di membri nei tuoi canali in un certo lasso di tempo.
 
     <b>Reactions</b>. Aggiungi dei bottoni con semplici emoji e raccogli le reaction dei membri dei tuoi canali.
     
     Il Bot può inviare dei messaggi senza notifica e disabilitare l'anteprima dei link, inoltre accetta tutti i tipi di messaggi e supporta tutte le opzioni per la formattazione incluse nei client Telegram.
     
     <b>Come cominciare?</b>
-    Invia <code>/addchannel</code>, schegli uno dei bot connessi o aggiungine uno nuovo e segui le istruzioni.
+    Invia /addchannel, scegli uno dei bot connessi o aggiungine uno nuovo e segui le istruzioni.
     
     Contattaci su @ControllerSupportBot se hai qualche domanda o problema riguardo Controller Bot.
     
-    <code>/rate</code> — Dai un voto al Bot
-    <code>/help</code> — Ricevi la lista dei comandi
+    /rate — Dai un voto al Bot
+    /help — Ricevi la lista dei comandi
   do: OK. Cosa vuoi fare?
   choose_language: Prego, scegli la tua lingua.
   language_changed: OK, lingua salvata.
   rate: |
     Vota 5 stelle su Store Bot se ti piace Controller Bot: t.me/storebot?start=ControllerBot
   help: |
-    I can help you send formatted posts and create scheduled posts in your channels.
+	Posso aiutarti a creare post formattati e a programmarne l'invio nei tuoi canali. 
 
-    You can control me by sending these commands:
+	Puoi controllarmi inviando i seguenti comandi:
     
-    /channels - manage channels
-    /addchannel - add a new channel
+    /channels - gestisci i canali
+    /addchannel - aggiungi un nuovo canale
 
-    /create - create a new post
-    /manage - manage posts
+    /create - crea un nuovo post
+    /manage - gestisci post
        
-    /stats - get stats for a channel
-    /feedback - how to contact the devs
+    /stats - richiedi le statistiche per un canale
+    /feedback - come contattare gli sviluppatori
     
-    /rate - rate bot
+    /rate - dai un voto al bot
     
-    /cancel - cancel the current operation
+    /cancel - annulla l'operazione corrente
     
   feedback:
-    Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
+    Scrivici a @ControllerSupportBot se hai qualche domanda o problema con Controller Bot.
 
   bots:
     help: |
-      Doesn't look like anything to me. 
-      
-      Go to @ControllerBot if you want to manage your channels and posts. Send /start to create a new post.
+      Non mi ricorda nulla.
+	  
+	  Vai su @ControllerBot se vuoi gestire i tuoi canali e i tuoi post. Invia /start per creare un nuovo post.
 
 channels:
   welcome: |
-    Add a new channel or edit settings of added ones.
+    Aggiungi un nuovo canale o modifica le opzioni di uno già aggiunto.
 
   add: 
     select_bot: |
-      Choose a bot to send posts to the channel.
+      Scegli un bot per inviare un post al canale.
     select_bot_and_help: |
-      To add a new channel you need to connect your own bot first. You can connect one a bot and use it for all your channels. 
+      Per aggiungere un nuovo canale hai bisogno di connettere il tuo bot, prima. Puoi connettere un solo bot e usarlo per tutti i tuoi canali.
       
-      Choose «Connect New Bot» and follow the instructions.
+      Scegli «Connetti un nuovo Bot» e segui le istruzioni.
     welcome: |
-      To add a channel you should follow these two steps:
+	  Per aggiungere un canale devi seguire questi due passi:
     
-      1. Add @${username} to admins of your channel.   
-      2. Then forward to me any message from your channel (you can also send me its username or ID).
+      1. Aggiungi @${username} agli amministratori del tuo canale.   
+      2. Inoltrami un messaggio qualsiasi dal tuo canale (puoi anche inviarmi il suo username o ID).
 
-    ok: Success! The channel has been added.
+    ok: Il canale è stato aggiunto con successo!
     
     error:
       data: |
-        Please forward to me any message from your channel. Or send me its username or ID instead.
+        Per favore, Inoltrami un messaggio qualsiasi dal tuo canale. O inviami il suo username o ID.
       get_admins: |
-        Add @${username} to admins of your channel. Please check everything twice and try again.
+        Aggiungi @${username} agli amministratori del tuo canale. Per favore, verifica ancora e riprova.
     
-        Send /feedback to let us know if for some reason it doesn't change anything.
+		Invia /feedback per farci sapere se, per qualche ragione, non cambia nulla.
       bot_is_not_admin: |
-        Add @${username} to admins of your group.
+        Aggiungi @${username} agli amministratori del tuo canale.
       channels_already_added: |
-        This channel is already added by ${admin.first_name}${admin.last_name ? ' ' + admin.last_name : ''}${admin.username ? ' @' + admin.username : ''}. You can ask this user to appoint you as an admin in the channel settings (Channels — choose the channel — Manage Admins — Add) or delete this channel from Controller Bot so you can add it again by yourself.
+		Questo canale è stato già aggiunto da ${admin.first_name}${admin.last_name ? ' ' + admin.last_name : ''}${admin.username ? ' @' + admin.username : ''}. Puoi chiedere a questo utente di nominarti come amministratore nelle opzioni del canale (Canali - scegli il canale - Gestisci Amministratori - Aggiungi) o di cancellare questo canale da Controller Bot, così che tu possa aggiungerlo nuovamente.
       bot_was_deleted: |
-        Unable to add a channel. @${username} is no longer exist, or its token was revoked. Reconnect this bot or choose another. 
+        Impossibile aggiungere il canale. @${username} non esiste, o il suo token è stato revocato. Riconnetti questo bot o scegline un altro.
         
-        Message us at @ControllerSupportBot if any issues appeared when you connect your own bot. 
+        Scrivici a @ControllerSupportBot se hai qualche problema nel connettere il tuo bot.
   control:
-    options: 'Here it is: <b>${channel.name}</b>. What do you want to do with the channel?'
+    options: 'Ecco qui: <b>${channel.name}</b>. Cosa vuoi fare col canale?'
     
     delete_confirm: |
-      Are you sure you want to delete this channel?
+	  Sei sicuro di voler cancellare il canale?
       
-      All scheduled posts for this channel will be also deleted.
-    channel_deleted: Done! The channel is gone.
+	  Verranno eliminati anche tutti i post programmati.
+    channel_deleted: Fatto! Il canale è cancellato.
     
     select_bot: |
       ${count 
-        ? 'Choose a bot that will be used to send posts in the channel.' 
-        : 'There is no connected bots yet. Send /addchannel and choose \'Add New Channel\' to connect a new one.'
+        ? 'Scegli il bot che verrà usato per inviare messaggi al canale.' 
+        : 'Non ci sono ancora bot connessi.Invia /addchannel e scegli \'Aggiungi un nuovo canale\' per connetterne uno.'
       }
-    bot_is_not_admin: Add the bot to admins of your channel.
-    current_bot: Unable to choose currently used bot.
+    bot_is_not_admin: Aggiungi il bot agli amministratori del tuo canale.
+    current_bot: Impossibile scegliere un bot attualmente in uso.
     
     set_timezone: |
-      <b>Success! The channel has been added.</b>
+      <b>Perfetto! Il canale è stato aggiunto.</b>
       
-      Now send me the name of your city, so I'll be able to determine your time zone. Your time zone is required for the management of scheduled posts.
+	  Ora inviami il nome della tua città, così potrò individuare il tuo fuso orario. Questo è richiesto per gestire la programmazione dei post.
     
     timezone: |
-      Current time zone:
+      Fuso orario attuale:
       ${city ? '🔹 GMT ' + (gmt > 0 ? '+' + gmt : gmt) + '\n🔹 ' + timezone_id + ' — ' + city : '🔹 None'}
       
-      Send me the name of the city close to you.
+	  Inviamo il nome di una città a te vicina.
     check_timezone: |
       🔹 GMT ${timezone.gmtOffset > 0 ? '+' + timezone.gmtOffset : timezone.gmtOffset} (${timezone.timeZoneId})
       🔹 ${countryName}, ${name}
       
-      Is it right? If not, try to send me the name of another city close to you.
-    error_timezone: Sorry, I can't find this city. Try to send me the name of another city close to you.
-    error_request_timezone: Something went wrong :( Please try again. Send /feedback to let us know if for some reason it doesn't change anything.
-    save_timezone: OK, your timezone saved.
+      E' giusto? Se non lo è, prova ad inviarmi il nome di un'altra città a te vicina.
+    error_timezone: Spiacente, non riesco a trovare questa città. Prova ad inviarmi il nome di un'altra città a te vicina.
+    error_request_timezone: Qualcosa è andato storto :( Per favore, ritenta. Invia /feedback per farci sapere se, per qualche motivo, non cambia nulla.
+    save_timezone: OK, fuso orario salvato.
     
   admins:
-    add: Forward to me any message from the user you want to appoint as an admin of the channel.
+    add: Inoltrami un qualsiasi messaggio dall'utente che vuoi nominare amministratore del canale.
     user_is_not_use_bot: |
-      Please ask this user to start @ControllerBot first.
+      Per favore, chiedi a questo utente di connettersi a @ControllerBot e digitare /start, prima.
     you_added_as_admin: > 
-      ${from.first_name}${from.last_name ? ' ' + from.last_name : ''}${from.username ? ' @' + from.username : ''} appointed you as an admin of <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}.
+      ${from.first_name}${from.last_name ? ' ' + from.last_name : ''}${from.username ? ' @' + from.username : ''} ti ha nominato amministratore di  <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}.
     you_remove: >
-      ${from.first_name}${from.last_name ? ' ' + from.last_name : ''}${from.username ? ' @' + from.username : ''} removed you from admins of <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}.
-    added: Done! The user has been appointed as an admin. 
-    not_added: This user is already admin of the channel.
-    delete: Choose a user to remove it from admins of the channel. 
+      ${from.first_name}${from.last_name ? ' ' + from.last_name : ''}${from.username ? ' @' + from.username : ''} ti ha rimosso dagli amministratori di <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}.
+    added: Fatto! L'utente è stato nominato amministratore.
+    not_added: Questo utente è già amministratore del canale.
+    delete: Scegli un utente da rimuovere dagli amministratori del canale.
     empty_list: |
-      There is no admins in this channel yet.
+      Non ci sono ancora amministratori in questo canale.
     list: |
-      You have ${pluralize(count, 'admin', 'admins', 'admins')} in this channel:
+      Hai ${pluralize(count, 'amministratore', 'amministratori', 'amministratori')} in this channel:
       
       ${items}
      
@@ -171,88 +171,88 @@ channels:
       ${index}. ${user.first_name}${user.last_name ? ' ' + user.last_name : ''}${user.username ? ' @' + user.username : ''}
       
 post:
-  select_channel: Choose a channel to create a new post.
+  select_channel: Scegli il canale in cui creare il nuovo post.
   no_channels: |
-    There is no added channels yet.
+    Non hai ancora aggiunto canali.
     
-    Send /addchannel to add a new one.
-  error_check_channel: Something went wrong :( Please try again. Send /feedback to let us know if for some reason it doesn't change anything.
-  channel_not_found: The channel doesn't exist, or you don't have access to it. Go back to @ControllerBot and try again.
+    Invia /addchannel per aggiungerne uno nuovo.
+  error_check_channel: Qualcosa è andato storto :( Per favore, riprova. Invia /feedback per farci sapere se, per qualche motivo, non cambia nulla.
+  channel_not_found: Il canale non esiste o tu non vi hai accesso. Torna su @ControllerBot e riprova.
   problems: |
-    Unable to create a new post in <b>${channel.name}</b>. The next issues found:
+	Impossibile creare un nuovo post in <b>${channel.name}</b>. I problemi trovati:
     
     ${problems}
     
     ${from.id == channel.owner_id
-      ? 'Go to the channel settings to fix the issues.'
-      : 'The creator of the channel should go to the channel settings and fix the issues.'
+      ? 'Vai alle impostazioni del canale e sistema i problemi.'
+      : 'Il creatore del canale deve andare nelle impostazioni e sistemare i problemi.'
     }
   problem_items: 
-    timezone_is_not_set: 🔹 the time zone  is not set
-    bot_is_not_connection: 🔹 the channel  is not connected to a bot
-    channel_not_found: 🔹 the channel is no longer exist
-    bot_is_not_admin: 🔹 the connected bot  is not added to the channel admins
-    bot_was_deleted: 🔹 the connected bot is no longer exist, or its token was revoked
+    timezone_is_not_set: 🔹 il fuso orario non è impostato
+    bot_is_not_connection: 🔹 il canale non è connesso al bot
+    channel_not_found: 🔹 il canale non esiste
+    bot_is_not_admin: 🔹 il bot connesso non è stato aggiunto come amministratore
+    bot_was_deleted: 🔹 il bot connesso non esiste più, o il suo token è stato revocato
     
   start: |
-    Go to @ControllerBot to connect a new channel and start creating posts.
+    Vai su @ControllerBot per connettere un nuovo canale ed iniziare a creare post.
   
   make:
     welcome: |
-      Here it is: <b>${channel.name}</b>. Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
+      Eccoci: <b>${channel.name}</b>. Spediscimi uno o più messaggi che vuoi includere nel post. Può essere qualunque cosa - teso, foto, video, persino uno sticker.
       
-      You can use either /markdown-style or /HTML-style formatting in messages.
+      Puoi utilizzare /markdown-style o /HTML-style per formattare i messaggi.
     settings: |
-      Send /markdown or /HTML to get a hint. You can also use built-in formatting options of your Telegram client.
-    clear: Success! All messages have been deleted.
-    message_deleted: Done! The message has been deleted.
+      Invia /markdown o /HTML per ricevere un suggerimento. Puoi anche utilizzare le funzioni di formattazione integrate nel tuo client Telegram.
+    clear: Tutti i messaggi sono stati eliminati con successo!
+    message_deleted: Fatto! Il messaggio è stato cancellato.
     not_posts: |
-      There is no any messages yet.
+      Non c'è ancora nessun messaggio.
     not_posts_for_done: |
-      There is no any messages yet.
-    preview_sent: The preview of messages sent.
+      Non c'è ancora nessun messaggio.
+    preview_sent: L'anteprima del messaggio è stata inviata.
     error_parse: |
-      Errors in formatting text:
+      Errori nella formattazione del testo:
       
       <pre>${description}</pre>
       
-      Please fix all errors and send message again.
-    posts_sent: Success! Messages have been sent.
-    continue_collect: You can continue to send me messages. 
+      Per favore, sistema gli errori e reinvia il messaggio.
+    posts_sent: Il messaggio è stato inviato con successo!
+    continue_collect: Puoi continuare ad inviarmi messaggi. 
     html: |
-      <b>bold</b>
-      &lt;b&gt;bold&lt;/b&gt;
+      <b>grassetto</b>
+      &lt;b&gt;grassetto&lt;/b&gt;
       
-      <i>italic</i>
-      &lt;i&gt;italic&lt;/i&gt;
+      <i>corsivo</i>
+      &lt;i&gt;corsivo&lt;/i&gt;
       
-      <a href="http://www.example.com/">inline URL</a>
-      &lt;a href=&quot;http://www.example.com/&quot;&gt;inline URL&lt;/a&gt;
+      <a href="http://www.example.com/">URL in linea</a>
+      &lt;a href=&quot;http://www.example.com/&quot;&gt;URL in linea&lt;/a&gt;
       
-      <code>inline fixed-width code</code>
-      &lt;code&gt;inline fixed-width code&lt;/code&gt;
+      <code>testo a larghezza fissa</code>
+      &lt;code&gt;testo a larghezza fissa&lt;/code&gt;
       
-      <pre>pre-formatted fixed-width code block</pre>
-      &lt;pre&gt;pre-formatted fixed-width code block&lt;/pre&gt;
+      <pre>blocco di testo a larghezza fissa pre-formattato</pre>
+      &lt;pre&gt;blocco di testo a larghezza fissa pre-formattato&lt;/pre&gt;
     markdown: |
-      <b>bold text</b>
-      *bold text*
+      <b>testo grassetto</b>
+      *testo grassetto*
       
-      <i>italic text</i>
-      _italic text_
+      <i>testo corsivo</i>
+      _testo corsivo_
       
-      <a href="http://www.example.com/">text</a>
-      [text](http://www.example.com/)
+      <a href="http://www.example.com/">collegamento</a>
+      [collegamento](http://www.example.com/)
       
-      <code>inline fixed-width code</code>
-      `inline fixed-width code`
+      <code>testo a larghezza fissa</code>
+      `testo a larghezza fissa`
       
-      <pre>text 
-      pre-formatted fixed-width code block</pre>
-      ```text 
-      pre-formatted fixed-width code block
+      <pre>blocco di testo 
+	  a larghezza fissa pre-formattato<</pre>
+      ```blocco di testo 
+	  a larghezza fissa pre-formattato<
       ```
-    canceled: Creating of the post has been canceled.
+    canceled: La creazione del post è stata annullata.
     inline:
       welcome: |
         Send me a list of URL buttons for the message. Please use this format:
