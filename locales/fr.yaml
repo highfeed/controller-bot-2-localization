@@ -24,7 +24,7 @@ start:
   Welcome: |
     <b>Controller Bot</b> — excellent bot pour les propriétaires de chaîne, qui vous aide à envoyer des messages formatés et à créer des messages planifiés dans vos chaînes.
 
-    <b>Messages formatés.</b> envoyer des messages en gras, en italique, avec des textes à largeur fixe et des liens URL en bouton.
+    <b>Messages formatés.</b> envoyer des messages en gras, en italique, avec des textes à largeur fixe et des boutons pour lien URL.
 
     <b>Message planifiés.</b> Créez un nombre illimité de messages planifiés dans vos chaînes.
 
