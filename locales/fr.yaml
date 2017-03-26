@@ -2,166 +2,166 @@ enable: false
 name: French
 
 bots:
-  welcome: |
-    To connect a bot you should follow these two steps:
+  Welcome: |
+    Pour connecter un bot veuillez suivre ces deux étapes:
 
-    1. Open @BotFather, then enter <code>/newbot</code> and choose a name and a username for your bot.
-    2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
+    1. Ouvrir @BotFather, puis entrez <code>/newbot</code> et choisissez un nom et un nom d'utilisateur pour votre bot.
+    2. Vous obtiendrez un jeton (e.g. 12345:6789ABCDEF) — faire un copier-coller vers moi ou me le transferer.
 
-    <b>Warning!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect.
+    <b>Warning!</b> Ne pas connecter des bots déjà utilisés par d'autres services comme Chatfuel, Manybot, ect.
 
-  wrong_token: Doesn't look like anything to me. Please send me a token of your bot.
-  error_add: Invalid token. Try to get a new one or use a token of another bot.
-  bot_already_added: Looks familiar to me. You already have this bot connected.
+  wrong_token: Ceci ne me dit rien. Veuillez m'envoyer le jeton de votre bot.
+  error_add: Jeton invalide. Essayez d'en obtenir un nouveau ou utilisez celui d'un autre bot.
+  bot_already_added: Il me semble familier. Ce bot est déjà connecté.
   help: |
-    🔹 Why do I need to connect a bot?
+    🔹 Pourquoi dois-je connecter un bot?
 
-    This avoid some Bot API limits for a better user experience, speed and stability. You can connect one bot and use it for all your channels.
+    Ceci évite certaines limites des API pour bots, pour une meilleure expérience utilisateur, rapidité et stabilité. Vous pouvez connecter un bot et l'utilisez pour toutes vos chaînes.
 
-    Message us at @ControllerSupportBot if any issues appeared when you connect your own bot.
+    Envoyez-nous un message à @ControllerSupportBot si des problèmes se présentent lorsque vous connectez votre propre bot.
 
 start:
-  welcome: |
-    <b>Controller Bot</b> — excellent bot for channel owners that helps you send formatted posts and create scheduled posts in your channels.
+  Welcome: |
+    <b>Controller Bot</b> — excellent bot pour les propriétaires de chaîne, qui vous aide à envoyer des messages formatés et à créer des messages planifiés dans vos chaînes.
 
-    <b>Formatted Posts.</b> Send posts with bold, italic, fixed-width text and inline links.
+    <b>Messages formatés.</b> envoyer des messages en gras, en italique, avec des textes à largeur fixe et des liens URL en bouton.
 
-    <b>Scheduled Posts.</b> Create an unlimited number of scheduled posts in your channels.
+    <b>Message planifiés.</b> Créez un nombre illimité de messages planifiés dans vos chaînes.
 
-    <b>URL Buttons.</b> Add to any post inline buttons that can open links.
+    <b>Boutons URL.</b> Ajoutez à tous vos messages des boutons ouvrant des liens.
 
-    <b>Admins.</b> Add admins to help you send new posts and manage scheduled posts.
+    <b>Administrateurs.</b> Ajouter des administrateurs pour vous aider à envoyer de nouveaux messages et gérer les messages planifiés.
 
-    <b>Stats.</b> Easy collect and track a number of members in your channels for certain periods of time.
+    <b>Statistiques.</b> Obtenez facilement le nombre de membre inscrits dans vos chaînes, pendant une certaine durée.
 
-    <b>Reactions</b>. Add to your posts emoji-based like buttons and collect reactions of members in your channels.
+    <b>Réactions</b>. Ajoutez à vos messages des émoji en bouton "Like" et collectez les réactions de vos membres dans vos chaînes.
 
-    Bot can send posts silently and disable previews for links, as well as accepts all message types and supports built-in formatting options of Telegram clients.
+    Ce bot peut envoyer des messages en mode silencieux et désactiver les aperçus des liens, accepte tout type de message et prend en charge les options de formatage intégrées du client Telegram.
 
-    <b>How to start?</b>
-    Send /addchannel, choose a connected bot or add a new one and follow the instructions to add a new channel.
+    <b>Comment débuter?</b>
+    Envoyez /addchannel, choisissez un bot conncté ou ajoutez-en un nouveau et suivez les instructions pour ajouter une nouvelle chaîne.
 
-    Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
+    Envoyez-nous un message à @ControllerSupportBot si vous avez des questions ou des problèmes concernant Controller Bot.
 
-    /rate — rate bot
-    /help — get a list of commands
-  do: OK. What do you want to do?
-  choose_language: Please choose your language.
-  language_changed: OK, your language saved.
+    /rate — noter le bot
+    /help — obtenir la liste des commandes
+  do: OK. Que voulez vous effectuer?
+  choose_language: Veuillez choisir une langue.
+  language_changed: OK, langue sauvegardée.
   rate: |
-    Give us 5 stars on Store Bot if you like Controller Bot: t.me/storebot?start=ControllerBot
+    Notez 5 étoiles sur Bot Store si vous aimez Controller Bot: t.me/storebot?start=ControllerBot
   help: |
-    I can help you send formatted posts and create scheduled posts in your channels.
+    Je peux vous aider à envoyer des messages formatés et à créer des messages planifiés dans vos chaînes.
 
-    You can control me by sending these commands:
+    Vous pouvez me contrôler en envoyant ces commandes:
 
-    /channels - manage channels
-    /addchannel - add a new channel
+    /channels - gérer les chaînes
+    /addchannel - ajouter une chaîne
 
-    /create - create a new post
-    /manage - manage posts
+    /create - créer un nouveau message
+    /manage - gérer des messages
 
-    /stats - get stats for a channel
-    /feedback - how to contact the devs
+    /stats - obtenir les statistiques d'une chaîne
+    /feedback - comment contacter les developpeurs
 
-    /rate - rate bot
+    /rate - noter le bot
 
-    /cancel - cancel the current operation
+    /cancel - annuler l'opération en cours
 
   feedback:
-    Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
+    Envoyez-nous un message à @ControllerSupportBot si vous avez des questions ou des problèmes concernant Controller Bot.
 
   bots:
     help: |
-      Doesn't look like anything to me.
+      Ceci ne me dit rien.
 
-      Go to @ControllerBot if you want to manage your channels and posts. Send /start to create a new post.
+      Allez à @ControllerBot si vous voulez gérer vos chaînes et messages. Envoyez /start pour créer un nouveau message.
 
 channels:
-  welcome: |
-    Add a new channel or edit settings of added ones.
+  Welcome: |
+    Ajouter une nouvelle chaîne ou modifier les paramètres de celles déjà ajoutées.
 
   add:
     select_bot: |
-      Choose a bot to send posts to the channel.
+      choisissez un bot pour envoyer des messages à la chaîne.
     select_bot_and_help: |
-      To add a new channel you need to connect your own bot first. You can connect one a bot and use it for all your channels.
+      Pour ajouter un nouvelle chaîne, vous devez d'abord connecter votre propre bot. Vous pouvez connecter un bot et l'utiliser pour toutes vos chaînes.
 
-      Choose «Connect New Bot» and follow the instructions.
-    welcome: |
-      To add a channel you should follow these two steps:
+      Choisissez «Connecter un nouveau Bot» et suivez les instructions.
+    Welcome: |
+      Pour ajouter une chaîne veuillez suivre ces deux étapes:
 
-      1. Add @${username} to admins of your channel.
-      2. Then forward to me any message from your channel (you can also send me its username or ID).
+      1. Ajoutez @${username} à la liste des administrateurs de votre chaîne.
+      2. Puis transférez moi n'importe quel message depuis votre chaîne (vous pouvez aussi m'envoyez le nom d'utilisateur ou l'ID de votre chaîne).
 
-    ok: Success! The channel has been added.
+    ok: Succès! La chaîne a été ajoutée.
 
     error:
       data: |
-        Please forward to me any message from your channel. Or send me its username or ID instead.
+        Veuillez me transférer n'importe quel message depuis votre chaîne. Ou envoyez moi son nom d'utilisaeur ou son ID à la place.
       get_admins: |
-        Add @${username} to admins of your channel. Please check everything twice and try again.
+        Ajoutez @${username} à la liste des administrateurs de votre chaîne. Veuillez vérifier le tout encore une fois et réessayer.
 
-        Send /feedback to let us know if for some reason it doesn't change anything.
+        Envoyez /feedback pour nous faire savoir si pour une raison quelconque cela n'a rien changé.
       bot_is_not_admin: |
-        Add @${username} to admins of your group.
+        Ajoutez @${username} à la liste des administrateurs de votre chaîne.
       channels_already_added: |
-        This channel is already added by ${admin.first_name}${admin.last_name ? ' ' + admin.last_name : ''}${admin.username ? ' @' + admin.username : ''}. You can ask this user to appoint you as an admin in the channel settings (Channels — choose the channel — Manage Admins — Add) or delete this channel from Controller Bot so you can add it again by yourself.
+        Cette chaîne a déjà été ajoutée par ${administrateur.first_name}${administrateur.last_name ? ' ' + administrateur.last_name : ''}${administrateur.username ? ' @' + administrateur.username : ''}. Vous pouvez demander à cet utilisateur de vous nommer administrateur, à partir des paramètres de chaîne (Chaînes — choisir la chaîne — Gérer les administrateurs — Ajouter) ou supprimer cette chaîne de Controller Bot afin de pouvoir vous-même l'ajouter à nouveau.
       bot_was_deleted: |
-        Unable to add a channel. @${username} is no longer exist, or its token was revoked. Reconnect this bot or choose another.
+        Impossible d'ajouter la chaîne. @${username} n'existe plus, ou son jeton a été révoqué. Reconnectez ce bot ou choisissez-en un autre.
 
-        Message us at @ControllerSupportBot if any issues appeared when you connect your own bot.
+        Envoyez-nous un message à @ControllerSupportBot si des problèmes se présentent lorsque vous connectez votre propre robot.
   control:
-    options: 'Here it is: ${channel.name}. What do you want to do with the channel?'
+    options: 'Ça y est: ${channel.name}. Que voulez vous faire de cette chaîne?'
 
     delete_confirm: |
-      Are you sure you want to delete this channel?
+      Voulez-vous vraiment supprimer cette chaîne?
 
-      All scheduled posts for this channel will be also deleted.
-    channel_deleted: Done! The channel is gone.
+      Tous les messages planifiés pour cette chaîne seront également supprimés.
+    channel_deleted: Opération éffectuée! La chaîne a été supprimée.
 
     select_bot: |
       ${count
-        ? 'Choose a bot that will be used to send posts in the channel.'
-        : 'There is no connected bots yet. Send /addchannel and choose \'Add New Channel\' to connect a new one.'
+        ? 'choisissez un bot qui sera utilisé pour envoyer des messages dans la chaîne.'
+        : 'Aucun bot connecté pour l'instant. Envoyez /addchannel et choisissez \'Add New Channel\' pour en connecter un nouveau.'
       }
-    bot_is_not_admin: Add the bot to admins of your channel.
-    current_bot: Unable to choose currently used bot.
+    bot_is_not_admin: Ajoutez le bot à la liste des administrateurs de votre chaîne.
+    current_bot: Impossible de choisir le bot actuellement utilisé.
 
     set_timezone: |
-      <b>Success! The channel has been added.</b>
+      <b>Opération éffectuée! La chaîne a été ajoutée.</b>
 
-      Now send me the name of your city, so I'll be able to determine your time zone. Your time zone is required for the management of scheduled posts.
+      À présent, envoyez-moi le nom de votre ville, afin que je puisse déterminer votre fuseau horaire. Votre fuseau horaire est nécessaire pour la gestion des messages planifiés.
 
     timezone: |
-      Current time zone:
+      Fuseau horaire actuel:
       ${city ? '🔹 GMT ' + (gmt > 0 ? '+' + gmt : gmt) + '\n🔹 ' + timezone_id + ' — ' + city : '🔹 None'}
 
-      Send me the name of the city close to you.
+      Envoyez-moi le nom de la ville proche de chez vous.
     check_timezone: |
       🔹 GMT ${timezone.gmtOffset > 0 ? '+' + timezone.gmtOffset : timezone.gmtOffset} (${timezone.timeZoneId})
       🔹 ${countryName}, ${name}
 
-      Is it right? If not, try to send me the name of another city close to you.
-    error_timezone: Sorry, I can't find this city. Try to send me the name of another city close to you.
-    error_request_timezone: Something went wrong :( Please try again. Send /feedback to let us know if for some reason it doesn't change anything.
-    save_timezone: OK, your timezone saved.
+      Est-ce correct? Si non, essayez de m'envoyer le nom d'une autre ville proche de chez vous.
+    error_timezone: Désolé, je ne peux pas trouver cette ville. Essayez de m'envoyer le nom d'une autre ville proche de chez vous.
+    error_request_timezone: Une erreur s'est produite :( S'il vous plaît essayez à nouveau. Envoyez /feedback pour nous faire savoir si, pour une raison quelconque, cela n'a rien changé.
+    save_timezone: OK, Fuseau horaire sauvegardé.
 
   admins:
-    add: Forward to me any message from the user you want to appoint as an admin of the channel.
+    add: Transférez-moi tout message de l'utilisateur que vous souhaitez nommer en tant qu'administrateur de la chaîne.
     user_is_not_use_bot: |
-      Please ask this user to start @ControllerBot first.
+      Veuillez demander à cet utilisateur de démarrer @ControllerBot premièrement.
     you_added_as_admin: >
-      ${from.first_name}${from.last_name ? ' ' + from.last_name : ''}${from.username ? ' @' + from.username : ''} appointed you as an admin of <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}.
+      ${from.first_name}${from.last_name ? ' ' + from.last_name : ''}${from.username ? ' @' + from.username : ''} vous a nommé administrateur de <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}.
     you_remove: >
-      ${from.first_name}${from.last_name ? ' ' + from.last_name : ''}${from.username ? ' @' + from.username : ''} removed you from admins of <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}.
-    added: Done! The user has been appointed as an admin.
-    not_added: This user is already admin of the channel.
-    delete: Choose a user to remove it from admins of the channel.
+      ${from.first_name}${from.last_name ? ' ' + from.last_name : ''}${from.username ? ' @' + from.username : ''} vous a retiré de la liste des administrateurs de <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}.
+    added: Opération éffectué! L'utilisateur a été nommé administrateur.
+    not_added: Cet utilisateur est déjà administrateur de cette chaîne.
+    delete: Choisissez un utilisateur à supprimer des administrateurs de la chaîne.
     empty_list: |
-      There is no admins in this channel yet.
+      Il n'y a pas encore d'administrateur dans cette chaîne.
     list: |
-      You have ${pluralize(count, 'admin', 'admins', 'admins')} in this channel:
+      Vous avez ${pluralize(count, 'administrateur', 'administrateurs', 'administrateurs')} dans cette chaîne:
 
       ${items}
 
@@ -171,358 +171,358 @@ channels:
       ${index}. ${user.first_name}${user.last_name ? ' ' + user.last_name : ''}${user.username ? ' @' + user.username : ''}
 
 post:
-  select_channel: Choose a channel to create a new post.
+  select_channel: Choisissez une chaîne pour créer un nouveau message.
   no_channels: |
-    There is no added channels yet.
+    Il n'y a aucune chaîne ajoutée pour l'instant.
 
-    Send /addchannel to add a new one.
-  error_check_channel: Something went wrong :( Please try again. Send /feedback to let us know if for some reason it doesn't change anything.
-  channel_not_found: The channel doesn't exist, or you don't have access to it. Go back to @ControllerBot and try again.
+    Envoyez /addchannel pour en ajouter une.
+  error_check_channel: Une erreur s'est produite :( S'il vous plaît essayez à nouveau. Envoyez /feedback pour nous faire savoir si, pour une raison quelconque, cela n'a rien changé.
+  channel_not_found: La chaîne n'existe pas ou vous n'y avez pas accès. Retournez sur @ControllerBot et réessayez à nouveau.
   problems: |
-    Unable to create a new post in ${channel.name}. The next issues found:
+    Impossible de créer un nouveau message dans ${channel.name}. Les problèmes suivant ont été trouvés:
 
     ${problems}
 
     ${from.id == channel.owner_id
-      ? 'Go to the channel settings to fix the issues.'
-      : 'The creator of the channel should go to the channel settings and fix the issues.'
+      ? 'Accédez aux paramètres de chaîne pour résoudre ces problèmes.'
+      : 'Le créateur de la chaîne doit aller aux paramètres de chaîne afin de corriger les problèmes.'
     }
   problem_items:
-    timezone_is_not_set: 🔹 the time zone  is not set
-    bot_is_not_connection: 🔹 the channel  is not connected to a bot
-    channel_not_found: 🔹 the channel is no longer exist
-    bot_is_not_admin: 🔹 the connected bot  is not added to the channel admins
-    bot_was_deleted: 🔹 the connected bot is no longer exist, or its token was revoked
+    timezone_is_not_set: 🔹 le fuseau horaire n'est pas défini
+    bot_is_not_connection: 🔹 la chaîne n'est pas connectée à un bot
+    channel_not_found: 🔹 la chaîne n'existe plus
+    bot_is_not_admin: 🔹 le bot connecté n'est pas ajouté à la liste des administrateurs de la chaîne
+    bot_was_deleted: 🔹 le bot connecté n'existe plus, ou son jeton a été revoqué
 
   start: |
-    Go to @ControllerBot to connect a new channel and start creating posts.
+    Allez à @ControllerBot pour connecter une nouvelle chaîne et commencer à créer des messages.
 
   make:
-    welcome: |
-      Here it is: ${channel.name}. Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
+    Welcome: |
+      Ça y est: ${channel.name}. Envoyez-moi un ou plusieurs messages que vous souhaitez inclure dans le message. Cela peut être — un texte, une photo, une vidéo, ou même un sticker.
 
-      You can use either /markdown-style or /HTML-style formatting in messages.
+      Vous pouvez utiliser soit /markdown-style ou /HTML-style pour le formatage des messages.
     settings: |
       Send /markdown or /HTML to get a hint. You can also use built-in formatting options of your Telegram client.
-    clear: Success! All messages have been deleted.
-    message_deleted: Done! The message has been deleted.
+    clear: Opération éffectuée! Tous les messages ont été supprimés.
+    message_deleted: Opération éffectuée! Le message a été supprimé.
     not_posts: |
-      There is no any messages yet.
+      Il n'y a aucun message pour l'instant.
     not_posts_for_done: |
-      There is no any messages yet.
-    preview_sent: The preview of messages sent.
+      Il n'y a aucun message pour l'instant.
+    preview_sent: Aperçu des messages envoyés.
     error_parse: |
-      Errors in formatting text:
+      Erreurs lors du formatage du texte:
 
       <pre>${description}</pre>
 
-      Please fix all errors and send message again.
-    posts_sent: Success! Messages have been sent.
-    continue_collect: You can continue to send me messages.
+      Veuillez corriger toutes les erreurs et envoyez le message à nouveau.
+    posts_sent: Opération éffectuée! Les messages ont été envoyés.
+    continue_collect: Vous pouvez continuer à m'envoyer des messages.
     html: |
-      <b>bold</b>
+      <b>Gras</b>
       &lt;b&gt;bold&lt;/b&gt;
 
-      <i>italic</i>
+      <i>Italique</i>
       &lt;i&gt;italic&lt;/i&gt;
 
-      <a href="http://www.example.com/">inline URL</a>
+      <a href="http://www.example.com/">URL</a>
       &lt;a href=&quot;http://www.example.com/&quot;&gt;inline URL&lt;/a&gt;
 
-      <code>inline fixed-width code</code>
+      <code>Code à largeur fixe</code>
       &lt;code&gt;inline fixed-width code&lt;/code&gt;
 
-      <pre>pre-formatted fixed-width code block</pre>
+      <pre>Bloc de code pré-formaté à largeur fixe</pre>
       &lt;pre&gt;pre-formatted fixed-width code block&lt;/pre&gt;
     markdown: |
-      <b>bold text</b>
-      *bold text*
+      <b>texte en gras</b>
+      *texte en gras*
 
-      <i>italic text</i>
-      _italic text_
+      <i>texte en italique</i>
+      _texte en italique_
 
-      <a href="http://www.example.com/">text</a>
-      [text](http://www.example.com/)
+      <a href="http://www.example.com/">texte</a>
+      [texte](http://www.example.com/)
 
-      <code>inline fixed-width code</code>
+      <code>code à largeur fixe</code>
       `inline fixed-width code`
 
-      <pre>text
-      pre-formatted fixed-width code block</pre>
-      ```text
-      pre-formatted fixed-width code block
+      <pre>texte
+      bloc de code pré-formaté à largeur fixe</pre>
+      ```texte
+      bloc de code pré-formaté à largeur fixe
       ```
-    canceled: Creating of the post has been canceled.
+    canceled: La création du message a été annulée.
     inline:
-      welcome: |
-        Send me a list of URL buttons for the message. Please use this format:
-        <pre>Label text - http://www.example.com/
-        Another label text - http://www.example2.com/
+      Welcome: |
+        Envoyez-moi une liste de boutons pour lien URL pour le message. Veuillez utiliser ce format:
+        <pre>Texte du lien - http://www.example.com/
+        Autre texte du lien - http://www.example2.com/
         </pre>
 
-        Choose 'Cancel' to back to creating of the post.
+        choisissez 'Annuler' pour revenir à la création du message.
       error: |
-        Errors in URL buttons list:
+        Erreurs dans la liste des boutons pour lien URL:
 
         <code>${error}</code>
 
-        Please fix all errors and send message again.
+        Veuillez corriger toutes les erreurs et envoyez le message à nouveau.
       not_keyboard: |
-        The message sent by you does not fit the format of URL buttons list. Please check everything twice and try again.
-      save: URL buttons saved. You can continue to send me messages.
-      cleared: Success! URL buttons cleared.
-      continue: Send me a list of URL buttons for the message or choose 'Cancel' to back to creating of the post.
+        Le message envoyé par vous ne correspond pas au format de la liste des boutons pour lien URL. Vérifiez le tout deux fois et réessayez de nouveau.
+      save: Boutons pour lien URL enregistrés. Vous pouvez continuer à m'envoyer des messages.
+      cleared: Opération éffectuée! Boutons URL effacés.
+      continue: Envoyez-moi une liste de boutons pour lien URL pour le message ou choisissez 'Annuler' pour revenir à la création du message.
     reactions:
-      welcome: |
-        Send me one or more emoticons that will be used for emoji like-buttons (up to 6 emoji).
+      Welcome: |
+        Envoyez-moi un ou plusieurs émoticônes qui seront utilisés comme émoji en bouton "Like" (jusqu'à 6 emoji).
       not_found_smiles: |
-        Send me one or more emoticons. For example: `👍👎`
-      save: Reactions saved. You can continue to send me messages.
-      cleared: Success! Reactions cleared.
-      notify: Counters will be available after sending.
+        Envoyez-moi un ou plusieurs émoticônes. Par exemple: `👍👎`
+      save: Réactions enregistrées. Vous pouvez continuer à m'envoyer des messages.
+      cleared: Opération éffectuée! Réactions effacées.
+      notify: Le compteur sera disponible après l'envoi.
 
   preview:
     ok: |
-      The preview of messages sent.
+      Aperçu des messages envoyés.
 
-      Go back to @ControllerBot or send /start to create a new post.
+      Retournez sur @ControllerBot ou envoyez /start pour créer un nouveau message.
 
   send:
-    count_posts: ${pluralize(count, 'message', 'messages', 'messages')} ready to be sent to the channel.
-    choose_type: When you want to send the post?
+    count_posts: ${pluralize(count, 'message', 'messages', 'messages')} prêt à être envoyé à la chaîne.
+    choose_type: Quand voulez-vous envoyer le message?
     problems: |
-      Unable to create a new post in ${channel.name}. The next issues found:
+      Impossible de créer un nouveau message dans ${channel.name}. Problèmes suivants trouvés:
 
       ${problems}
 
       ${from.id == channel.owner_id
-        ? 'Go to the channel settings to fix the issues.'
-        : 'The creator of the channel should go to the channel settings and fix the issues.'
+        ? 'Accédez aux paramètres de chaîne pour résoudre ces problèmes.'
+        : 'Le créateur de la chaîne doit aller aux paramètres de chaîne afin de corriger les problèmes.'
       }
-    cancel_send: Sending of the post has been canceled.
-    continue_send: You can continue to send me messages.
+    cancel_send: L'envoi du message a été annulé.
+    continue_send: Vous pouvez continuer à m'envoyer des messages.
     confirm_send: >
-      Are you sure you want to send <b>${pluralize(posts, 'message', 'messages', 'messages')}</b> to
+      Voulez-vous vraiment envoyer <b>${pluralize(posts, 'message', 'messages', 'messages')}</b> à
       <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}?
-    waiting: 🕒 Sending...
-    ok: Done!
+    waiting: 🕒 Envoi...
+    ok: Opération éffectuée!
 
   schedule:
     day:
-      today: today
-      tomorrow: tomorrow
-      after_tomorrow: overmorrow
-    welcome: |
-      Send time at which you want to send the post ${day}.
-      Send time+date to enqueue the post at any other day.
+      today: aujourd'hui
+      tomorrow: demain
+      after_tomorrow: après-demain
+    Welcome: |
+      Envoyez l'heure à laquelle vous souhaitez envoyer le message ${day}.
+      Envoyez heure+date pour mettre le message en file d'attente pour un autre jour.
 
     help: |
-      <b>The following time formats are supported:</b>
+      <b>Les formats d'heure suivants sont supportés:</b>
       <pre>6      -> 06:00
       5 3    -> 05:03
       15:30  -> 15:30
       1530   -> 15:30</pre>
 
-      <b>The following date formats are supported:</b>
+      <b>Les formats d'heure suivants sont supportés:</b>
       <pre>6      -> 6 of the current month
       9 6    -> May 9
       8 7 17 -> Jun 8, 2017</pre>
 
-      You can also use colons and dots instead of spaces for separation.
+      Vous pouvez également utiliser des colonnes et des points au lieu des espaces pour la séparation.
 
-      If you send only time, the post will be enqueued at the current day by default. To enqueue the post at any other day send time+date. For example, <code>16 30 6 8 -> 16:30, Aug 6</code>
-    error_date: Incorrect date and time. Choose 'Help' to get a hint.
-    invalid_date: Incorrect date.
-    limit: 'You need to choose a time more than the current by 1 minute or more. The current date and time is ${current_date}'
-    limit_year: Unable to choose a time over than the current by 1 year or more. Who knows what is going to happen... :)
+      Si vous envoyez uniquement l'heure, le message sera mis en file d'attente pour le jour en cours, par défaut. Pour mettre le message en file attente pour un autre jour, envoyez heure+date. Par exemple, <code>16 30 6 8 -> 16:30, Aug 6</code>
+    error_date: Heure et date incorrects. choisissez 'Aide' pour obtenir de l'aide.
+    invalid_date: Date incorrecte.
+    limit: 'Vous devez choisir une heure supérieure d'une minute ou plus à celle actuelle. L'heure et la date actuelle est ${current_date}'
+    limit_year: Impossible de choisir une heure supérieure d'un an ou plus à celle actuelle. Qui sait ce qui va se passer... :)
     ok: |
-      Scheduled post has been сreated. The post will be sent to <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
+      Le message planifié a été créé. Le message sera envoyé à <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} le <b>${date}</b>.
 
 posts:
   types:
-    text: text
+    text: texte
     audio: audio
-    document: file
+    document: fichier
     photo: photo
     sticker: sticker
     video: video
-    voice: voice message
+    voice: message vocal
     contact: contact
     location: location
     venue: venue
-  welcome: Choose a channel to manage scheduled posts.
-  select_type: View or delete scheduled posts.
+  Welcome: choisissez une chaîne pour gérer les messages planifiés.
+  select_type: Afficher ou supprimer des messages planifiés.
   not_schedule_posts: |
-    There is no scheduled posts for this channel in yet.
-  choose_scheduled_post: Choose a scheduled post you want to view or delete.
+    Il n'y a pas de message planifiés pour cette chaîne pour l'instant.
+  choose_scheduled_post: choisissez un message planifié que vous souhaitez afficher ou supprimer.
   bot_was_deleted: |
-    Unable to view this scheduled post because the connected bot used for it creating was deleted. You can connect that bot again to restore the post.
+    Impossible d'afficher ce message planifié car le bot connecté utilisé pour sa création a été supprimé. Vous pouvez connecter ce bot à nouveau pour restaurer le post.
   view_scheduled_post: |
-    The post will be sent to ${channel.name}${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
+    Le message sera envoyé à ${channel.name}${channel.username ? ' @' + channel.username : ''} le <b>${date}</b>.
 
-    You have ${pluralize(posts, 'message', 'messages', 'messages')} in this post:
+    Vous avez ${pluralize(posts, 'message', 'messages', 'messages')} dans ce message:
     ${messages}
-  confirm_delete_post: Are you sure you want to delete this scheduled post?
-  scheduled_post_was_deleted: Done! Scheduled post has been deleted.
+  confirm_delete_post: Voulez-vous vraiment supprimer ce message planifié??
+  scheduled_post_was_deleted: Opération éffectuée! Message planifié supprimé.
 
 settings:
-  welcome: Choose what you want to change.
+  Welcome: choisissez ce que vous souhaitez modifier.
 
   bots:
     select_bot: |
       ${count
-        ? 'Choose a bot you want to delete.'
-        : 'There is no connected bots yet.'
+        ? 'choisissez le bot que vous voulez supprimer.'
+        : 'Aucun bot connecté pour l'instant.'
       }
     channel_item: |
       ${index}. ${name}
     confirm_delete: |
       ${count
-        ? 'The bot is connected with these channels:\n\n' + channels
-        : 'The bot is not connected with any channels.\n'
+        ? 'Le bot est connecté à ces chaînes:\n\n' + channels
+        : 'Le bot n'est connecté à aucune chaîne.\n'
       }
-      Are you sure you want to delete this bot?
-    bot_deleted: Done! The bot is gone.
+      Voulez-vous vraiment supprimer ce bot?
+    bot_deleted: Opération éffectuée! Le bot a été supprimé.
 
 statistics:
-  select_channel: Choose a channel to view stats.
+  select_channel: Choisissez une chaîne pour afficher les statistiques.
   no_channels: |
-    There is no added channels yet.
+    Il n'y a aucune chaîne ajoutée pour l'instant.
 
-    Send /addchannel to add a new one.
-  selected_channel: 'Here it is: ${channel.name}. What do you want to do with stats?'
-  channel_not_found: This channel is not available.
-  select_periods: Choose a period you want to get stats.
-  loading_data: 🕒 Processing the data and rendering graphs...
+    Envoyez /addchannel pour en ajouter une nouvelle.
+  selected_channel: 'Ça y est: ${channel.name}. Que voulez-vous faire de ces statistiques?'
+  channel_not_found: Cette chaîne n'est pas disponible.
+  select_periods: Choisissez une période pour obtenir des statistiques.
+  loading_data: 🕒 Traitement de donnée et rendu des graphes...
   error_load_data: |
-    An error occurred while data processing.
+    Une erreur est survenu lors du traitement de donnée.
 
-    Message us at @ControllerSupportBot to report an issue.
+    Envoyez-nous un message à @ControllerSupportBot pour signaler le problème.
   not_found_data: |
-    There is no stats data for this channel yet. Come back later.
+    Il n'y a pas encore de données statistiques pour cette chaîne. Revenez plus tard.
   share_text: |
-    Here is the link to view stats of ${channel.name}${channel.username ? ' @' + channel.username : ''}
+    Voici le lien pour voir les statistiques de ${channel.name}${channel.username ? ' @' + channel.username : ''}
   data: |
-    Stats of ${channel.name}${channel.username ? ' @' + channel.username : ''} for ${period == 'week'
-      ? 'the last 7 days'
-      : 'the last 31 days'
+    Statistiques pour ${channel.name}${channel.username ? ' @' + channel.username : ''} durant les ${period == 'week'
+      ? 'Les 7 derniers jours'
+      : 'Les 31 derniers jours'
     }.
 
     ${data}
   chart:
     title: |
-      Stats for ${channel.name}${channel.username ? ' @' + channel.username : ''}
+      Statistiques pour ${channel.name}${channel.username ? ' @' + channel.username : ''}
     copyright: Powered by @ControllerBot
-    label: members
+    label: membres
 
 keyboard:
   btn:
-    true: Yes, It is Right
-    back: Back
-    back_inline: « Back
-    cancel: Cancel
-    help: Help
+    true: Oui, C'est vrai
+    back: Retour
+    back_inline: « Retour
+    cancel: Annuler
+    help: Aide
 
   menu:
-    create_post: Create Post
-    control_posts: Manage Posts
-    channels: Channels
-    statistics: Channel Stats
-    settings: Settings
-    feedback: Feedback
+    create_post: Créer un message
+    control_posts: Gérer les messages
+    channels: Chaînes
+    statistics: Statistiques de chaîne
+    settings: Paramètres
+    feedback: Avis
 
   channels:
-    add_channel: Add New Channel
-    add_bot: Connect New Bot
+    add_channel: Ajouter une nouvelle chaîne
+    add_bot: Connecter un nouveau bot
 
     control:
-      bot: Change Connected Bot
-      timezone: Change Time Zone
-      admins: Manage Admins
-      delete: Delete Channel
+      bot: Changer le bot connecté
+      timezone: Changer le fuseau horaire
+      admins: Gérer les administrateurs
+      delete: Supprimer la chaîne
 
-      confirm_delete_yes: Yes
-      confirm_delete_no: No
+      confirm_delete_yes: Oui
+      confirm_delete_no: Non
 
-      return_to_settings: « Back to Settings
+      return_to_settings: « Revenir aux paramètres
 
     admins:
-      add: Add New Admin
-      delete: Dismiss Admin
+      add: Ajouter un nouvel administrateur
+      delete: Retirer un administrateur
 
   bots:
-    help: Why do I need to connect a bot?
+    help: Pourquoi dois-je connecter un bot?
 
   post:
     settings:
-      disable_notification_disable: 'Silent Broadcast: OFF'
-      disable_notification_enable: 'Silent Broadcast: ON'
+      disable_notification_disable: 'Diffusion silencieuse: Desactiver'
+      disable_notification_enable: 'Diffusion silencieuse: Activer'
 
-      disable_web_page_preview_disable: 'Link Preview: ON'
-      disable_web_page_preview_enable: 'Link Preview: OFF'
+      disable_web_page_preview_disable: 'Aperçu du lien: Activer'
+      disable_web_page_preview_enable: 'Aperçu du lien: Desactiver'
 
-      parse_mode_markdown: 'Formatting Style: Markdown'
-      parse_mode_html: 'Formatting Style: HTML'
+      parse_mode_markdown: 'Style de formatage: Markdown'
+      parse_mode_html: 'Style de formatage: HTML'
 
-    control_channel: Go to Channel Settings
-    return_to_channels: « Back to Channels List
+    control_channel: Aller aux paramètres de chaîne
+    return_to_channels: « Retourner à la liste des chaînes
 
-    continue: Continue »
+    continue: Continuer »
 
-    delete: Delete Message
+    delete: Supprimer message
 
-    add_inline: Add URL Buttons
-    save_inline: Save URL Buttons
-    clear_inline: Delete URL Buttons
-    cancel_inline: Cancel
+    add_inline: Ajouter un boutton pour lien URL
+    save_inline: Sauvegarder un boutton pour lien URL
+    clear_inline: Supprimer bouttons pour lien URL
+    cancel_inline: Annuler
 
-    add_reactions: Add Reactions
-    clear_reactions: Delete Reactions
+    add_reactions: Ajouter des réactions
+    clear_reactions: Supprimer les réactions
 
-    clear: Delete All
-    preview: Preview
-    open_settings: Options
-    done: Send
-    cancel: Cancel
+    clear: Tout supprimer
+    preview: Aperçu
+    Open_settings: Options
+    done: Envoyer
+    cancel: Annuler
 
     silent_enable: 🔈
     silent_disable: 🔇
 
     send:
-      send_now: Send Now
-      create_scheduled: Enqueue
+      send_now: Envoyer maintenant
+      create_scheduled: Mettre en file d'attente
 
-      send: Send
-      cancel: Cancel
+      send: Envoyer
+      cancel: Annuler
 
     schedule:
       today: |-
-        ${active ? '🔹 ' : ''}Today
+        ${active ? '🔹 ' : ''}Aujourd'hui
       tomorrow: |-
-        ${active ? '🔹 ' : ''}Tomorrow
+        ${active ? '🔹 ' : ''}Demain
       after_tomorrow: |-
-        ${active ? '🔹 ' : ''}Overmorrow
+        ${active ? '🔹 ' : ''}Après-demain
 
-    back_to_controller: Back to Controller Bot
+    back_to_controller: Retourner sur Controller Bot
 
   settings:
-    bots: Manage Connected Bots
-    delete_bot: Delete Bot
-    language: Change Language
+    bots: Gérer les bots connectés
+    delete_bot: Supprimer un bot
+    language: Changer la langue
 
   posts:
-    edit_sent_posts: Edit Sent Posts
-    view_schedule: Manage Scheduled Posts
-    view: View Post
-    delete: Delete Post
-    yes: Yes
-    cancel: No
+    edit_sent_posts: Editer les messages envoyés
+    view_schedule: Gérer les messages planifiés
+    view: Afficher le message
+    delete: Supprimer le message
+    yes: Oui
+    cancel: Non
 
   statistics:
-    view_periods: View
-    view_via_web: View via Webpage
-    share: Share
+    view_periods: Afficher
+    view_via_web: Afficher sur la page web
+    share: Partager
 
     periods:
-      one_week: Week
-      one_month: Month
+      one_week: Semaine
+      one_month: Mois
