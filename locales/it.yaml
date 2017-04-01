@@ -257,6 +257,7 @@ post:
       welcome: |
         Inviami una lista di bottoni URL da aggiungere al messaggio. Usa questo formato:
         <pre>Testo di un Bottone - http://www.example.com/
+        Testo di un altro Bottone - http://www.example2.com/
         </pre>
 
         Scegli 'Annulla' per tornare alla creazione del post.
