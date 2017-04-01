@@ -248,278 +248,277 @@ post:
       `testo a larghezza fissa`
       
       <pre>blocco di testo 
-	  a larghezza fissa pre-formattato<</pre>
+	  a larghezza fissa pre-formattato</pre>
       ```blocco di testo 
-	  a larghezza fissa pre-formattato<
+	  a larghezza fissa pre-formattato
       ```
     canceled: La creazione del post è stata annullata.
     inline:
       welcome: |
-        Send me a list of URL buttons for the message. Please use this format:
-        <pre>Label text - http://www.example.com/
-        Another label text - http://www.example2.com/
+        Inviami una lista di bottoni URL da aggiungere al messaggio. Usa questo formato:
+        <pre>Testo di un Bottone - http://www.example.com/
         </pre>
 
-        Choose 'Cancel' to back to creating of the post.
+        Scegli 'Annulla' per tornare alla creazione del post.
       error: |
-        Errors in URL buttons list:
+        Errori nella lista di bottoni URL:
         
         <code>${error}</code>
         
-        Please fix all errors and send message again.
+        Per favore, sistema gli errori e invia nuovamente il messaggio.
       not_keyboard: |
-        The message sent by you does not fit the format of URL buttons list. Please check everything twice and try again.
-      save: URL buttons saved. You can continue to send me messages.
-      cleared: Success! URL buttons cleared.
-      continue: Send me a list of URL buttons for the message or choose 'Cancel' to back to creating of the post.
+        Il messaggio da te inviato non corrisponde al formato della lista di bottoni URL. Per favore, ricontrolla tutto e riprova.
+      save: Bottoni URL salvati. Puoi continuare ad inviarmi messaggi.
+      cleared: Successo! Bottoni URL cancellati.
+      continue: Inviami una lista di bottoni URL da aggiungere al messaggio o scegli 'Annulla' per tornare alla creazione del post.
     reactions:
       welcome: |
-        Send me one or more emoticons that will be used for emoji like-buttons (up to 6 emoji).
+        Inviami una o più emoticon che verranno usate per creare pulsanti emoji. (invia fino a 6 emoji).
       not_found_smiles: |
-        Send me one or more emoticons. For example: `👍👎`
-      save: Reactions saved. You can continue to send me messages.
-      cleared: Success! Reactions cleared.
-      notify: Counters will be available after sending.
+        Inviami una o più emoticon. Per esempio: `👍👎`
+      save: Reazioni salvate. Puoi continuare ad inviarmi messaggi.
+      cleared: Successo! Reazioni cancellate.
+      notify: I contatori saranno disponibili una volta pubblicato.
         
   preview:
     ok: |
-      The preview of messages sent. 
+      Anteprima del messaggio inviata. 
       
-      Go back to @ControllerBot or send /start to create a new post.
+      Torna a @ControllerBot invia /start per creare un nuovo post.
         
   send:
-    count_posts: ${pluralize(count, 'message', 'messages', 'messages')} ready to be sent to the channel.
-    choose_type: When you want to send the post?
+    count_posts: ${pluralize(count, 'messaggio', 'messaggi', 'messaggi')} pronti per essere inviati al canale.
+    choose_type: Quando vuoi inviare i messaggi?
     problems: |
-      Unable to create a new post in <b>${channel.name}</b>. The next issues found:
+      Impossibile creare un nuovo post in <b>${channel.name}</b>. I problemi incontrati:
       
       ${problems}
       
       ${from.id == channel.owner_id
-        ? 'Go to the channel settings to fix the issues.'
-        : 'The creator of the channel should go to the channel settings and fix the issues.'
+        ? 'Vai alle impostazioni del canale e sistema il problema.'
+        : 'Il creatore del canale dovrebbe andare nelle impostazioni del canale e sistema il problema.'
       }
-    cancel_send: Sending of the post has been canceled.
-    continue_send: You can continue to send me messages.
+    cancel_send: L'invio dei post è stato annullato.
+    continue_send: Puoi continuare ad inviarmi messaggi.
     confirm_send: >
-      Are you sure you want to send <b>${pluralize(posts, 'message', 'messages', 'messages')}</b> to
+      Confermi di voler inviare <b>${pluralize(posts, 'messaggio', 'messaggi', 'messaggi')}</b> su
       <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}?
-    waiting: 🕒 Sending...
-    ok: Done!
+    waiting: 🕒 Invio in corso...
+    ok: Fatto!
     
   schedule:
     day:
-      today: today
-      tomorrow: tomorrow
-      after_tomorrow: overmorrow
+      today: oggi
+      tomorrow: domani
+      after_tomorrow: dopodomani
     welcome: |
-      Send time at which you want to send the post ${day}.
-      Send time+date to enqueue the post at any other day.
+      Inviami l'ora alla quale vuoi che venga pubblicato il post ${day}.
+      Invia ora+giorno per accodare il post in qualsiasi altro giorno.
       
     help: |
-      <b>The following time formats are supported:</b>
+      <b>L'ora è supportata nei seguenti formati:</b>
       <pre>6      -> 06:00
       5 3    -> 05:03
       15:30  -> 15:30
       1530   -> 15:30</pre>
       
-      <b>The following date formats are supported:</b>
+      <b>La data è supportata nei seguenti formati:</b>
       <pre>6      -> 6 of the current month
       9 6    -> May 9
       8 7 17 -> Jun 8, 2017</pre>
       
-      You can also use colons and dots instead of spaces for separation. 
+      Puoi utilizzare anche i due punti o il punto come separatori al posto degli spazi.
       
-      If you send only time, the post will be enqueued at the current day by default. To enqueue the post at any other day send time+date. For example, <code>16 30 6 8 -> 16:30, Aug 6</code>
-    error_date: Incorrect date and time. Choose 'Help' to get a hint.
-    invalid_date: Incorrect date.
-    limit: 'You need to choose a time more than the current by 1 minute or more. The current date and time is ${current_date}'
-    limit_year: Unable to choose a time over than the current by 1 year or more. Who knows what is going to happen... :)
+      Se invii solo l'ora, il post verrà programmato di default per oggi stesso. Per programmarlo in qualsiasi altro giorno, inviami ora+giorno. Ad Esempio: <code>16 30 6 8 -> 16:30, Aug 6</code>
+    error_date: Formato data e ora scorretto. Scegli 'Aiuto' per ricevere suggerimenti.
+    invalid_date: Data scorretta.
+    limit: 'Devi impostare almeno un minuto in più rispetto all'ora attuale. La data attuale è ${current_date}'
+    limit_year: Impossibile impostare una data ad oltre un anno da oggi. Chissà cosa potrebbe accadere... :)
     ok: |
-      Scheduled post has been сreated. The post will be sent to <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
+      Il post è stato programmato. Il post verrà inviato su <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} il <b>${date}</b>.
       
 posts:
   types:
-    text: text
+    text: testo
     audio: audio
     document: file
-    photo: photo
+    photo: foto
     sticker: sticker
     video: video
-    voice: voice message
-    contact: contact
-    location: location
-    venue: venue
-  welcome: Choose a channel to manage scheduled posts.
-  select_type: View or delete scheduled posts.
+    voice: messaggio vocale
+    contact: contatto
+    location: posizione
+    venue: sede
+  welcome: Scegli un canale di cui gestire la programmazione.
+  select_type: Visualizza o elimina i post programmati.
   not_schedule_posts: |
-    There is no scheduled posts for this channel in yet.
-  choose_scheduled_post: Choose a scheduled post you want to view or delete.
+    Non ci sono ancora post programmati per questo canale.
+  choose_scheduled_post: Scegli un post da visualizzare o eliminare.
   bot_was_deleted: |
-    Unable to view this scheduled post because the connected bot used for it creating was deleted. You can connect that bot again to restore the post.
+    Impossibile visualizzare il post poiché il bot utilizzato per la creazione è stato cancellato. Puoi riconnetterlo per recuperare il post.
   view_scheduled_post: |
-    The post will be sent to <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
+    Il post verrà inviato su <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} il <b>${date}</b>.
     
-    You have ${pluralize(posts, 'message', 'messages', 'messages')} in this post:
+    Hai ${pluralize(posts, 'messaggio', 'messaggi', 'messaggi')} in questo post:
     ${messages}
-  confirm_delete_post: Are you sure you want to delete this scheduled post?
-  scheduled_post_was_deleted: Done! Scheduled post has been deleted.
+  confirm_delete_post: Sei sicuro di voler eliminare questo post?
+  scheduled_post_was_deleted: Fatto! Il post è stato eliminato.
  
 settings:
-  welcome: Choose what you want to change.
+  welcome: Scegli cosa vuoi modificare.
   
   bots: 
     select_bot: |
       ${count 
-        ? 'Choose a bot you want to delete.' 
-        : 'There is no connected bots yet.'
+        ? 'Scegli il bot da eliminare.' 
+        : 'Non ci sono ancora bot connessi.'
       }
     channel_item: |
       ${index}. ${name}
     confirm_delete: |
       ${count 
-        ? 'The bot is connected with these channels:\n\n' + channels 
-        : 'The bot is not connected with any channels.\n'
+        ? 'Il bot è connesso con i seguenti canali: \n\n' + channels 
+        : 'Il bot non è connesso con nessun canale.\n'
       }
-      Are you sure you want to delete this bot?
-    bot_deleted: Done! The bot is gone.
+      Sei sicuro di voler eliminare questo bot?
+    bot_deleted: Fatto! Il bot è andato.
 
 statistics:
-  select_channel: Choose a channel to view stats.
+  select_channel: Scegli un canale di cui visualizzare le statistiche.
   no_channels: |
-    There is no added channels yet.
+    Non sono ancora stati aggiunti canali.
     
-    Send /addchannel to add a new one.
-  selected_channel: 'Here it is: <b>${channel.name}</b>. What do you want to do with stats?'
-  channel_not_found: This channel is not available.
-  select_periods: Choose a period you want to get stats.
-  loading_data: 🕒 Processing the data and rendering graphs...
+    Invia /addchannel per aggiungerne uno nuovo.
+  selected_channel: 'Ecco: <b>${channel.name}</b>. Cosa vuoi fare con le statistiche?'
+  channel_not_found: Questo canale non è disponibile.
+  select_periods: Scegli per quale periodo vuoi ricevere le statistiche.
+  loading_data: 🕒 Processo i dati e renderizzo i grafici...
   error_load_data: |
-    An error occurred while data processing.
+    Errore durante il processamento dei dati.
      
-    Message us at @ControllerSupportBot to report an issue.
+    Contattaci su @ControllerSupportBot per riferire un problema.
   not_found_data: |
-    There is no stats data for this channel yet. Come back later.
+    Non ci sono ancora dati statistici per questo canale. Torna più tardi.
   share_text: |
-    Here is the link to view stats of ${channel.name}${channel.username ? ' @' + channel.username : ''}
+    Questo è il link per vedere le statistiche di ${channel.name}${channel.username ? ' @' + channel.username : ''}
   data: |
-    Stats of <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} for ${period == 'week'
-      ? 'the last 7 days'
-      : 'the last 31 days'
+    Statistiche di 	<b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} per ${period == 'week'
+      ? 'l'ultima settimana'
+      : 'l'ultimo mese'
     }.
     
     ${data}
   chart:
     title: |
-      Stats for ${channel.name}${channel.username ? ' @' + channel.username : ''}
+      Statistiche per ${channel.name}${channel.username ? ' @' + channel.username : ''}
     copyright: Powered by @ControllerBot
-    label: members
+    label: membri
 
 keyboard:
   btn:
-    true: Yes, It is Right
-    back: Back
-    back_inline: « Back
-    cancel: Cancel
-    help: Help
+    true: Sì, è giusto
+    back: Indietro
+    back_inline: « Indietro
+    cancel: Annulla
+    help: Aiuto
   
   menu:
-    create_post: Create Post
-    control_posts: Manage Posts
-    channels: Channels
-    statistics: Channel Stats
-    settings: Settings
+    create_post: Crea Post
+    control_posts: Gestisci Post
+    channels: Canali
+    statistics: Stats Canali
+    settings: Impostazioni
     feedback: Feedback
     
   channels:
-    add_channel: Add New Channel
-    add_bot: Connect New Bot
+    add_channel: Aggiungi un Canale
+    add_bot: Connetti un Bot
     
     control:
-      bot: Change Connected Bot
-      timezone: Change Time Zone
-      admins: Manage Admins
-      delete: Delete Channel
+      bot: Modifica Bot Connesso
+      timezone: Cambia Fuso Orario
+      admins: Gestisci Amministratori
+      delete: Elimina Canale
       
-      confirm_delete_yes: Yes
+      confirm_delete_yes: Sì
       confirm_delete_no: No
       
-      return_to_settings: « Back to Settings
+      return_to_settings: « Torna alle Impostazioni
     
     admins:
-      add: Add New Admin
-      delete: Dismiss Admin
+      add: Aggiungi Amministratore
+      delete: Elimina Amministratore
       
   bots:
-    help: Why do I need to connect a bot?
+    help: Perché devo connettere un bot?
       
   post:
     settings: 
-      disable_notification_disable: 'Silent Broadcast: OFF'
-      disable_notification_enable: 'Silent Broadcast: ON'
+      disable_notification_disable: 'Invio Silenzioso: OFF'
+      disable_notification_enable: 'Invio Silenzioso: ON'
       
-      disable_web_page_preview_disable: 'Link Preview: ON'
-      disable_web_page_preview_enable: 'Link Preview: OFF'
+      disable_web_page_preview_disable: 'Anteprima Link: ON'
+      disable_web_page_preview_enable: 'Anteprima Link: OFF'
       
-      parse_mode_markdown: 'Formatting Style: Markdown'
-      parse_mode_html: 'Formatting Style: HTML'
+      parse_mode_markdown: 'Stile Formattazione: Markdown'
+      parse_mode_html: 'Stile Formattazione: HTML'
     
-    control_channel: Go to Channel Settings
-    return_to_channels: « Back to Channels List
+    control_channel: Vai alle Impostazioni del Canale
+    return_to_channels: « Torna alla Lista dei Canali
     
-    continue: Continue »
+    continue: Continua »
     
-    delete: Delete Message
+    delete: Elimina Messaggi
     
-    add_inline: Add URL Buttons
-    save_inline: Save URL Buttons
-    clear_inline: Delete URL Buttons
-    cancel_inline: Cancel
+    add_inline: Aggiungi Bottoni URL
+    save_inline: Salva Bottoni URL
+    clear_inline: Elimina Bottoni URL
+    cancel_inline: Annulla
     
-    add_reactions: Add Reactions
-    clear_reactions: Delete Reactions
+    add_reactions: Aggiungi Reactions
+    clear_reactions: Elimina Reactions
     
-    clear: Delete All 
-    preview: Preview
-    open_settings: Options
-    done: Send
-    cancel: Cancel
+    clear: Elimina Tutti
+    preview: Anteprima
+    open_settings: Opzioni
+    done: Invia
+    cancel: Annulla
     
     send:
-      send_now: Send Now
-      create_scheduled: Enqueue
+      send_now: Invia Ora
+      create_scheduled: Accoda
       
-      send: Send
-      cancel: Cancel
+      send: Invia
+      cancel: Annulla
     
     schedule:
       today: |-
-        ${active ? '🔹 ' : ''}Today
+        ${active ? '🔹 ' : ''}Oggi
       tomorrow: |-
-        ${active ? '🔹 ' : ''}Tomorrow
+        ${active ? '🔹 ' : ''}Domani
       after_tomorrow: |-
-        ${active ? '🔹 ' : ''}Overmorrow
+        ${active ? '🔹 ' : ''}Dopodomani
         
-    back_to_controller: Back to Controller Bot
+    back_to_controller: Torna al Controller Bot
       
   settings:
-    bots: Manage Connected Bots
-    delete_bot: Delete Bot
-    language: Change Language
+    bots: Gestisci i Bot Connessi
+    delete_bot: Elimina Bot
+    language: Cambia Lingua
     
   posts:
-    edit_sent_posts: Edit Sent Posts
-    view_schedule: Manage Scheduled Posts
-    view: View Post
-    delete: Delete Post
-    yes: Yes
+    edit_sent_posts: Modifica Post iviati
+    view_schedule: Gestisci Post programmati
+    view: Visualizza Post
+    delete: Elimina Post
+    yes: Sì
     cancel: No
     
   statistics:
-    view_periods: View
-    view_via_web: View via Webpage
-    share: Share
+    view_periods: Visualizza
+    view_via_web: Visualizza via pagina Web
+    share: Condividi
     
     periods:
-      one_week: Week
-      one_month: Month
+      one_week: Settimana
+      one_month: Mese
