@@ -1,4 +1,4 @@
-enable: false
+enable: true
 name: Italian
   
 bots:
@@ -51,9 +51,9 @@ start:
   rate: |
     Vota 5 stelle su Store Bot se ti piace Controller Bot: t.me/storebot?start=ControllerBot
   help: |
-	Posso aiutarti a creare post formattati e a programmarne l'invio nei tuoi canali. 
+    Posso aiutarti a creare post formattati e a programmarne l'invio nei tuoi canali.
 
-	Puoi controllarmi inviando i seguenti comandi:
+    Puoi controllarmi inviando i seguenti comandi:
     
     /channels - gestisci i canali
     /addchannel - aggiungi un nuovo canale
@@ -74,8 +74,8 @@ start:
   bots:
     help: |
       Non mi ricorda nulla.
-	  
-	  Vai su @ControllerBot se vuoi gestire i tuoi canali e i tuoi post. Invia /start per creare un nuovo post.
+
+      Vai su @ControllerBot se vuoi gestire i tuoi canali e i tuoi post. Invia /start per creare un nuovo post.
 
 channels:
   welcome: |
@@ -89,7 +89,7 @@ channels:
       
       Scegli «Connetti un nuovo Bot» e segui le istruzioni.
     welcome: |
-	  Per aggiungere un canale devi seguire questi due passi:
+      Per aggiungere un canale devi seguire questi due passi:
     
       1. Aggiungi @${username} agli amministratori del tuo canale.   
       2. Inoltrami un messaggio qualsiasi dal tuo canale (puoi anche inviarmi il suo username o ID).
@@ -102,22 +102,22 @@ channels:
       get_admins: |
         Aggiungi @${username} agli amministratori del tuo canale. Per favore, verifica ancora e riprova.
     
-		Invia /feedback per farci sapere se, per qualche ragione, non cambia nulla.
+        Invia /feedback per farci sapere se, per qualche ragione, non cambia nulla.
       bot_is_not_admin: |
         Aggiungi @${username} agli amministratori del tuo canale.
       channels_already_added: |
-		Questo canale è stato già aggiunto da ${admin.first_name}${admin.last_name ? ' ' + admin.last_name : ''}${admin.username ? ' @' + admin.username : ''}. Puoi chiedere a questo utente di nominarti come amministratore nelle opzioni del canale (Canali - scegli il canale - Gestisci Amministratori - Aggiungi) o di cancellare questo canale da Controller Bot, così che tu possa aggiungerlo nuovamente.
+        Questo canale è stato già aggiunto da ${admin.first_name}${admin.last_name ? ' ' + admin.last_name : ''}${admin.username ? ' @' + admin.username : ''}. Puoi chiedere a questo utente di nominarti come amministratore nelle opzioni del canale (Canali - scegli il canale - Gestisci Amministratori - Aggiungi) o di cancellare questo canale da Controller Bot, così che tu possa aggiungerlo nuovamente.
       bot_was_deleted: |
         Impossibile aggiungere il canale. @${username} non esiste, o il suo token è stato revocato. Riconnetti questo bot o scegline un altro.
         
         Scrivici a @ControllerSupportBot se hai qualche problema nel connettere il tuo bot.
   control:
-    options: 'Ecco qui: <b>${channel.name}</b>. Cosa vuoi fare col canale?'
+    options: 'Ecco qui: ${channel.name}. Cosa vuoi fare col canale?'
     
     delete_confirm: |
-	  Sei sicuro di voler cancellare il canale?
+      Sei sicuro di voler cancellare il canale?
       
-	  Verranno eliminati anche tutti i post programmati.
+      Verranno eliminati anche tutti i post programmati.
     channel_deleted: Fatto! Il canale è cancellato.
     
     select_bot: |
@@ -131,13 +131,13 @@ channels:
     set_timezone: |
       <b>Perfetto! Il canale è stato aggiunto.</b>
       
-	  Ora inviami il nome della tua città, così potrò individuare il tuo fuso orario. Questo è richiesto per gestire la programmazione dei post.
+      Ora inviami il nome della tua città, così potrò individuare il tuo fuso orario. Questo è richiesto per gestire la programmazione dei post.
     
     timezone: |
       Fuso orario attuale:
       ${city ? '🔹 GMT ' + (gmt > 0 ? '+' + gmt : gmt) + '\n🔹 ' + timezone_id + ' — ' + city : '🔹 None'}
       
-	  Inviamo il nome di una città a te vicina.
+      Inviamo il nome di una città a te vicina.
     check_timezone: |
       🔹 GMT ${timezone.gmtOffset > 0 ? '+' + timezone.gmtOffset : timezone.gmtOffset} (${timezone.timeZoneId})
       🔹 ${countryName}, ${name}
@@ -179,7 +179,7 @@ post:
   error_check_channel: Qualcosa è andato storto :( Per favore, riprova. Invia /feedback per farci sapere se, per qualche motivo, non cambia nulla.
   channel_not_found: Il canale non esiste o tu non vi hai accesso. Torna su @ControllerBot e riprova.
   problems: |
-	Impossibile creare un nuovo post in <b>${channel.name}</b>. I problemi trovati:
+    Impossibile creare un nuovo post in <b>${channel.name}</b>. I problemi trovati:
     
     ${problems}
     
@@ -199,7 +199,7 @@ post:
   
   make:
     welcome: |
-      Eccoci: <b>${channel.name}</b>. Spediscimi uno o più messaggi che vuoi includere nel post. Può essere qualunque cosa - teso, foto, video, persino uno sticker.
+      Eccoci: ${channel.name}. Spediscimi uno o più messaggi che vuoi includere nel post. Può essere qualunque cosa - teso, foto, video, persino uno sticker.
       
       Puoi utilizzare /markdown-style o /HTML-style per formattare i messaggi.
     settings: |
@@ -237,20 +237,20 @@ post:
     markdown: |
       <b>testo grassetto</b>
       *testo grassetto*
-      
+
       <i>testo corsivo</i>
       _testo corsivo_
-      
+
       <a href="http://www.example.com/">collegamento</a>
       [collegamento](http://www.example.com/)
-      
+
       <code>testo a larghezza fissa</code>
       `testo a larghezza fissa`
-      
-      <pre>blocco di testo 
-	  a larghezza fissa pre-formattato</pre>
-      ```blocco di testo 
-	  a larghezza fissa pre-formattato
+
+      <pre>blocco di testo
+      a larghezza fissa pre-formattato</pre>
+      ```blocco di testo
+      a larghezza fissa pre-formattato
       ```
     canceled: La creazione del post è stata annullata.
     inline:
@@ -333,8 +333,8 @@ post:
       Se invii solo l'ora, il post verrà programmato di default per oggi stesso. Per programmarlo in qualsiasi altro giorno, inviami ora+giorno. Ad Esempio: <code>16 30 6 8 -> 16:30, Aug 6</code>
     error_date: Formato data e ora scorretto. Scegli 'Aiuto' per ricevere suggerimenti.
     invalid_date: Data scorretta.
-    limit: 'Devi impostare almeno un minuto in più rispetto all'ora attuale. La data attuale è ${current_date}'
-    limit_year: Impossibile impostare una data ad oltre un anno da oggi. Chissà cosa potrebbe accadere... :)
+    limit: Devi impostare almeno un minuto in più rispetto all\'ora attuale. La data attuale è ${current_date}
+    limit_year: Impossibile impostare una data ad oltre un anno da oggi. Chissà cosa potrebbe accadere...
     ok: |
       Il post è stato programmato. Il post verrà inviato su <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} il <b>${date}</b>.
       
@@ -358,7 +358,7 @@ posts:
   bot_was_deleted: |
     Impossibile visualizzare il post poiché il bot utilizzato per la creazione è stato cancellato. Puoi riconnetterlo per recuperare il post.
   view_scheduled_post: |
-    Il post verrà inviato su <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} il <b>${date}</b>.
+    Il post verrà inviato su ${channel.name}${channel.username ? ' @' + channel.username : ''} il <b>${date}</b>.
     
     Hai ${pluralize(posts, 'messaggio', 'messaggi', 'messaggi')} in questo post:
     ${messages}
@@ -390,7 +390,7 @@ statistics:
     Non sono ancora stati aggiunti canali.
     
     Invia /addchannel per aggiungerne uno nuovo.
-  selected_channel: 'Ecco: <b>${channel.name}</b>. Cosa vuoi fare con le statistiche?'
+  selected_channel: 'Ecco: ${channel.name}. Cosa vuoi fare con le statistiche?'
   channel_not_found: Questo canale non è disponibile.
   select_periods: Scegli per quale periodo vuoi ricevere le statistiche.
   loading_data: 🕒 Processo i dati e renderizzo i grafici...
@@ -403,9 +403,9 @@ statistics:
   share_text: |
     Questo è il link per vedere le statistiche di ${channel.name}${channel.username ? ' @' + channel.username : ''}
   data: |
-    Statistiche di 	<b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} per ${period == 'week'
-      ? 'l'ultima settimana'
-      : 'l'ultimo mese'
+    Statistiche di 	${channel.name}${channel.username ? ' @' + channel.username : ''} per ${period == 'week'
+      ? 'l\'ultima settimana'
+      : 'l\'ultimo mese'
     }.
     
     ${data}
@@ -484,6 +484,9 @@ keyboard:
     open_settings: Opzioni
     done: Invia
     cancel: Annulla
+
+    silent_enable: 🔈
+    silent_disable: 🔇
     
     send:
       send_now: Invia Ora

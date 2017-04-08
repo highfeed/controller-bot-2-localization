@@ -1,4 +1,4 @@
-enable: false
+enable: true
 name: Spanish
   
 bots:
@@ -74,8 +74,8 @@ start:
   bots:
     help: |
       No me parece nada.
-      
-      Vaya a @ControllerBot si desea administrar sus canales y publicaciones. Envía /start para crear una nueva publicación.
+
+      Vaya a @ControllerBot si desea administrar sus canales y publicaciones. Envía /start para crear una nueva publicación.
 
 channels:
   welcome: |
@@ -112,7 +112,7 @@ channels:
         
         Envíenos un mesaje a @ControllerSupportBot si experimenta cualquier fallo cuando conecte su propio bot. 
   control:
-    options: 'Este es: <b>${channel.name}</b>. ¿Qué quiere hacer con el canal?'
+    options: 'Este es: ${channel.name}. ¿Qué quiere hacer con el canal?'
     
     delete_confirm: |
       ¿Estás seguro de que quieres borrar este canal?
@@ -123,7 +123,7 @@ channels:
     select_bot: |
       ${count 
         ? 'Elija el bot que se utilizará para enviar mensajes en el canal.' 
-        : 'Todavía no hay bots conectados. Envíe/ addchannel y elige \ 'Añadir Nuevo Canal \' para conectar uno nuevo.'
+        : 'Todavía no hay bots conectados. Envíe/addchannel y elige \'Añadir Nuevo Canal\' para conectar uno nuevo.'
       }
     bot_is_not_admin: Agrega el bot a los administradores de tu canal.
     current_bot: No se puede elegir el bot actual.
@@ -179,7 +179,7 @@ post:
   error_check_channel: Algo ha salido mal :( Por favor, inténtelo de nuevo. Envíenos /feedback para hacernos saber si por alguna razón no se arregla el problema.
   channel_not_found: El canal no existe o no tiene acceso a él. Vuelva a @ControllerBot e inténtelo de nuevo.
   problems: |
-    No se ha podido crear una nueva publicación en<b>${channel.name}</b>. Problemas encontrados:
+    No se ha podido crear una nueva publicación en <b>${channel.name}</b>. Problemas encontrados:
     
     ${problems}
     
@@ -199,7 +199,7 @@ post:
   
   make:
     welcome: |
-      Aquí está: <b>${channel.name}</b>. Envíame uno o varios mensajes que deseas incluir en la publicación. Puede ser cualquier cosa: un texto, una foto, un video, incluso una pegatina.
+      Aquí está: ${channel.name}. Envíame uno o varios mensajes que deseas incluir en la publicación. Puede ser cualquier cosa: un texto, una foto, un video, incluso una pegatina.
       
       Puedes usar los estilos de formato /markdown-style o /HTML-style en los mensajes.
     settings: |
@@ -302,7 +302,7 @@ post:
     cancel_send: Se ha cancelado el envío de la publicación.
     continue_send: Puedes seguir enviándome mensajes.
     confirm_send: >
-      ¿Seguro que quieres enviar<b>${pluralize(posts, 'mensaje', 'mensajes', 'mensajes')}</b> a
+      ¿Seguro que quieres enviar <b>${pluralize(posts, 'mensaje', 'mensajes', 'mensajes')}</b> a
       <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}?
     waiting: 🕒 Enviando...
     ok: Done!
@@ -336,7 +336,7 @@ post:
     limit: 'Necesita elegir un tiempo mayor que el actual por 1 minuto o más. La fecha y hora actuales son ${current_date}'
     limit_year: No se puede elegir un tiempo superior al actual por 1 año o más. Quién sabe lo que va a pasar ... :)
     ok: |
-      Se ha creado una publicación programada. El mensaje se enviará a<b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} el <b>${date}</b>.
+      Se ha creado una publicación programada. El mensaje se enviará a <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} el <b>${date}</b>.
       
 posts:
   types:
@@ -358,7 +358,7 @@ posts:
   bot_was_deleted: |
     No se pudo ver esta publicación programada porque se eliminó el bot conectado que se utilizó para crearla. Puede volver a conectar el bot para restaurar la publicación.
   view_scheduled_post: |
-    El mensaje se enviará ha <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} el <b>${date}</b>.
+    El mensaje se enviará ha ${channel.name}${channel.username ? ' @' + channel.username : ''} el <b>${date}</b>.
     
     Tienes ${pluralize(posts, 'mensaje', 'mensajes', 'mensajes')} en este post:
     ${messages}
@@ -377,7 +377,7 @@ settings:
     channel_item: |
       ${index}. ${name}
     confirm_delete: |
-      ${count 
+      ${count
         ? 'El bot está conectado con estos canales:\n\n' + channels 
         : 'El bot no está conectado con ningún canal.\n'
       }
@@ -390,7 +390,7 @@ statistics:
     Aún no hay canales agregados.
     
     Envíe /addchannel para agregar uno nuevo.
-  selected_channel: 'Aquí está: <b>${channel.name}</b>. ¿Qué quieres hacer con las estadísticas?'
+  selected_channel: 'Aquí está: ${channel.name}. ¿Qué quieres hacer con las estadísticas?'
   channel_not_found: Este canal no está disponible.
   select_periods: Elija el período del que desea obtener estadísticas.
   loading_data: 🕒 Procesando los datos y renderizando gráficos...
@@ -403,7 +403,7 @@ statistics:
   share_text: |
     Aquí está el enlace para ver las estadísticas de ${channel.name}${channel.username ? ' @' + channel.username : ''}
   data: |
-    Estadísticas de <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} para ${period == 'week'
+    Estadísticas de ${channel.name} ${channel.username ? ' @' + channel.username : ''} para ${period == 'week'
       ? 'los últimos 7 días'
       : 'los últimos 31 días'
     }.
@@ -484,6 +484,9 @@ keyboard:
     open_settings: Opciones
     done: Enviar
     cancel: Cancelar
+
+    silent_enable: 🔈
+    silent_disable: 🔇
     
     send:
       send_now: Enviar Ahora

@@ -1,8 +1,8 @@
-enable: false
+enable: true
 name: French
 
 bots:
-  Welcome: |
+  welcome: |
     Pour connecter un bot veuillez suivre ces deux étapes:
 
     1. Ouvrir @BotFather, puis entrez <code>/newbot</code> et choisissez un nom et un nom d'utilisateur pour votre bot.
@@ -21,7 +21,7 @@ bots:
     Envoyez-nous un message à @ControllerSupportBot si des problèmes se présentent lorsque vous connectez votre propre bot.
 
 start:
-  Welcome: |
+  welcome: |
     <b>Controller Bot</b> — excellent bot pour les propriétaires de chaîne, qui vous aide à envoyer des messages formatés et à créer des messages planifiés dans vos chaînes.
 
     <b>Messages formatés.</b> envoyer des messages en gras, en italique, avec des textes à largeur fixe et des boutons pour lien URL.
@@ -78,7 +78,7 @@ start:
       Allez à @ControllerBot si vous voulez gérer vos chaînes et messages. Envoyez /start pour créer un nouveau message.
 
 channels:
-  Welcome: |
+  welcome: |
     Ajouter une nouvelle chaîne ou modifier les paramètres de celles déjà ajoutées.
 
   add:
@@ -88,7 +88,7 @@ channels:
       Pour ajouter un nouvelle chaîne, vous devez d'abord connecter votre propre bot. Vous pouvez connecter un bot et l'utiliser pour toutes vos chaînes.
 
       Choisissez «Connecter un nouveau Bot» et suivez les instructions.
-    Welcome: |
+    welcome: |
       Pour ajouter une chaîne veuillez suivre ces deux étapes:
 
       1. Ajoutez @${username} à la liste des administrateurs de votre chaîne.
@@ -122,8 +122,8 @@ channels:
 
     select_bot: |
       ${count
-        ? 'choisissez un bot qui sera utilisé pour envoyer des messages dans la chaîne.'
-        : 'Aucun bot connecté pour l'instant. Envoyez /addchannel et choisissez \'Add New Channel\' pour en connecter un nouveau.'
+        ? 'Choisissez un bot qui sera utilisé pour envoyer des messages dans la chaîne.'
+        : 'Aucun bot connecté pour l\'instant. Envoyez /addchannel et choisissez \'Add New Channel\' pour en connecter un nouveau.'
       }
     bot_is_not_admin: Ajoutez le bot à la liste des administrateurs de votre chaîne.
     current_bot: Impossible de choisir le bot actuellement utilisé.
@@ -198,7 +198,7 @@ post:
     Allez à @ControllerBot pour connecter une nouvelle chaîne et commencer à créer des messages.
 
   make:
-    Welcome: |
+    welcome: |
       Ça y est: ${channel.name}. Envoyez-moi un ou plusieurs messages que vous souhaitez inclure dans le message. Cela peut être — un texte, une photo, une vidéo, ou même un sticker.
 
       Vous pouvez utiliser soit /markdown-style ou /HTML-style pour le formatage des messages.
@@ -254,7 +254,7 @@ post:
       ```
     canceled: La création du message a été annulée.
     inline:
-      Welcome: |
+      welcome: |
         Envoyez-moi une liste de boutons pour lien URL pour le message. Veuillez utiliser ce format:
         <pre>Texte du lien - http://www.example.com/
         Autre texte du lien - http://www.example2.com/
@@ -273,7 +273,7 @@ post:
       cleared: Opération éffectuée! Boutons URL effacés.
       continue: Envoyez-moi une liste de boutons pour lien URL pour le message ou choisissez 'Annuler' pour revenir à la création du message.
     reactions:
-      Welcome: |
+      welcome: |
         Envoyez-moi un ou plusieurs émoticônes qui seront utilisés comme émoji en bouton "Like" (jusqu'à 6 emoji).
       not_found_smiles: |
         Envoyez-moi un ou plusieurs émoticônes. Par exemple: `👍👎`
@@ -312,7 +312,7 @@ post:
       today: aujourd'hui
       tomorrow: demain
       after_tomorrow: après-demain
-    Welcome: |
+    welcome: |
       Envoyez l'heure à laquelle vous souhaitez envoyer le message ${day}.
       Envoyez heure+date pour mettre le message en file d'attente pour un autre jour.
 
@@ -333,8 +333,8 @@ post:
       Si vous envoyez uniquement l'heure, le message sera mis en file d'attente pour le jour en cours, par défaut. Pour mettre le message en file attente pour un autre jour, envoyez heure+date. Par exemple, <code>16 30 6 8 -> 16:30, Aug 6</code>
     error_date: Heure et date incorrects. choisissez 'Aide' pour obtenir de l'aide.
     invalid_date: Date incorrecte.
-    limit: 'Vous devez choisir une heure supérieure d'une minute ou plus à celle actuelle. L'heure et la date actuelle est ${current_date}'
-    limit_year: Impossible de choisir une heure supérieure d'un an ou plus à celle actuelle. Qui sait ce qui va se passer... :)
+    limit: Vous devez choisir une heure supérieure d\'une minute ou plus à celle actuelle. L\'heure et la date actuelle est ${current_date}
+    limit_year: Impossible de choisir une heure supérieure d\'un an ou plus à celle actuelle. Qui sait ce qui va se passer...
     ok: |
       Le message planifié a été créé. Le message sera envoyé à <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} le <b>${date}</b>.
 
@@ -350,7 +350,7 @@ posts:
     contact: contact
     location: location
     venue: venue
-  Welcome: choisissez une chaîne pour gérer les messages planifiés.
+  welcome: choisissez une chaîne pour gérer les messages planifiés.
   select_type: Afficher ou supprimer des messages planifiés.
   not_schedule_posts: |
     Il n'y a pas de message planifiés pour cette chaîne pour l'instant.
@@ -366,20 +366,20 @@ posts:
   scheduled_post_was_deleted: Opération éffectuée! Message planifié supprimé.
 
 settings:
-  Welcome: choisissez ce que vous souhaitez modifier.
+  welcome: choisissez ce que vous souhaitez modifier.
 
   bots:
     select_bot: |
       ${count
-        ? 'choisissez le bot que vous voulez supprimer.'
-        : 'Aucun bot connecté pour l'instant.'
+        ? 'Choisissez le bot que vous voulez supprimer.'
+        : 'Aucun bot connecté pour l\'instant.'
       }
     channel_item: |
       ${index}. ${name}
     confirm_delete: |
       ${count
         ? 'Le bot est connecté à ces chaînes:\n\n' + channels
-        : 'Le bot n'est connecté à aucune chaîne.\n'
+        : 'Le bot n\'est connecté à aucune chaîne.\n'
       }
       Voulez-vous vraiment supprimer ce bot?
     bot_deleted: Opération éffectuée! Le bot a été supprimé.
@@ -481,7 +481,7 @@ keyboard:
 
     clear: Tout supprimer
     preview: Aperçu
-    Open_settings: Options
+    open_settings: Options
     done: Envoyer
     cancel: Annuler
 
