@@ -436,6 +436,7 @@ keyboard:
     add_bot: Connect Bot
     
     control:
+      update: Update Channel Info
       bot: Change Connected Bot
       timezone: Change Time Zone
       admins: Manage Admins

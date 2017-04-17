@@ -364,6 +364,7 @@ keyboard:
     add_bot: Conectar o Bot
     
     control:
+      update: Update Channel Info
       bot: Alterar Bot
       timezone: Alterar Bot
       admins: Gerenciador Adminis
