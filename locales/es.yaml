@@ -71,6 +71,11 @@ start:
   feedback:
     Envíenos un mensaje a @ControllerSupportBot si tiene alguna pregunta o problema sobre Controller Bot.
 
+  channel: |
+    Join @BotUpdates to stay tuned for news about this one and other our bots.
+
+    A small bonus for those who will do this: you will never see this message again :)
+
   bots:
     help: |
       No me parece nada.
