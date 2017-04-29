@@ -1,18 +1,18 @@
-enable: true
+enable: false
 name: Chinese Simplified
   
 bots:
   welcome: |
-    To connect a bot you should follow these two steps:
+    如果你要连接一个“机器人”，就要根据下面这两个指示：
     
-    1. Open @BotFather, then enter <code>/newbot</code> and choose a name and a username for your bot.
-    2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
+    1. 开 @BotFather, 然后打这些字<code>/newbot</code>。你也要选一个名字和用户名给你的“机器人”
+    2. 你会拿到一个“机器人”符记(比如： 12345:6789ABCDEF) — 把它转递给我就好了！
     
-    <b>Warning!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect. 
+    <b>警告!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect. 
   
   wrong_token: Doesn't look like anything to me. Please send me a token of your bot.
   error_add: Invalid token. Try to get a new one or use a token of another bot.
-  bot_already_added: Looks familiar to me. You already have this bot connected.
+  bot_already_added: 这个“机器人”我看过。你已经有这个“机器人”连接了。
   help: |
     🔹 Why do I need to connect a bot?
     
