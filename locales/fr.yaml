@@ -441,7 +441,7 @@ keyboard:
     add_bot: Connecter un nouveau bot
 
     control:
-      update: Mettre à jour les informations de la chaîne
+      update: Actualiser infos chaîne
       bot: Changer le bot connecté
       timezone: Changer le fuseau horaire
       admins: Gérer les administrateurs
