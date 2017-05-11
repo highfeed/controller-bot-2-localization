@@ -215,7 +215,11 @@ post:
       Non c'è ancora nessun messaggio.
     not_posts_for_done: |
       Non c'è ancora nessun messaggio.
-    preview_sent: L'anteprima del messaggio è stata inviata.
+    preview_sent: |
+      L'anteprima del messaggio è stata inviata.
+
+      Hai <b>${pluralize(posts, 'messaggio', 'messaggi', 'messaggi')}</b> in questo post:
+      ${messages}
     error_parse: |
       Errori nella formattazione del testo:
       

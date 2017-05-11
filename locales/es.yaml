@@ -215,7 +215,11 @@ post:
       Todavía no hay mensajes.
     not_posts_for_done: |
       Todavía no hay mensajes.
-    preview_sent: Vista previa de los mensajes enviados.
+    preview_sent: |
+      Vista previa de los mensajes enviados.
+
+      Tienes <b>${pluralize(posts, 'mensaje', 'mensajes', 'mensajes')}</b> en este post:
+      ${messages}
     error_parse: |
       Errores al formatear el texto:
       

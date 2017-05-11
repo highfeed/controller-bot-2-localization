@@ -215,7 +215,11 @@ post:
       Il n'y a aucun message pour l'instant.
     not_posts_for_done: |
       Il n'y a aucun message pour l'instant.
-    preview_sent: Aperçu des messages envoyés.
+    preview_sent: |
+      Aperçu des messages envoyés.
+
+      Vous avez <b>${pluralize(posts, 'message', 'messages', 'messages')}</b> dans ce message:
+      ${messages}
     error_parse: |
       Erreurs lors du formatage du texte:
 
