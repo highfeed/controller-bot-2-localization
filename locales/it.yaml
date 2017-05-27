@@ -359,6 +359,7 @@ posts:
     contact: contatto
     location: posizione
     venue: sede
+    video_note: video messaggio
   welcome: Scegli un canale di cui gestire la programmazione.
   select_type: Visualizza o elimina i post programmati.
   not_schedule_posts: |

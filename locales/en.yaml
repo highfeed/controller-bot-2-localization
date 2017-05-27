@@ -359,6 +359,7 @@ posts:
     contact: contact
     location: location
     venue: venue
+    video_note: video message
   welcome: Choose a channel to manage scheduled posts.
   select_type: View or delete scheduled posts.
   not_schedule_posts: |

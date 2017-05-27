@@ -359,6 +359,7 @@ posts:
     contact: contactos
     location: localizaciones
     venue: lugar de encuentro
+    video_note: mensajes de video
   welcome: Elige un canal para administrar las publicaciones programadas.
   select_type: Ver o eliminar publicaciones programadas.
   not_schedule_posts: |

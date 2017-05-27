@@ -359,6 +359,7 @@ posts:
     contact: contact
     location: location
     venue: venue
+    video_note: video message
   welcome: choisissez une chaîne pour gérer les messages planifiés.
   select_type: Afficher ou supprimer des messages planifiés.
   not_schedule_posts: |
