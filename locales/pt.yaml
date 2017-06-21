@@ -7,7 +7,7 @@ bots:
     
     1. Abra o @BotFather em seguida insira <code>/newbot</code> escolha um nome e username para o seu bot.
     2. Você receberá um token (exemplo: 12345:6789ABCDEF) — encaminhe ou copie e cole este código aqui.
-  wrong_token: Doesn't look like anything to me. Por favor, me envie o token do seu bot.
+  wrong_token: Isto não se parece com um token válido. Por favor, me envie o token do seu bot.
   error_add: Token inválido. Tente obter um novo ou use um token de outro bot.
   bot_already_added: Isso me parece familiar. Você já tem este bot conectado.
   help: |
