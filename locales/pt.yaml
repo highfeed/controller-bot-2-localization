@@ -60,9 +60,9 @@ start:
   feedback: Envie mensagens para @ControllerSupportBot se tiver dúvidas ou sugestões para o Controller Bot.
 
   channel: |
-    Join @BotUpdates to stay tuned for news about this one and other our bots.
+    Acompanhe o canal @BotUpdates e fique por dentro das novidades sobre os nossos bots.
 
-    A small bonus for those who will do this: you will never see this message again :)
+    Um pequeno bônus para aqueles que irão fazer isso: você nunca mais verá esta mensagem :)
 
 channels:
   welcome: |
