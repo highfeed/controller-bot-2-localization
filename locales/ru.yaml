@@ -664,6 +664,7 @@ keyboard:
   posts:
     edit:
       original: Показать оригинал
+      clear_caption: Удалить описание
       save: Сохранить изменения
       cancel: Выйти из редактирования
       open_edited_post: Посмотреть изменения
