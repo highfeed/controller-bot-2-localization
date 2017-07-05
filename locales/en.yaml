@@ -5,7 +5,7 @@ bots:
   welcome: |
     To connect a bot you should follow these two steps:
     
-    1. Open @BotFather, then enter <code>/newbot</code> and choose a name and a username for your bot.
+    1. Open @BotFather and <a href="http://telegra.ph/Create-Bot-Controller-FAQ-03-28">create a new bot</a>.
     2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
     
     <b>Warning!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect. 
@@ -289,6 +289,13 @@ post:
       save: Reactions saved. You can continue to send me messages.
       cleared: Success! Reactions cleared.
       notify: Counters will be available after sending.
+      default_reactions:
+        welcome: |
+          You can set reactions that will be automatically added to messages in new posts.
+
+          ${reactions.length ? 'Current default reactions: ' + reactions.join(' ') : ''}
+        saved: Default reactions saved.
+        deleted: Default reactions disabled.
         
   preview:
     ok: |
@@ -348,6 +355,27 @@ post:
       Scheduled post has been сreated. The post will be sent to <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
       
 posts:
+  edit:
+    welcome: Forward to me a message from your channel you want to edit.
+    only_channel_post: |
+      Sorry, only messages from channels are available for editing.
+    channel_not_found: |
+      This channel is not available. The channel and the bot via which message was sent must be connected to Controller Bot. Please check everything twice and try again.
+    unsupported_type: |
+      Unable to edit this message. You can edit only text messages and captions.
+    post_not_found: |
+      This post is not available. The channel and the bot via which message was sent must be connected to Controller Bot. Please check everything twice and try again.
+    bot_unauthorized: |
+      Unable to edit this message. The bot via which message was sent is no longer exist, or its token was revoked. 
+    editing: |
+      Message type: ${type_text}.${type == 'text' ? '\nFormatting style: ' + parse_mode : ''}
+
+      Send a new text to edit this ${type == 'text' ? 'message' : 'caption. No more 200 characters are allowed.'}.
+    not_changed: Something went wrong :( Please try again.
+    edited: Success! Message has been edited.
+
+  edit_time: Отправьте время и дату, на которую хотите перенести публикацию поста.
+
   types:
     text: text
     audio: audio
@@ -360,8 +388,8 @@ posts:
     location: location
     venue: venue
     video_note: video message
-  welcome: Choose a channel to manage scheduled posts.
-  select_type: View or delete scheduled posts.
+  welcome_schedule: Choose a channel to manage scheduled posts.
+  select_type: Edit sent posts or manage scheduled posts.
   not_schedule_posts: |
     There is no scheduled posts for this channel in yet.
   choose_scheduled_post: Choose a scheduled post you want to view or delete.
@@ -431,6 +459,7 @@ keyboard:
     back: Back
     back_inline: « Back
     cancel: Cancel
+    off: Disable
     help: Help
   
   menu:
@@ -474,6 +503,9 @@ keyboard:
       
       parse_mode_markdown: 'Formatting Style: Markdown'
       parse_mode_html: 'Formatting Style: HTML'
+
+      default_reactions_disable: 'Default Reactions: OFF'
+      default_reactions_enable: 'Default Reactions: ON'
     
     control_channel: Go to Channel Settings
     return_to_channels: « Back to Channels List
@@ -501,6 +533,7 @@ keyboard:
     
     send:
       send_now: Send Now
+      sent: View Post in Channel
       create_scheduled: Enqueue
       
       send: Send
@@ -522,6 +555,12 @@ keyboard:
     language: Change Language
     
   posts:
+    edit:
+      original: View Original
+      save: Save Changes
+      cancel: Cancel
+      open_edited_post: View Post in Channel
+
     edit_sent_posts: Edit Sent Posts
     view_schedule: Manage Scheduled Posts
     view: View Post
