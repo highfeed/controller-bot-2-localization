@@ -374,7 +374,7 @@ posts:
     not_changed: Something went wrong :( Please try again.
     edited: Success! Message has been edited.
 
-  edit_time: Отправьте время и дату, на которую хотите перенести публикацию поста.
+  edit_time: Send time+date to re-enqueue the post at any other day.
 
   types:
     text: text
@@ -557,6 +557,7 @@ keyboard:
   posts:
     edit:
       original: View Original
+      clear_caption: Delete Caption
       save: Save Changes
       cancel: Cancel
       open_edited_post: View Post in Channel
