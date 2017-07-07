@@ -45,8 +45,9 @@ start:
     Spanish — Roberdcr
     French — Teladi Fisher
     Italian — @Myosotis85
+    Portuguese - @adiltons
 
-    You can <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">help us translate</a> the bot and join our translation team.
+    Você pode <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">nos ajudar a traduzir</a> o bot e juntar-se a nossa equipe de tradução.
   language_changed: OK, idioma salvo.
   rate: |
     Nos avalie com 5 estrelas no Bot Store se você gostou do Controller Bot: t.me/storebot?start=ControllerBot
@@ -333,7 +334,7 @@ posts:
   view_scheduled_post: |
     The post will be sent to ${channel.name}${channel.username ? ' @' + channel.username : ''} on ${date}.
     
-    You have ${pluralize(posts, 'message', 'messages', 'messages')} in this post:
+    Você tem ${pluralize(posts, 'message', 'messages', 'messages')} neste post:
     ${messages}
   confirm_delete_post: Tem certeza de que deseja excluir esta postagem?
   scheduled_post_was_deleted: Feito! A postagem agendada foi excluída.
