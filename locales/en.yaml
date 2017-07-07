@@ -46,7 +46,12 @@ start:
     /rate — rate bot
     /help — get a list of commands
   do: OK. What do you want to do?
-  choose_language: Please choose your language.
+  choose_language: |
+    Spanish — Roberdcr
+    French — Teladi Fisher
+    Italian — @Myosotis85
+
+    You can <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">help us translate</a> the bot and join our translation team.
   language_changed: OK, your language saved.
   rate: |
     Give us 5 stars on Store Bot if you like Controller Bot: t.me/storebot?start=ControllerBot
@@ -96,7 +101,7 @@ channels:
     welcome: |
       To add a channel you should follow these two steps:
     
-      1. Add @${username} to admins of your channel.   
+      1. <a href="http://telegra.ph/Add-Bot-to-Admins-Controller-FAQ-03-28">Add @${username} to admins</a> of your channel.   
       2. Then forward to me any message from your channel (you can also send me its username or ID).
 
     ok: Success! The channel has been added.
@@ -204,9 +209,13 @@ post:
   
   make:
     welcome: |
-      Here it is: ${channel.name}. Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
+      Here it is: ${channel.name}.
       
-      You can use either /markdown-style or /HTML-style formatting in messages.
+      Send /markdown or /HTML to get a hint. You can also use built-in formatting options of your Telegram client.
+    start: |
+      Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
+
+      If you have any questions, take a look at the <a href="http://telegra.ph/Controller-Help-03-20">Controller Help</a>.
     settings: |
       Send /markdown or /HTML to get a hint. You can also use built-in formatting options of your Telegram client.
     clear: Success! All messages have been deleted.
@@ -291,7 +300,7 @@ post:
       notify: Counters will be available after sending.
       default_reactions:
         welcome: |
-          You can set reactions that will be automatically added to messages in new posts.
+          You can set reactions that will be automatically added to messages in new posts. Send me one or more emoticons. For example: `👍👎`
 
           ${reactions.length ? 'Current default reactions: ' + reactions.join(' ') : ''}
         saved: Default reactions saved.
@@ -370,7 +379,7 @@ posts:
     editing: |
       Message type: ${type_text}.${type == 'text' ? '\nFormatting style: ' + parse_mode : ''}
 
-      Send a new text to edit this ${type == 'text' ? 'message' : 'caption. No more 200 characters are allowed.'}.
+      Send a new text to edit this ${type == 'text' ? 'message' : 'caption. No more 200 characters are allowed'}.
     not_changed: Something went wrong :( Please try again.
     edited: Success! Message has been edited.
 
