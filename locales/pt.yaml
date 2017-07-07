@@ -39,6 +39,14 @@ start:
     /help — respostas a perguntas básicas
   do: OK. O que você quer fazer?
   choose_language: Por favor, escolha um idioma.
+  choose_language_with_credits: |
+    Por favor, escolha um idioma.
+
+    Spanish — Roberdcr
+    French — Teladi Fisher
+    Italian — @Myosotis85
+
+    You can <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">help us translate</a> the bot and join our translation team.
   language_changed: OK, idioma salvo.
   rate: |
     Nos avalie com 5 estrelas no Bot Store se você gostou do Controller Bot: t.me/storebot?start=ControllerBot

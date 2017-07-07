@@ -47,6 +47,14 @@ start:
     /help — Ricevi la lista dei comandi
   do: OK. Cosa vuoi fare?
   choose_language: Prego, scegli la tua lingua.
+  choose_language_with_credits: |
+    Prego, scegli la tua lingua.
+
+    Spanish — Roberdcr
+    French — Teladi Fisher
+    Italian — @Myosotis85
+
+    You can <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">help us translate</a> the bot and join our translation team.
   language_changed: OK, lingua salvata.
   rate: |
     Vota 5 stelle su Store Bot se ti piace Controller Bot: t.me/storebot?start=ControllerBot
