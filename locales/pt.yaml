@@ -582,8 +582,8 @@ yes: Sim
 cancel: Não
 
 statistics:
-view_periods: Visualização
-view_via_web: Visualização via Web
+view_periods: Visualizar Período
+view_via_web: Visualizar via Web
 share: Compartilhar
 
 periods:
