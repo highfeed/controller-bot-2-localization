@@ -207,6 +207,10 @@ post:
       Eccoci: ${channel.name}. Spediscimi uno o più messaggi che vuoi includere nel post. Può essere qualunque cosa - teso, foto, video, persino uno sticker.
       
       Puoi utilizzare /markdown-style o /HTML-style per formattare i messaggi.
+    start: |
+      Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
+
+      If you have any questions, take a look at the <a href="http://telegra.ph/Controller-Help-03-20">Controller Help</a>.
     settings: |
       Invia /markdown o /HTML per ricevere un suggerimento. Puoi anche utilizzare le funzioni di formattazione integrate nel tuo client Telegram.
     clear: Tutti i messaggi sono stati eliminati con successo!
@@ -289,6 +293,13 @@ post:
       save: Reazioni salvate. Puoi continuare ad inviarmi messaggi.
       cleared: Successo! Reazioni cancellate.
       notify: I contatori saranno disponibili una volta pubblicato.
+      default_reactions:
+        welcome: |
+          You can set reactions that will be automatically added to messages in new posts. Send me one or more emoticons. For example: `👍👎`
+
+          ${reactions.length ? 'Current default reactions: ' + reactions.join(' ') : ''}
+        saved: Default reactions saved.
+        deleted: Default reactions disabled.
         
   preview:
     ok: |
@@ -348,6 +359,27 @@ post:
       Il post è stato programmato. Il post verrà inviato su <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} il <b>${date}</b>.
       
 posts:
+  edit:
+    welcome: Forward to me a message from your channel you want to edit.
+    only_channel_post: |
+      Sorry, only messages from channels are available for editing.
+    channel_not_found: |
+      This channel is not available. The channel and the bot via which message was sent must be connected to Controller Bot. Please check everything twice and try again.
+    unsupported_type: |
+      Unable to edit this message. You can edit only text messages and captions.
+    post_not_found: |
+      This post is not available. The channel and the bot via which message was sent must be connected to Controller Bot. Please check everything twice and try again.
+    bot_unauthorized: |
+      Unable to edit this message. The bot via which message was sent is no longer exist, or its token was revoked. 
+    editing: |
+      Message type: ${type_text}.${type == 'text' ? '\nFormatting style: ' + parse_mode : ''}
+
+      Send a new text to edit this ${type == 'text' ? 'message' : 'caption. No more 200 characters are allowed'}.
+    not_changed: Something went wrong :( Please try again.
+    edited: Success! Message has been edited.
+
+  edit_time: Send time+date to re-enqueue the post at any other day.
+
   types:
     text: testo
     audio: audio
@@ -360,7 +392,7 @@ posts:
     location: posizione
     venue: sede
     video_note: video messaggio
-  welcome: Scegli un canale di cui gestire la programmazione.
+  welcome_schedule: Scegli un canale di cui gestire la programmazione.
   select_type: Visualizza o elimina i post programmati.
   not_schedule_posts: |
     Non ci sono ancora post programmati per questo canale.
@@ -431,6 +463,7 @@ keyboard:
     back: Indietro
     back_inline: « Indietro
     cancel: Annulla
+    off: Disable
     help: Aiuto
   
   menu:
@@ -474,6 +507,9 @@ keyboard:
       
       parse_mode_markdown: 'Stile Formattazione: Markdown'
       parse_mode_html: 'Stile Formattazione: HTML'
+
+      default_reactions_disable: 'Default Reactions: OFF'
+      default_reactions_enable: 'Default Reactions: ON'
     
     control_channel: Vai alle Impostazioni del Canale
     return_to_channels: « Torna alla Lista dei Canali
@@ -501,6 +537,7 @@ keyboard:
     
     send:
       send_now: Invia Ora
+      sent: View Post in Channel
       create_scheduled: Accoda
       
       send: Invia
@@ -522,6 +559,13 @@ keyboard:
     language: Cambia Lingua
     
   posts:
+    edit:
+      original: View Original
+      clear_caption: Delete Caption
+      save: Save Changes
+      cancel: Cancel
+      open_edited_post: View Post in Channel
+
     edit_sent_posts: Modifica Post iviati
     view_schedule: Gestisci Post programmati
     view: Visualizza Post
