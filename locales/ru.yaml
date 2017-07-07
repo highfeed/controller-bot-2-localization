@@ -48,6 +48,12 @@ start:
     /help — покажет все команды.
   do: Что будем делать?
   choose_language: Выберите ваш язык.
+  choose_language_with_credits: |
+    Выберите ваш язык.
+
+    Spanish — Roberdcr
+    French — Teladi Fisher
+    Italian — @Myosotis85
   language_changed: Язык сохранен.
   rate: |
     Поставьте нам 5 звезд в StoreBot, если вам нравится наш бот:

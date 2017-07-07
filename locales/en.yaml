@@ -46,7 +46,10 @@ start:
     /rate — rate bot
     /help — get a list of commands
   do: OK. What do you want to do?
-  choose_language: |
+  choose_language: Please choose your language.
+  choose_language_with_credits: |
+    Please choose your language.
+
     Spanish — Roberdcr
     French — Teladi Fisher
     Italian — @Myosotis85
