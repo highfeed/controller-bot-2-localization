@@ -54,10 +54,10 @@ start:
     French — Teladi Fisher
     Italian — @Myosotis85
 
-    You can <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">help us translate</a> the bot and join our translation team.
+    Vous pouvez <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">nous aider à traduire</a> ce bot et rejoindre l'équipe de traduction.
   language_changed: OK, langue sauvegardée.
   rate: |
-    Notez 5 étoiles sur Bot Store si vous aimez Controller Bot: t.me/storebot?start=ControllerBot
+    Notez 5 étoiles sur StoreBot si vous aimez Controller Bot: t.me/storebot?start=ControllerBot
   help: |
     Je peux vous aider à envoyer des messages formatés et à créer des messages planifiés dans vos chaînes.
 
