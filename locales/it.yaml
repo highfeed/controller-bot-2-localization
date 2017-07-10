@@ -540,8 +540,8 @@ keyboard:
     done: Invia
     cancel: Annulla
 
-    silent_enable: 🔈
-    silent_disable: 🔇
+    silent_enable: 'Notify: ON'
+    silent_disable: 'Notify: OFF'
     
     send:
       send_now: Invia Ora

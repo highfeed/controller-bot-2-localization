@@ -641,8 +641,8 @@ keyboard:
     done: Далее
     cancel: Отменить пост
 
-    silent_enable: 🔈
-    silent_disable: 🔇
+    silent_enable: Уведомление: вкл.
+    silent_disable: Уведомление: выкл.
 
     send:
       send_now: Опубликовать
