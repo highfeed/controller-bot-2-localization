@@ -22,7 +22,7 @@ bots:
 
 start:
   welcome: |
-    <b>Controller Bot</b> is a bot for channel owners that helps you create reach posts, view stats and more.
+    <b>Controller Bot</b> is a bot for channel owners that helps you to create rich posts, view stats and more.
     
     <b>Formatted Posts.</b> Send posts with bold, italic, fixed-width text and inline links.
     
@@ -99,7 +99,7 @@ channels:
     select_bot: |
       Choose a bot to send posts to the channel.
     select_bot_and_help: |
-      To add a new channel you need to connect your own bot first. You can connect one a bot and use it for all your channels. 
+      To add a new channel you need to connect your own bot first. You can connect one bot and use it for all your channels. 
       
       Choose \'Connect Bot\' and follow the instructions.
     welcome: |
