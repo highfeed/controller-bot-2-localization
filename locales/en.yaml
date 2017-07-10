@@ -136,7 +136,7 @@ channels:
     select_bot: |
       ${count 
         ? 'Choose a bot that will be used to send posts in the channel.' 
-        : 'There is no connected bots yet. Send /addchannel and choose \'Add Channel\' to connect a new one.'
+        : 'There is no connected bots yet. Send /addchannel and choose \'Connect Bot\' to connect a new one.'
       }
     bot_is_not_admin: Add the bot to admins of your channel.
     current_bot: Unable to choose currently used bot.
@@ -540,8 +540,8 @@ keyboard:
     done: Send
     cancel: Cancel
 
-    silent_enable: 🔈
-    silent_disable: 🔇
+    silent_enable: Notify: OFF
+    silent_disable: Notify: ON
     
     send:
       send_now: Send Now
@@ -568,7 +568,7 @@ keyboard:
     
   posts:
     edit:
-      original: View Original
+      original: View Previous Version
       clear_caption: Delete Caption
       save: Save Changes
       cancel: Cancel
