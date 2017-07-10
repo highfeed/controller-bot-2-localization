@@ -93,7 +93,7 @@ channels:
     select_bot_and_help: |
       Para adicionar um novo canal você precisar inicialmente conectar um bot. Você pode conectar um único bot e usá-lo para todos os seus canais.
 
-      Escolha \'Connect Bot\' e siga as instruções.
+      Escolha \'Conectar o Bot\' e siga as instruções.
     welcome: |
       Para adicionar um canal você precisa seguir os seguintes passos:
 
@@ -130,7 +130,7 @@ channels:
     select_bot: |
       ${count 
         ? 'Escolha um bot que será usado para enviar mensagens no canal.' 
-        : 'Você ainda não tem bots conectados. Envie /addchannel e escolha \'Add Channel\' para conectar um novo.'
+        : 'Você ainda não tem bots conectados. Envie /addchannel e escolha \'Conectar o Bot\' para conectar um novo.'
       }
     bot_is_not_admin: Adicione o bot aos administradores do seu canal.
     current_bot: Não é possível escolher o bot atual.
@@ -565,6 +565,7 @@ keyboard:
     edit_sent_posts: Editar Mensagens enviadas
     view_schedule: Gerenciador Postagens
     view: Visualizar Postagem
+    edit_time: Edit Time
     delete: Excluir postagem
     yes: Sim
     cancel: Não
