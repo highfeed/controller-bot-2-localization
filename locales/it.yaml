@@ -54,7 +54,7 @@ start:
     French — Teladi Fisher
     Italian — @Myosotis85
 
-    You can <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">help us translate</a> the bot and join our translation team.
+    Puoi <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">aiutarci a tradurre</a> il bot ed unirti al nostro Team di traduzioni.
   language_changed: OK, lingua salvata.
   rate: |
     Vota 5 stelle su Store Bot se ti piace Controller Bot: t.me/storebot?start=ControllerBot
@@ -303,11 +303,11 @@ post:
       notify: I contatori saranno disponibili una volta pubblicato.
       default_reactions:
         welcome: |
-          You can set reactions that will be automatically added to messages in new posts. Send me one or more emoticons. For example: `👍👎`
+          Puoi impostare le Reazioni che verranno automaticamente aggiunte ai messaggi nei nuovi post. Inviami una o più emoticon. Ad Esempio: `👍👎`
 
-          ${reactions.length ? 'Current default reactions: ' + reactions.join(' ') : ''}
-        saved: Default reactions saved.
-        deleted: Default reactions disabled.
+          ${reactions.length ? 'Reazioni predefinite attuali: ' + reactions.join(' ') : ''}
+        saved: Reazioni predefinite salvate.
+        deleted: Reazioni predefinite disabilitate.
         
   preview:
     ok: |
@@ -368,25 +368,25 @@ post:
       
 posts:
   edit:
-    welcome: Forward to me a message from your channel you want to edit.
+    welcome: Inoltrami un messaggio dal tuo canale che vuoi modificare.
     only_channel_post: |
-      Sorry, only messages from channels are available for editing.
+      Scusa, è possibile modificare solo messaggi dai canali.
     channel_not_found: |
-      This channel is not available. The channel and the bot via which message was sent must be connected to Controller Bot. Please check everything twice and try again.
+      Questo canale non è disponibile. Il canale e il bot attraverso il quale il messaggio è stato spedito devono essere connessi a Controller Bot. Per favore, ricontrolla e poi riprova.
     unsupported_type: |
-      Unable to edit this message. You can edit only text messages and captions.
+      Impossibile modificare il messaggio. Puoi modificare solo messaggi di testo e la didascalia.
     post_not_found: |
-      This post is not available. The channel and the bot via which message was sent must be connected to Controller Bot. Please check everything twice and try again.
+      Questo post non è disponibile. Il canale e il bot attraverso il quale il messaggio è stato spedito devono essere connessi a Controller Bot. Per favore, ricontrolla e poi riprova.
     bot_unauthorized: |
-      Unable to edit this message. The bot via which message was sent is no longer exist, or its token was revoked. 
+      Impossibile modificare questo messaggio. Il bot attraverso il quale il messaggio è stato spedito non esiste più, o il suo token è stato revocato.
     editing: |
-      Message type: ${type_text}.${type == 'text' ? '\nFormatting style: ' + parse_mode : ''}
+      Tipo messaggio:: ${type_text}.${type == 'text' ? '\nTipo formattazione: ' + parse_mode : ''}
 
-      Send a new text to edit this ${type == 'text' ? 'message' : 'caption. No more 200 characters are allowed'}.
-    not_changed: Something went wrong :( Please try again.
-    edited: Success! Message has been edited.
+      Invia un nuovo testo per modificare questo ${type == 'text' ? 'messaggio' : 'didascalia. Non sono permessi più di 200 caratteri.'}.
+    not_changed: Qualcosa è andato storto :( Per favore, riprova.
+    edited: Successo! Il messaggio è stato modificato.
 
-  edit_time: Send time+date to re-enqueue the post at any other day.
+  edit_time: Invia data+ora per riprogrammare il post in qualsiasi altro giorno.
 
   types:
     text: testo
@@ -471,7 +471,7 @@ keyboard:
     back: Indietro
     back_inline: « Indietro
     cancel: Annulla
-    off: Disable
+    off: Disabilita
     help: Aiuto
   
   menu:
@@ -487,7 +487,7 @@ keyboard:
     add_bot: Connetti un Bot
     
     control:
-      update: Update Channel Info
+      update: Aggiorna Info Canale
       bot: Modifica Bot Connesso
       timezone: Cambia Fuso Orario
       admins: Gestisci Amministratori
@@ -516,8 +516,8 @@ keyboard:
       parse_mode_markdown: 'Stile Formattazione: Markdown'
       parse_mode_html: 'Stile Formattazione: HTML'
 
-      default_reactions_disable: 'Default Reactions: OFF'
-      default_reactions_enable: 'Default Reactions: ON'
+      default_reactions_disable: 'Reazioni di Default: OFF'
+      default_reactions_enable: 'Reazioni di Default: ON'
     
     control_channel: Vai alle Impostazioni del Canale
     return_to_channels: « Torna alla Lista dei Canali
@@ -531,8 +531,8 @@ keyboard:
     clear_inline: Elimina Bottoni URL
     cancel_inline: Annulla
     
-    add_reactions: Aggiungi Reactions
-    clear_reactions: Elimina Reactions
+    add_reactions: Aggiungi Reazioni
+    clear_reactions: Elimina Reazioni
     
     clear: Elimina Tutti
     preview: Anteprima
@@ -568,16 +568,16 @@ keyboard:
     
   posts:
     edit:
-      original: View Original
-      clear_caption: Delete Caption
-      save: Save Changes
-      cancel: Cancel
-      open_edited_post: View Post in Channel
+      original: Guarda Originale
+      clear_caption: Elimina Didascalia
+      save: Salva le Modifiche
+      cancel: Annulla
+      open_edited_post: Guarda il Post nel Canale
 
     edit_sent_posts: Modifica Post iviati
     view_schedule: Gestisci Post programmati
     view: Visualizza Post
-    edit_time: Edit Time
+    edit_time: Modifica l\'Ora
     delete: Elimina Post
     yes: Sì
     cancel: No
