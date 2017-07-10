@@ -520,6 +520,7 @@ keyboard:
     edit_sent_posts: Edit Sent Posts
     view_schedule: Manage Scheduled Posts
     view: View Post
+    edit_time: Edit Time
     delete: Delete Post
     yes: Yes
     cancel: No

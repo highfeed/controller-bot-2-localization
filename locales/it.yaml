@@ -577,6 +577,7 @@ keyboard:
     edit_sent_posts: Modifica Post iviati
     view_schedule: Gestisci Post programmati
     view: Visualizza Post
+    edit_time: Edit Time
     delete: Elimina Post
     yes: Sì
     cancel: No

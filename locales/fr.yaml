@@ -577,6 +577,7 @@ keyboard:
     edit_sent_posts: Editer les messages envoyés
     view_schedule: Gérer les messages planifiés
     view: Afficher le message
+    edit_time: Edit Time
     delete: Supprimer le message
     yes: Oui
     cancel: Non
