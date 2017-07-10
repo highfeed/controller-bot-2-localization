@@ -540,8 +540,8 @@ keyboard:
     done: Send
     cancel: Cancel
 
-    silent_enable: Notify: ON
-    silent_disable: Notify: OFF
+    silent_enable: 'Notify: ON'
+    silent_disable: 'Notify: OFF'
     
     send:
       send_now: Send Now
