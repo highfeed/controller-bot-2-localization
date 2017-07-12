@@ -238,7 +238,7 @@ post:
       
       <pre>${description}</pre>
       
-      Please fix all errors and send message again.
+      Please <a href="http://telegra.ph/Parsing-Error-Fix-Controller-FAQ">fix all errors</a> and send message again.
     posts_sent: Success! Messages have been sent.
     continue_collect: You can continue to send me messages. 
     html: |
