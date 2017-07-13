@@ -22,7 +22,7 @@ bots:
 
 start:
   welcome: |
-    <b>Controller Bot</b> — excelente bot para proprietários de canais. Auxiliar no envio de mensagens formatadas e na criação de postagens programadas para canais.
+    <b>Controller Bot</b> — Excelente bot para donos de canais. Auxilia no envio de mensagens formatadas e postagens programadas para canais.
     
     <b>Formatted Posts.</b> Envie mensagens com texto em negrito, itálico, textos monoespaçados e links inline.
     
@@ -32,11 +32,11 @@ start:
     
     <b>Admins.</b> Você pode adicionar administradores para ajudá-lo a enviar e gerenciar postagens programadas em seu canal.
     
-    <b>Stats.</b> Colete e controle facilmnete o número de membros em seus canais em um determinado período de tempo.
+    <b>Stats.</b> Colete e controle facilmnete o número de membros inscritos seus canais em um determinado período de tempo.
     
     <b>Reactions</b>. Adicione nas suas postagens botões com emoticons e colete reações dos membros do seu canal.
         
-    Bot pode enviar mensagens em silêncio e desabilitar pré-visualizações de links, e suporta todos os tipos de mensagem (textos, documentos, sticker, audios, videos, nota de voz, localização e outros).
+    Este Bot pode enviar mensagens em silêncio, desativar pré-visualizações de links e suporta todos os tipos de mensagem (textos, documentos, sticker, audios, videos, nota de voz, localização e outros).
     
     <b>Como usar?</b>
     Envie /addchannel, escolha 'Add Channel' e siga as instruções para adicionar um novo canal.
@@ -87,13 +87,13 @@ start:
 
   bots:
     help: |
-      Não me parece um bot.
+      Isso não me parece um bot.
 
       Vá para @ControllerBot se quiser gerenciar seus canais e postagens. Envie /start para criar uma nova postagem. 
 
 channels:
   welcome: |
-    Adicionar um novo canal ou editar as configurações existentes.
+    Adicione um novo canal ou edite as configurações existentes.
   
   add: 
     select_bot: |    
@@ -112,7 +112,7 @@ channels:
     
     error:
       data: |
-        Nos envie qualquer mensagem do seu canal, username ou ID.
+        Agora, me envie qualquer mensagem do seu canal, username ou ID.
       get_admins: |
         Adicione @${username} como administrador de seu canal. Certifique-se que tudo esteja correto e tente novamente.
     
@@ -132,7 +132,7 @@ channels:
       Tem certeza de que deseja excluir este canal?
     
       Todas as postagens programadas para este canal também serão excluídas.
-    channel_deleted: Feito! O canal removido.
+    channel_deleted: Feito! O canal foi removido.
       
     select_bot: |
       ${count 
