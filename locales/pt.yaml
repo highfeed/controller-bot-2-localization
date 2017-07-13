@@ -125,16 +125,15 @@ channels:
         Não é possível adicionar um canal. @${Username} não existe, ou seu token foi anulado. Reconecte este bot ou escolha outro.
 
         Envie uma mensagem para @ControllerSupportBot se surgirem problemas quando você conecta seu próprio bot.
-        
-  control:
-    options: 'Aqui está: ${channel.name}. O que você quer fazer com o canal?'
+    control:     
+      options: 'Aqui está: ${channel.name}. O que você quer fazer com o canal?'
     
     delete_confirm: |
       Tem certeza de que deseja excluir este canal?
-      
+    
       Todas as postagens programadas para este canal também serão excluídas.
     channel_deleted: Feito! O canal removido.
-    
+      
     select_bot: |
       ${count 
         ? 'Escolha um bot que será usado para enviar mensagens no canal.' 
@@ -151,13 +150,13 @@ channels:
     timezone: |
       Fuso horário atual:
       ${city ? '🔹 GMT ' + (gmt > 0 ? '+' + gmt : gmt) + '\n🔹 ' + timezone_id + ' — ' + city : '🔹 None'}
-      
-      Me envie o nome da cidade perto de você.
+    
+       Me envie o nome da cidade perto de você.
     check_timezone: |
       🔹 GMT ${timezone.gmtOffset > 0 ? '+' + timezone.gmtOffset : timezone.gmtOffset} (${timezone.timeZoneId})
       🔹 ${countryName}, ${name}
-      
-      Localização está correta? Se não, tente me enviar o nome de outra cidade próxima a você.
+     
+     Localização está correta? Se não, tente me enviar o nome de outra cidade próxima a você.
     error_timezone: Desculpe, eu não consigo encontrar sua cidade. Tente me enviar o nome de outra cidade próxima.
     error_request_timezone: Ocorreu um erro :( Por favor, tente novamente. Envie /feedback caso o erro continue por algum motivo.
     save_timezone: OK, seu fuso horário foi salvo.
@@ -173,7 +172,8 @@ channels:
     added: Feito! O usuário foi nomeado como administrador. 
     not_added: Este usuário já é administrador do canal.
     delete: Escolha um usuário para removê-lo dos administradores do canal. 
-    empty_list: Você ainda não tem administradores neste canal.
+    empty_list: |
+      Você ainda não tem administradores neste canal.
     list: |
       Você tem ${pluralize(count, 'admin', 'admins', 'admins')} neste canal:
       
@@ -230,6 +230,9 @@ post:
       Você ainda não tem mensagens escritas.
     preview_sent: |
       Visualização de mensagens enviadas.
+    
+    Você tem <b>${pluralize(posts, 'message', 'messages', 'messages')}</b> nesta postagem:
+      ${messages}    
     error_parse: |
       Erros na formatação de texto:
       
@@ -278,6 +281,7 @@ post:
         <pre>Label text - http://www.example.com/
         Another label text - http://www.example2.com/
         </pre>
+        
         Escolha 'Cancel' para voltar a criação de postagem.
       error: |
         Erros na lista de botões com URL:
@@ -540,7 +544,6 @@ keyboard:
     silent_enable: 'Notify: ON'
     silent_disable: 'Notify: OFF'
 
-    
     send:
       send_now: Enviar Agora
       sent: View Post in Channel
