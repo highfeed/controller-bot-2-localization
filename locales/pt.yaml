@@ -32,7 +32,7 @@ start:
     
     <b>Admins.</b> Você pode adicionar administradores para ajudá-lo a enviar e gerenciar postagens programadas em seu canal.
     
-    <b>Stats.</b> Colete e controle facilmnete o número de membros inscritos seus canais em um determinado período de tempo.
+    <b>Stats.</b> Analise e controle facilmente o número de membros inscritos em canais num determinado período de tempo.
     
     <b>Reactions</b>. Adicione nas suas postagens botões com emoticons e colete reações dos membros do seu canal.
         
@@ -231,7 +231,7 @@ post:
     preview_sent: |
       Visualização de mensagens enviadas.
     
-    Você tem <b>${pluralize(posts, 'message', 'messages', 'messages')}</b> nesta postagem:
+    Você tem <b>${pluralize(postagens, 'mensagem', 'mensagens', 'mensagens')}</b> nesta postagem:
       ${messages}    
     error_parse: |
       Erros na formatação de texto:
