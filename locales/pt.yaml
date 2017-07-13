@@ -30,11 +30,11 @@ start:
     
     <b>URL Buttons.</b> Adicione botões personalizados em suas postagens para abrir links.
     
-    <b>Admins.</b> Você pode adicionar administradores para ajudá-lo a enviar novas postagens e gerenciar postagens programadas em seu canal.
+    <b>Admins.</b> Você pode adicionar administradores para ajudá-lo a enviar e gerenciar postagens programadas em seu canal.
     
-    <b>Stats.</b> Ficou fácil coletar e controlar o número de membros em seus canais em um determinados período de tempo.
+    <b>Stats.</b> Colete e controle facilmnete o número de membros em seus canais em um determinado período de tempo.
     
-    <b>Reactions</b>. Adicione em suas postagens botões com emoticons e colete reações dos membros do seu canal.
+    <b>Reactions</b>. Adicione nas suas postagens botões com emoticons e colete reações dos membros do seu canal.
         
     Bot pode enviar mensagens em silêncio e desabilitar pré-visualizações de links, e suporta todos os tipos de mensagem (textos, documentos, sticker, audios, videos, nota de voz, localização e outros).
     
@@ -70,10 +70,10 @@ start:
     /create - enviar uma nova mensagem
     /manage - gerenciador de postagens
        
+    /stats - obter estatísticas de um canal
     /feedback - entre em contato com um de nossos desenvolvedores
     
     /rate - avaliar bot
-    /help - respostas a perguntas básicas 
     
     /cancel - Cancelar a operação atual
     
