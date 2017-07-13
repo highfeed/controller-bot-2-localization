@@ -44,7 +44,7 @@ start:
     Envie uma mensagem para @ControllerSupportBot para relatar um problema, ou entrar em contato com um de nossos desenvolvedores.
     
     /rate — avaliar bot
-    /help — respostas a perguntas básicas
+    /help — obter lista de comandos
   do: OK. O que você quer fazer?
   choose_language: Por favor, escolha um idioma.
   choose_language_with_credits: |
@@ -94,8 +94,9 @@ start:
 channels:
   welcome: |
     Adicionar um novo canal ou editar as configurações existentes.
+  
   add: 
-    select_bot: |
+    select_bot: |    
       Escolha um bot para enviar mensagens para o seu canal.
     select_bot_and_help: |
       Para adicionar um novo canal você precisar inicialmente conectar um bot. Você pode conectar um único bot e usá-lo para todos os seus canais.
