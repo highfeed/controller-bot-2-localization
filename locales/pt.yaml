@@ -19,6 +19,7 @@ bots:
     Para oferecer uma melhor experiência ao usuário, este procedimento é necessário para evitar alguns limites do Bot API e garantir velocidade e estabilidade. Você pode conectar um único bot e usá-lo em todos os seus canais. 
     
     Envie uma mensagem para @ControllerSupportBot caso ocorra algum problema no momento que você estiver conectando um novo bot.
+
 start:
   welcome: |
     <b>Controller Bot</b> — excelente bot para proprietários de canais. Auxiliar no envio de mensagens formatadas e na criação de postagens programadas para canais.
@@ -31,6 +32,10 @@ start:
     
     <b>Admins.</b> Você pode adicionar administradores para ajudá-lo a enviar novas postagens e gerenciar postagens programadas em seu canal.
     
+    <b>Stats.</b> Ficou fácil coletar e controlar o número de membros em seus canais em um determinados período de tempo.
+    
+    <b>Reactions</b>. Adicione em suas postagens botões com emoticons e colete reações dos membros do seu canal.
+        
     Bot pode enviar mensagens em silêncio e desabilitar pré-visualizações de links, e suporta todos os tipos de mensagem (textos, documentos, sticker, audios, videos, nota de voz, localização e outros).
     
     <b>Como usar?</b>
@@ -56,6 +61,8 @@ start:
     Nos avalie com 5 estrelas no StoreBot se você gostou do Controller Bot: t.me/storebot?start=ControllerBot
   help: |
     Controller Bot ajuda você a enviar mensagens formatadas e criar postagens programadas no seu canal
+    
+    Você pode me controlar enviando os seguintes comandos:
     
     /channels - gerenciador de canais
     /addchannel - adicionar um novo canal
