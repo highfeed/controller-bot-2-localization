@@ -79,7 +79,7 @@ start:
     Um pequeno bônus para aqueles que irão fazer isso: você nunca mais verá esta mensagem :)
 
   bots:
-    Ajuda: |
+    help: |
       Não me parece um bot.
 
       Vá para @ControllerBot se quiser gerenciar seus canais e postagens. Envie /start para criar uma nova postagem. 
@@ -194,10 +194,11 @@ post:
       : 'O criador do canal deve ir nas configurações de canal e corrigir os problemas.'
     }
   problem_items: 
-    timezone_is_not_set: 🔹 O fuso horário não está definido
-    bot_is_not_connection: 🔹 O canal não está conectado a um bot
-    channel_not_found: 🔹 O canal não foi encontrado
-    bot_is_not_admin: 🔹 Bot conectado não foi adicionado aos administradores do canal
+    timezone_is_not_set: 🔹 o fuso horário não está definido
+    bot_is_not_connection: 🔹 o canal não está conectado a um bot
+    channel_not_found: 🔹 o canal não foi encontrado
+    bot_is_not_admin: 🔹 bot conectado não foi adicionado aos administradores do canal
+    bot_was_deleted: 🔹 the connected bot is no longer exist, or its token was revoked
     
   start: |
     Inicie o @ControllerBot para conectar um novo canal e começar a criar postagens.
@@ -206,11 +207,11 @@ post:
     welcome: |
       Aqui está: ${channel.name}.
 
-      Envie /markdown ou / HTML para obter dicas. Você também pode usar as opções de formatação integradas no seu cliente Telegram.
-
+      Envie /markdown ou /HTML para obter dicas. Você também pode usar as opções de formatação integradas no seu cliente Telegram.
+    start: |
       Me envie uma ou várias mensagens que você deseja incluir na postagem. Pode ser qualquer coisa — um texto, foto, video, até mesmo um sticker.
 
-      Se você tiver alguma dúvida, dê uma olhada em <a href="http://telegra.ph/Controller-Help-03-20"> Controller Help</a>.
+      Se você tiver alguma dúvida, dê uma olhada em <a href="http://telegra.ph/Controller-Help-03-20">Controller Help</a>.
     settings: |
       Envie /markdown ou / HTML para obter dicas. Você também pode usar as opções de formatação integradas no seu cliente Telegram.
     clear: Sucesso! Todas as mensagens foram excluídas.
@@ -534,6 +535,7 @@ keyboard:
     
     send:
       send_now: Enviar Agora
+      sent: View Post in Channel
       create_scheduled: Bloquear
       
       send: Enviar
