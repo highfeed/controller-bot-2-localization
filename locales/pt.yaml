@@ -36,7 +36,7 @@ start:
     
     <b>Reactions</b>. Adicione nas suas postagens botões com emoticons e colete reações dos membros do seu canal.
         
-    Este Bot pode enviar mensagens em silêncio, desativar pré-visualizações de links e suporta todos os tipos de mensagem (textos, documentos, sticker, audios, videos, nota de voz, localização e outros).
+    Posso enviar mensagens silenciadas e desativar a pré-visualizações de links, além de suportar todos os tipos de mensagem e formatações integradas dos clientes Telegram.
     
     <b>Como usar?</b>
     Envie /addchannel, escolha 'Add Channel' e siga as instruções para adicionar um novo canal.
@@ -55,7 +55,7 @@ start:
     Italian — @Myosotis85
     Portuguese - @adiltons
 
-    Você pode <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">nos ajudar a traduzir</a> o bot. Junte-se a nossa equipe de tradução.
+    Você pode <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">nos ajudar a traduzir</a> o bot. Junte-se a nossa equipe de tradutores.
   language_changed: OK, idioma salvo.
   rate: |
     Nos avalie com 5 estrelas no StoreBot se você gostou do Controller Bot: t.me/storebot?start=ControllerBot
@@ -120,7 +120,7 @@ channels:
       bot_is_not_admin: |
         Adicione @${username} aos administradores do seu grupo.
       channels_already_added: |
-        Este canal já foi adicionado por ${admin.first_name}${admin.last_name? '' + Admin.last_name: ''} $ {admin.username? '@' + Admin.username: ''}. Você pode solicitar a este usuário que o nomeie como administrador nas configurações do canal (Canais - escolha o canal - Gerenciar Administradores - Adicionar) ou exclua este canal do Controller Bot para que você possa adicioná-lo novamente sozinho.
+        Este canal já foi adicionado por ${admin.first_name}${admin.last_name? '' + Admin.last_name: ''} $ {admin.username? '@' + Admin.username: ''}. Você pode solicitar a este usuário que o nomeie como administrador nas configurações do canal (Canais - escolha o canal - Gerenciar Administradores - Adicionar) ou exclua este canal do Controller Bot para que você possa adicioná-lo novamente.
       bot_was_deleted: |
         Não é possível adicionar um canal. @${Username} não existe, ou seu token foi anulado. Reconecte este bot ou escolha outro.
 
@@ -242,10 +242,10 @@ post:
     posts_sent: Sucesso! As mensagens foram enviadas.
     continue_collect: Lista atualizada de botões com URL. Você pode continuar enviando mensagens. 
     html: |
-      <b>bold</b>
+      <b>negrito</b>
       &lt;b&gt;bold&lt;/b&gt;
       
-      <i>italic</i>
+      <i>itálico</i>
       &lt;i&gt;italic&lt;/i&gt;
       
       <a href="http://www.example.com/">inline URL</a>
@@ -257,14 +257,14 @@ post:
       <pre>pre-formatted fixed-width code block</pre>
       &lt;pre&gt;pre-formatted fixed-width code block&lt;/pre&gt;
     markdown: |
-      <b>bold text</b>
-      *bold text*
+      <b>texto em negrito</b>
+      *texto em negrito*
       
-      <i>italic text</i>
-      _italic text_
+      <i>texto em itálico</i>
+      _texto em itálico_
       
-      <a href="http://www.example.com/">text</a>
-      [text](http://www.example.com/)
+      <a href="http://www.example.com/">texto</a>
+      [texto](http://www.example.com/)
       
       <code>inline fixed-width code</code>
       `inline fixed-width code`
@@ -278,8 +278,8 @@ post:
     inline:
       welcome: |
         Me envie uma lista de botões com URL para a mensagem. Use este formato:
-        <pre>Label text - http://www.example.com/
-        Another label text - http://www.example2.com/
+        <pre>Texto de atalho - http://www.example.com/
+        Outro texto de atalho - http://www.example2.com/
         </pre>
         
         Escolha 'Cancel' para voltar a criação de postagem.
@@ -353,13 +353,13 @@ post:
       1530   -> 15:30</pre>
       
       <b>Os seguintes formatos de data são suportados:</b>
-      <pre>6      -> 6 of the current month
-      9 6    -> May 9
-      8 7 17 -> Jun 8, 2017</pre>
+      <pre>6      -> Dia 6 de cada mês
+      9 6    -> 9 de Junho
+      8 7 17 -> 8 de Julho, 2017</pre>
       
       Você também pode usar dois pontos e pontos em vez de espaços para separação. 
       
-      Se você enviar apenas o tempo, o post será enfileirado no dia atual por padrão. Para bloquear o post em qualquer outro dia envie hora+data. Por exemplo, <code>16 30 6 8 -> 16:30, Aug 6</code>
+      Se você enviar apenas o tempo, o post será enfileirado no dia atual por padrão. Para bloquear o post em qualquer outro dia envie hora+data. Por exemplo, <code>16 30 6 8 -> 16:30, 6 de Agosto</code>
     error_date: Data e hora incorretas. Escolha 'Help' para obter sugestões.
     invalid_date: Data incorreta.
     limit: 'Você precisa escolher um tempo superior a um 1 minuto. A data e hora atuais são ${current_date}'
@@ -409,7 +409,7 @@ posts:
   bot_was_deleted: |
     Não foi possível visualizar esta mensgaem programada, pois o bot usado para criar foi excluído.
   view_scheduled_post: |
-    The post will be sent to ${channel.name}${channel.username ? ' @' + channel.username : ''} on ${date}.
+    A postagem será enviada para ${channel.name}${channel.username ? ' @' + channel.username : ''} em ${date}.
     
     Você tem ${pluralize(posts, 'message', 'messages', 'messages')} neste post:
     ${messages}
@@ -508,8 +508,8 @@ keyboard:
       
   post:
     settings: 
-      disable_notification_disable: 'Transmissão silenciosa: OFF'
-      disable_notification_enable: 'Transmissão silenciosa: ON'
+      disable_notification_disable: 'Notificação silenciosa: OFF'
+      disable_notification_enable: 'Notificação silenciosa: ON'
       
       disable_web_page_preview_disable: 'Pré-visualização Link: ON'
       disable_web_page_preview_enable: 'Pré-visualização Link: OFF'
@@ -517,8 +517,8 @@ keyboard:
       parse_mode_markdown: 'Estilo de formatação: Markdown'
       parse_mode_html: 'Estilo de formatação: HTML'
 
-      default_reactions_disable: 'Reações Padrões: OFF'
-      default_reactions_enable: 'Reações Padrões: ON'
+      default_reactions_disable: 'Reações padrões: OFF'
+      default_reactions_enable: 'Reações padrões: ON'
     
     control_channel: Ir para Configurações de canal
     return_to_channels: « Voltar à lista de canais
@@ -532,21 +532,21 @@ keyboard:
     clear_inline: Excluir Botões com URL
     cancel_inline: Cancelar
 
-    add_reactions: Add Reactions
-    clear_reactions: Delete Reactions
+    add_reactions: Adicionar Reações
+    clear_reactions: Excluir Reações
     
-    clear: Delete All 
-    preview: Preview
+    clear: Apagar Tudo 
+    preview: Pré-visualização
     open_settings: Opções
     done: Enviado
     cancel: Cancelado
 
-    silent_enable: 'Notify: ON'
-    silent_disable: 'Notify: OFF'
+    silent_enable: 'Notificações: ON'
+    silent_disable: 'Notificações: OFF'
 
     send:
       send_now: Enviar Agora
-      sent: View Post in Channel
+      sent: Visualizar Postagens no Canal
       create_scheduled: Bloquear
       
       send: Enviar
@@ -575,17 +575,17 @@ keyboard:
       cancel: Cancelar
       open_edited_post: Visualizar Postagem no Canal
 
-    edit_sent_posts: Editar Mensagens enviadas
-    view_schedule: Gerenciador Postagens
-    view: Visualizar Postagem
-    edit_time: Edit Time
+    edit_sent_posts: Editar mensagens enviadas
+    view_schedule: Gerenciar postagens
+    view: Visualizar postagem
+    edit_time: Editar tempo
     delete: Excluir postagem
     yes: Sim
     cancel: Não
 
   statistics:
-    view_periods: Visualizar Período
-    view_via_web: Visualizar via Web
+    view_periods: Visualizar períodos
+    view_via_web: Visualizar via WEB
     share: Compartilhar
 
     periods:
