@@ -125,8 +125,8 @@ channels:
         Não é possível adicionar um canal. @${Username} não existe, ou seu token foi anulado. Reconecte este bot ou escolha outro.
 
         Envie uma mensagem para @ControllerSupportBot se surgirem problemas quando você conecta seu próprio bot.
-    control:     
-      options: 'Aqui está: ${channel.name}. O que você quer fazer com o canal?'
+  control:
+    options: 'Aqui está: ${channel.name}. O que você quer fazer com o canal?'
     
     delete_confirm: |
       Tem certeza de que deseja excluir este canal?
@@ -156,7 +156,7 @@ channels:
       🔹 GMT ${timezone.gmtOffset > 0 ? '+' + timezone.gmtOffset : timezone.gmtOffset} (${timezone.timeZoneId})
       🔹 ${countryName}, ${name}
      
-     Localização está correta? Se não, tente me enviar o nome de outra cidade próxima a você.
+      Localização está correta? Se não, tente me enviar o nome de outra cidade próxima a você.
     error_timezone: Desculpe, eu não consigo encontrar sua cidade. Tente me enviar o nome de outra cidade próxima.
     error_request_timezone: Ocorreu um erro :( Por favor, tente novamente. Envie /feedback caso o erro continue por algum motivo.
     save_timezone: OK, seu fuso horário foi salvo.
@@ -231,7 +231,7 @@ post:
     preview_sent: |
       Visualização de mensagens enviadas.
     
-    Você tem <b>${pluralize(postagens, 'mensagem', 'mensagens', 'mensagens')}</b> nesta postagem:
+      Você tem <b>${pluralize(posts, 'mensagem', 'mensagens', 'mensagens')}</b> nesta postagem:
       ${messages}    
     error_parse: |
       Erros na formatação de texto:
