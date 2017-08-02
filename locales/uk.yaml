@@ -3,52 +3,52 @@ name: Ukrainian
   
 bots:
   welcome: |
-    To connect a bot you should follow these two steps:
+    Щоб під'єднати бота, вам потрібно виконати ці два кроки:
     
-    1. Open @BotFather and <a href="http://telegra.ph/Create-Bot-Controller-FAQ-03-28">create a new bot</a>.
-    2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
+    1. Відкрийте @BotFather та <a href="http://telegra.ph/Create-Bot-Controller-FAQ-03-28">створіть нового бота</a>.
+    2. Ви отримаєте токен (наприклад 12345:6789ABCDEF) — просто перешліть чи скопіюйте-вставте його мені.
     
-    <b>Warning!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect. 
+    <b>Увага!</b> Не приєднуйте ботів, які вже використовуються в інших сервісах як-от Chatfuel, Manybot, і т.д. 
   
-  wrong_token: Doesn't look like anything to me. Please send me a token of your bot.
-  error_add: Invalid token. Try to get a new one or use a token of another bot.
-  bot_already_added: Looks familiar to me. You already have this bot connected.
+  wrong_token: Щось не те. Будь ласка, надішліть мені токен вашого бота.
+  error_add: Хибний токен. Спробуйте отримати новий чи використайте токен іншого бота.
+  bot_already_added: Виглядає схоже. Ви вже під'єднали цього бота.
   help: |
-    🔹 Why do I need to connect a bot?
+    🔹 Чому мені потрібно під'єднувати бота?
     
-    This avoid some Bot API limits for a better user experience, speed and stability. You can connect one bot and use it for all your channels. 
+    Це дозволить уникнути деяких лімітів Bot API задля кращого досвіду використання, швидкості та стабільності. Ви можете приєднати одного бота та використовувати його для всіх ваших каналів. 
     
-    Message us at @ControllerSupportBot if any issues appeared when you connect your own bot.
+    Напишіть нам на @ControllerSupportBot, якщо у вас з'явилися деякі проблеми при під'єднанні вашого бота.
 
 start:
   welcome: |
-    <b>Controller Bot</b> is a bot for channel owners that helps you to create rich posts, view stats and more.
+    <b>Controller Bot</b> - це бот для власників каналів, що допоможе вам створити форматовані публікації,  переглядати статистику та більше.
     
-    <b>Formatted Posts.</b> Send posts with bold, italic, fixed-width text and inline links.
+    <b>Форматовані публікації.</b> Надсилайте публікації з жирним, курсивом, моноширинним текстом та вбудовані посилання.
     
-    <b>Scheduled Posts.</b> Create an unlimited number of scheduled posts in your channels.
+    <b>Заплановані публікації.</b> Створюйте необмежену кількість запланованих публікацій у ваших каналах.
     
-    <b>URL Buttons.</b> Add to any post inline buttons that can open links.
+    <b>Кнопки-посилання.</b> Додавайте до кожної публікації інлайн-кнопки, що можуть відкривати посилання.
     
-    <b>Admins.</b> Add admins to help you send new posts and manage scheduled posts.
+    <b>Адміни.</b> Додавайте адмінів для допомоги вам у надсиланні нових публікацій та керування запланованих публікацій.
 
-    <b>Stats.</b> Easy collect and track a number of members in your channels for certain periods of time.
+    <b>Статистика.</b> Легко відстежуйте кількість учасників у ваших каналах для окремих періодів часу.
 
-    <b>Reactions</b>. Add to your posts emoji-based like buttons and collect reactions of members in your channels.
+    <b>Реакції</b>. Додавайте до ваших публікацій кнопки з емодзі та збирайте відгуки від учасників у вашому каналі.
     
-    Bot can send posts silently and disable previews for links, as well as accepts all message types and supports built-in formatting options of Telegram clients.
+    Бот може надсилати публікації без сповіщень та вимикати передогляди посилань, так само, як і приймати всі типи повідомлень та підтримувати вбудовані варіанти форматування клієнтів Telegram.
     
-    <b>How to start?</b>
-    Send /addchannel, choose a connected bot or add a new one and follow the instructions to add a new channel.
+    <b>Як розпочати?</b>
+    Надішліть /addchannel, виберіть під'єднаного бота чи додайте нового та дотримуйтесь інструкцій, щоб додати новий канал.
     
-    Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
+    Напишіть нам повідомлення на @ControllerSupportBot, якщо у вас є якісь питання чи проблеми щодо Controller Bot.
     
-    /rate — rate bot
-    /help — get a list of commands
-  do: OK. What do you want to do?
-  choose_language: Please choose your language.
+    /rate — оцінити бота
+    /help — отримати список команд
+  do: Гаразд. Що ви хочете зробити?
+  choose_language: Будь ласка, виберіть вашу мову.
   choose_language_with_credits: |
-    Please choose your language.
+    Будь ласка, виберіть вашу мову.
 
     Spanish — Roberdcr
     French — Teladi Fisher
