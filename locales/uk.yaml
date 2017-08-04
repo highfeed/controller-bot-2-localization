@@ -55,111 +55,111 @@ start:
     Italian — @Myosotis85
     Portuguese - @adiltons
 
-    You can <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">help us translate</a> the bot and join our translation team.
-  language_changed: OK, your language saved.
+    Ви можете <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">допомогти нам перекласти</a> бота та приєднатися до нашої команди перекладачів.
+  language_changed: Гаразд, вашу мову збережено.
   rate: |
-    Give us 5 stars on Store Bot if you like Controller Bot: t.me/storebot?start=ControllerBot
+    Поставте нам 5 зірок у Store Bot, якщо вам подобається Controller Bot: t.me/storebot?start=ControllerBot
   help: |
-    I can help you send formatted posts and create scheduled posts in your channels.
+    Я можу допомогти вам надсилати форматовані публікації та створювати заплановані публікації у ваших каналах.
 
-    You can control me by sending these commands:
+    Ви можете контролювати мене, надсилаючи такі команди:
     
-    /channels - manage channels
-    /addchannel - add a new channel
+    /channels - керувати каналами
+    /addchannel - додати новий канал
 
-    /create - create a new post
-    /manage - manage posts
+    /create - створити нову публікацію
+    /manage - керувати публікаціями
        
-    /stats - get stats for a channel
-    /feedback - how to contact the devs
+    /stats - отримати статистику каналу
+    /feedback - як з'єднатися з розробниками
     
-    /rate - rate bot
+    /rate - оцінити бота
     
-    /cancel - cancel the current operation
+    /cancel - скасувати поточну дію
     
   feedback:
-    Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
+    Напишіть нам повідомлення на @ControllerSupportBot, якщо у вас є якісь питання чи проблеми щодо Controller Bot.
 
   channel: |
-    Join @BotUpdates to stay tuned for news about this one and other our bots.
+    Приєднайтеся до @BotUpdates, щоб завжди бути на зв'язку для новин про цього та інших наших ботів.
 
-    A small bonus for those who will do this: you will never see this message again :)
+    Маленький бонус для тих, хто це зробить: ви більше ніколи не побачите це повідомлення знову :)
 
   bots:
     help: |
-      Doesn't look like anything to me. 
+      Щось не те. 
       
-      Go to @ControllerBot if you want to manage your channels and posts. Send /start to create a new post.
+      Перейдіть до @ControllerBot, якщо ви хочете керувати вашими каналами та публікаціями. Надішліть /start, щоб створити нову публікацію.
 
 channels:
   welcome: |
-    Add a new channel or edit settings of added ones.
+    Додайте новий канал чи редагуйте налаштування вже доданих.
 
   add: 
     select_bot: |
-      Choose a bot to send posts to the channel.
+      Виберіть бота, щоб надіслати публікації до каналу.
     select_bot_and_help: |
-      To add a new channel you need to connect your own bot first. You can connect one bot and use it for all your channels. 
+      Щоб додати новий канал, спершу вам потрібно під'єднати вашого власного бота. Ви можете під'єднати одного бота та використовувати його для всіх ваших каналів. 
       
-      Choose \'Connect Bot\' and follow the instructions.
+      Виберіть \'Connect Bot\' та дотримуйтеся інструкцій.
     welcome: |
-      To add a channel you should follow these two steps:
+      Щоб додати канал, ви повинні виконати такі два кроки:
     
-      1. <a href="http://telegra.ph/Add-Bot-to-Admins-Controller-FAQ-03-28">Add @${username} to admins</a> of your channel.   
-      2. Then forward to me any message from your channel (you can also send me its username or ID).
+      1. <a href="http://telegra.ph/Add-Bot-to-Admins-Controller-FAQ-03-28">Додайте @${username} до адмінів</a> вашого каналу.   
+      2. Потім перешліть мені будь-яке повідомлення з вашого каналу (також ви можете мені надіслати його псевдонім чи ID).
 
-    ok: Success! The channel has been added.
+    ok: Успіх! Канал додано.
     
     error:
       data: |
-        Please forward to me any message from your channel. Or send me its username or ID instead.
+        Будь ласка, перешліть мені будь-яке повідомлення з вашого каналу. Чи натомість надішліть мені його псевдонім чи ID.
       get_admins: |
-        Add @${username} to admins of your channel. Please check everything twice and try again.
+        Додайте @${username} до адмінів вашого каналу. Будь ласка, перевірте все двічі та спробуйте ще.
     
-        Send /feedback to let us know if for some reason it doesn't change anything.
+        Надішліть /feedback, щоб дати нам знати з якої причини нічого не змінилося.
       bot_is_not_admin: |
-        Add @${username} to admins of your group.
+        Додайте @${username} до адмінів вашої групи.
       channels_already_added: |
-        This channel is already added by ${admin.first_name}${admin.last_name ? ' ' + admin.last_name : ''}${admin.username ? ' @' + admin.username : ''}. You can ask this user to appoint you as an admin in the channel settings (Channels — choose the channel — Manage Admins — Add) or delete this channel from Controller Bot so you can add it again by yourself.
+        Цей канал вже додано користувачем ${admin.first_name}${admin.last_name ? ' ' + admin.last_name : ''}${admin.username ? ' @' + admin.username : ''}. Ви можете попросити цього користувача призначити вас адміном у налаштуваннях каналу (Канали — відкрийте канал — Керувати адмінами — Додати) чи видалити цей канал з Controller Bot, щоб ви знову могли додато його власноруч.
       bot_was_deleted: |
-        Unable to add a channel. @${username} is no longer exist, or its token was revoked. Reconnect this bot or choose another. 
+        Неможливо додати канал. @${username} більше не існує чи його токен було відкликано. Під'єднайте цього бота повторно чи виберіть іншого. 
         
-        Message us at @ControllerSupportBot if any issues appeared when you connect your own bot. 
+        Надішліть нам повідомлення на @ControllerSupportBot, якщо у вас з'являлися якісь проблеми під час під'єднання вашого власного бота. 
   control:
-    options: 'Here it is: ${channel.name}. What do you want to do with the channel?'
+    options: 'Ось він: ${channel.name}. Що ви хочете зробити з каналом?'
     
     delete_confirm: |
-      Are you sure you want to delete this channel?
+      Ви дійсно хочете видалити цей канал?
       
-      All scheduled posts for this channel will be also deleted.
-    channel_deleted: Done! The channel is gone.
+      Усі заплановані публікації для цього каналу також будуть видалені.
+    channel_deleted: Готово! Канал відсутній.
     
     select_bot: |
       ${count 
-        ? 'Choose a bot that will be used to send posts in the channel.' 
-        : 'There is no connected bots yet. Send /addchannel and choose \'Connect Bot\' to connect a new one.'
+        ? 'Виберіть бота, який буде надсилати публікації до каналу.' 
+        : 'Ще немає під'єднаних ботів. Надішліть /addchannel та виберіть \'Під'єднати бота\', щоб під'єднати нового.'
       }
-    bot_is_not_admin: Add the bot to admins of your channel.
-    current_bot: Unable to choose currently used bot.
+    bot_is_not_admin: Додайте бота до адмінів вашого каналу.
+    current_bot: Неможливо вибрати наразі використовуваного бота.
     
     set_timezone: |
-      <b>Success! The channel has been added.</b>
+      <b>Успіх! Канал додано.</b>
       
-      Now send me the name of your city, so I'll be able to determine your time zone. Your time zone is required for the management of scheduled posts.
+      Тепер надішліть мені назву вашого міста, щоб я міг визначити ваш часовий пояс. Ваш часовий пояс потрібний для керування запланованих публікацій.
     
     timezone: |
-      Current time zone:
-      ${city ? '🔹 GMT ' + (gmt > 0 ? '+' + gmt : gmt) + '\n🔹 ' + timezone_id + ' — ' + city : '🔹 None'}
+      Поточна часова зона:
+      ${city ? '🔹 GMT ' + (gmt > 0 ? '+' + gmt : gmt) + '\n🔹 ' + timezone_id + ' — ' + city : '🔹 Немає'}
       
-      Send me the name of the city close to you.
+      Надішліть мені місто поблизу вас.
     check_timezone: |
       🔹 GMT ${timezone.gmtOffset > 0 ? '+' + timezone.gmtOffset : timezone.gmtOffset} (${timezone.timeZoneId})
       🔹 ${countryName}, ${name}
       
-      Is it right? If not, try to send me the name of another city close to you.
-    error_timezone: Sorry, I can't find this city. Try to send me the name of another city close to you.
-    error_request_timezone: Something went wrong :( Please try again. Send /feedback to let us know if for some reason it doesn't change anything.
-    save_timezone: OK, your timezone saved.
+      Так? Якщо ні - спробуйте надіслати мені назву іншого міста поблизу вас.
+    error_timezone: Вибачте, я не можу знати це місто. Спробуйте надіслати мені назву іншого міста поблизу вас.
+    error_request_timezone: Щось пішло не так :( Будь ласка, спробуйте ще. Надішліть /feedback, щоб дати нам знати, з якої причини нічого не змінилося.
+    save_timezone: Гаразд, ваш часовий пояс збережено.
     
   admins:
     add: Forward to me any message from the user you want to appoint as an admin of the channel.
