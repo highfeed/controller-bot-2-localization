@@ -22,29 +22,12 @@ bots:
 
 start:
   welcome: |
-    <b>Controller Bot</b> is a bot for channel owners that helps you to create rich posts, view stats and more.
+    <b>Controller Bot</b> is a bot for channel owners that helps you to create rich posts, view stats and accomplish other tasks. Read more <a href="http://telegra.ph/What-is-Controller-Bot-08-05">here</a>.
     
-    <b>Formatted Posts.</b> Send posts with bold, italic, fixed-width text and inline links.
+    /addchannel - add a new channel
     
-    <b>Scheduled Posts.</b> Create an unlimited number of scheduled posts in your channels.
-    
-    <b>URL Buttons.</b> Add to any post inline buttons that can open links.
-    
-    <b>Admins.</b> Add admins to help you send new posts and manage scheduled posts.
-
-    <b>Stats.</b> Easy collect and track a number of members in your channels for certain periods of time.
-
-    <b>Reactions</b>. Add to your posts emoji-based like buttons and collect reactions of members in your channels.
-    
-    Bot can send posts silently and disable previews for links, as well as accepts all message types and supports built-in formatting options of Telegram clients.
-    
-    <b>How to start?</b>
-    Send /addchannel, choose a connected bot or add a new one and follow the instructions to add a new channel.
-    
-    Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
-    
-    /rate — rate bot
     /help — answers to basic questions
+    /feedback - how to contact the devs
   do: OK. What do you want to do?
   choose_language: Please choose your language.
   choose_language_with_credits: |
@@ -105,7 +88,7 @@ channels:
     welcome: |
       To add a channel you should follow these two steps:
     
-      1. Add @${username} to admins of your channel.<a href="http://telegra.ph/Add-Bot-to-Admins-Controller-FAQ-03-28">⁠</a>   
+      1. <a href="http://telegra.ph/Add-Bot-to-Admins-Controller-FAQ-03-28">Add @${username} to admins</a> of your channel. 
       2. Then forward to me any message from your channel (you can also send me its username or ID).
 
     ok: Success! The channel has been added.
