@@ -3,7 +3,7 @@ name: English
   
 bots:
   welcome: |
-    To connect a bot you should follow these two steps:
+    To connect a bot, you should follow these two steps:
     
     1. Open @BotFather and <a href="http://telegra.ph/Create-Bot-Controller-FAQ-03-28">create a new bot</a>.
     2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
