@@ -44,7 +44,7 @@ start:
     Message us at @ControllerSupportBot if you have any questions or issues about Controller Bot.
     
     /rate — rate bot
-    /help — get a list of commands
+    /help — answers to basic questions
   do: OK. What do you want to do?
   choose_language: Please choose your language.
   choose_language_with_credits: |
@@ -60,7 +60,7 @@ start:
   rate: |
     Give us 5 stars on Store Bot if you like Controller Bot: t.me/storebot?start=ControllerBot
   help: |
-    I can help you send formatted posts and create scheduled posts in your channels.
+    If you have any questions, take a look at the <a href="http://telegra.ph/Controller-Help-03-20">Controller Help</a>.
 
     You can control me by sending these commands:
     
@@ -105,7 +105,7 @@ channels:
     welcome: |
       To add a channel you should follow these two steps:
     
-      1. <a href="http://telegra.ph/Add-Bot-to-Admins-Controller-FAQ-03-28">Add @${username} to admins</a> of your channel.   
+      1. Add @${username} to admins of your channel.<a href="http://telegra.ph/Add-Bot-to-Admins-Controller-FAQ-03-28">⁠</a>   
       2. Then forward to me any message from your channel (you can also send me its username or ID).
 
     ok: Success! The channel has been added.
