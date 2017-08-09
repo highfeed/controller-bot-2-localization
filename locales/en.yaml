@@ -26,7 +26,7 @@ start:
     
     /addchannel - add a new channel
     
-    /help — answers to basic questions
+    /help - answers to basic questions
     /feedback - how to contact the devs
   do: OK. What do you want to do?
   choose_language: Please choose your language.
