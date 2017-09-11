@@ -625,7 +625,7 @@ keyboard:
     preview: Предпросмотр
     open_settings: Настройки
     done: Далее
-    cancel: Отменить пост
+    cancel: Отменить
 
     silent_enable: 'Уведомление: вкл.'
     silent_disable: 'Уведомление: выкл.'
