@@ -5,7 +5,7 @@ bots:
   welcome: |
     Pour connecter un bot veuillez suivre ces deux étapes:
 
-    1. Ouvrir @BotFather, puis entrez <code>/newbot</code> et choisissez un nom et un nom d'utilisateur pour votre bot.
+    1. Ouvrir @BotFather, puis entrer <code>/newbot</code> et choisir un nom et un nom d'utilisateur pour votre bot.
     2. Vous obtiendrez un jeton (e.g. 12345:6789ABCDEF) — faire un copier-coller vers moi ou me le transferer.
 
     <b>Warning!</b> Ne pas connecter des bots déjà utilisés par d'autres services comme Chatfuel, Manybot, ect.
@@ -14,7 +14,7 @@ bots:
   error_add: Jeton invalide. Essayez d'en obtenir un nouveau ou utilisez celui d'un autre bot.
   bot_already_added: Il me semble familier. Ce bot est déjà connecté.
   help: |
-    🔹 Pourquoi dois-je connecter un bot?
+    🔹 Pourquoi connecter un bot?
 
     Ceci évite certaines limites des API pour bots, pour une meilleure expérience utilisateur, rapidité et stabilité. Vous pouvez connecter un bot et l'utilisez pour toutes vos chaînes.
 
@@ -45,18 +45,18 @@ start:
 
     /rate — noter le bot
     /help — obtenir la liste des commandes
-  do: OK. Que voulez vous effectuer?
+  do: Ensuite?
   choose_language: Veuillez choisir une langue.
   choose_language_with_credits: |
     Veuillez choisir une langue.
 
     Spanish — Roberdcr
-    French — Teladi Fisher
+    Français — Teladi Fisher
     Italian — @Myosotis85
     Portuguese - @adiltons
 
     Vous pouvez <a href="http://telegra.ph/Translate-Controller-FAQ-03-22">nous aider à traduire</a> ce bot et rejoindre l'équipe de traduction.
-  language_changed: OK, langue sauvegardée.
+  language_changed: Langue sauvegardée.
   rate: |
     Notez 5 étoiles sur StoreBot si vous aimez Controller Bot: t.me/storebot?start=ControllerBot
   help: |
