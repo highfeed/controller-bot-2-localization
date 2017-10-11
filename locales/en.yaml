@@ -222,7 +222,6 @@ post:
       <pre>${description}</pre>
       
       Please <a href="http://telegra.ph/Parsing-Error-Fix-Controller-FAQ-03-28">fix all errors</a> and send message again.
-    posts_sent: Success! Messages have been sent.
     continue_collect: You can continue to send me messages. 
     html: |
       <b>bold</b>
@@ -292,6 +291,15 @@ post:
           ${reactions.length ? 'Current default reactions: ' + reactions.join(' ') : ''}
         saved: Default reactions saved.
         deleted: Default reactions disabled.
+    image:
+      welcome: Send me a photo to attach it as link preview.
+      only_link_or_photo: Send me a photo or a link.
+      error: |
+    An error occurred while uploading.
+     
+    Message us at @ControllerSupportBot to report an issue.
+      save: The photo attached.
+      cleared: Attached photo deleted.
         
   preview:
     ok: |
@@ -343,12 +351,19 @@ post:
       You can also use colons and dots instead of spaces for separation. 
       
       If you send only time, the post will be enqueued at the current day by default. To enqueue the post at any other day send time+date. For example, <code>16 30 6 8 -> 16:30, Aug 6</code>
-    error_date: Incorrect date and time. Choose 'Help' to get a hint.
+    error_date: Incorrect date or time. Choose 'Help' to get a hint.
     invalid_date: Incorrect date.
     limit: 'You need to choose a time more than the current by 1 minute or more. The current date and time is ${current_date}'
     limit_year: Unable to choose a time over than the current by 1 year or more. Who knows what is going to happen... :)
     ok: |
       Scheduled post has been сreated. The post will be sent to <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
+
+timer:
+    welcome: |
+      Choose or send a period in hours after which the post will self-destruct.
+    wrong_hour: Incorrect time. Only periods from 1 to 72 hours are allowed.
+    save_timer: The self-destruct timer saved.
+    timer_off: The self-destruct timer disabled.
       
 posts:
   edit:
@@ -507,13 +522,13 @@ keyboard:
     return_to_channels: « Back to Channels List
     
     continue: Continue »
-    
-    delete: Delete Message
+
+    add_image: Attach Photo
+    clear_image: Delete Attached Photo
     
     add_inline: Add URL Buttons
     save_inline: Save URL Buttons
     clear_inline: Delete URL Buttons
-    cancel_inline: Cancel
     
     add_reactions: Add Reactions
     clear_reactions: Delete Reactions
@@ -524,10 +539,17 @@ keyboard:
     done: Send
     cancel: Cancel
 
+    more: ⇣ Show More Actions
+
+    delete: Delete Message
+
     silent_enable: 'Notify: ON'
     silent_disable: 'Notify: OFF'
+    preview_enable: 'Link Preview: ON'
+    preview_disable: 'Link Preview: OFF'
     
     send:
+      self_destruct_timer: "${'Self-Destruct Timer:' + hours ? hours + 'h' : 'Set Self-Destruct Timer'}"
       send_now: Send Now
       sent: View Post in Channel
       create_scheduled: Enqueue
