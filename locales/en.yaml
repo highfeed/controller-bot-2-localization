@@ -202,7 +202,7 @@ post:
     start: |
       Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
 
-      If you have any questions, take a look at the <a href="http://telegra.ph/Controller-Help-03-20">Controller Help</a>.
+
     settings: |
       Send /markdown or /HTML to get a hint. You can also use built-in formatting options of your Telegram client.
     clear: Success! All messages have been deleted.
@@ -295,9 +295,9 @@ post:
       welcome: Send me a photo to attach it as link preview.
       only_link_or_photo: Send me a photo or a link.
       error: |
-    An error occurred while uploading.
-     
-    Message us at @ControllerSupportBot to report an issue.
+        An error occurred while uploading.
+
+        Message us at @ControllerSupportBot to report an issue.
       save: The photo attached.
       cleared: Attached photo deleted.
         
@@ -517,6 +517,8 @@ keyboard:
 
       default_reactions_disable: 'Default Reactions: OFF'
       default_reactions_enable: 'Default Reactions: ON'
+
+    faq: FAQ
     
     control_channel: Go to Channel Settings
     return_to_channels: « Back to Channels List
@@ -549,7 +551,10 @@ keyboard:
     preview_disable: 'Link Preview: OFF'
     
     send:
-      self_destruct_timer: "${'Self-Destruct Timer:' + hours ? hours + 'h' : 'Set Self-Destruct Timer'}"
+      self_destruct_timer: "${+hours
+        ? 'Self-Destruct Timer: ' + hours + 'h'
+        : 'Set Self-Destruct Timer'
+      }"
       send_now: Send Now
       sent: View Post in Channel
       create_scheduled: Enqueue
