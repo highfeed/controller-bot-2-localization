@@ -198,13 +198,12 @@ post:
     welcome: |
       Here it is: ${channel.name}.
       
-      Send /markdown or /HTML to get a hint. You can also use built-in formatting options of your Telegram client.
+      You can change the settings that will be used by default. Send /markdown or /HTML to get a hint.
     start: |
       Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
 
-
     settings: |
-      Send /markdown or /HTML to get a hint. You can also use built-in formatting options of your Telegram client.
+      You can change the settings that will be used by default. Send /markdown or /HTML to get a hint.
     clear: Success! All messages have been deleted.
     message_deleted: Done! The message has been deleted.
     not_posts: |
@@ -518,7 +517,7 @@ keyboard:
       default_reactions_disable: 'Default Reactions: OFF'
       default_reactions_enable: 'Default Reactions: ON'
 
-    faq: FAQ
+    faq: Help
     
     control_channel: Go to Channel Settings
     return_to_channels: « Back to Channels List
@@ -541,7 +540,7 @@ keyboard:
     done: Send
     cancel: Cancel
 
-    more: ⇣ Show More Actions
+    more: ⇣ Show Actions
 
     delete: Delete Message
 
