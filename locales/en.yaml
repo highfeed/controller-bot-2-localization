@@ -357,7 +357,7 @@ post:
     ok: |
       Scheduled post has been сreated. The post will be sent to <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
 
-timer:
+  timer:
     welcome: |
       Choose or send a period in hours after which the post will self-destruct.
     wrong_hour: Incorrect time. Only periods from 1 to 72 hours are allowed.
@@ -554,6 +554,7 @@ keyboard:
         ? 'Self-Destruct Timer: ' + hours + 'h'
         : 'Set Self-Destruct Timer'
       }"
+      hours: ${hour}h
       send_now: Send Now
       sent: View Post in Channel
       create_scheduled: Enqueue
