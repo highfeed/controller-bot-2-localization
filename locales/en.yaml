@@ -128,7 +128,7 @@ channels:
     set_timezone: |
       <b>Success! The channel has been added.</b>
       
-      Now send me the name of your city, so I'll be able to determine your time zone. Your time zone is required for the management of scheduled posts.
+      Now send me the name of your city, so I will be able to determine your time zone. Your time zone is required for the management of scheduled posts.
     
     timezone: |
       Current time zone:
@@ -185,10 +185,10 @@ post:
       : 'The creator of the channel should go to the channel settings and fix the issues.'
     }
   problem_items: 
-    timezone_is_not_set: 🔹 the time zone  is not set
-    bot_is_not_connection: 🔹 the channel  is not connected to a bot
+    timezone_is_not_set: 🔹 the time zone is not set
+    bot_is_not_connection: 🔹 the channel is not connected to a bot
     channel_not_found: 🔹 the channel is no longer exist
-    bot_is_not_admin: 🔹 the connected bot  is not added to the channel admins
+    bot_is_not_admin: 🔹 the connected bot is not added to the channel admins
     bot_was_deleted: 🔹 the connected bot is no longer exist, or its token was revoked
     
   start: |
@@ -291,7 +291,7 @@ post:
         saved: Default reactions saved.
         deleted: Default reactions disabled.
     image:
-      welcome: Send me a photo to attach it as link preview.
+      welcome: Send me a photo to attach it as a link preview.
       only_link_or_photo: Send me a photo or a link.
       error: |
         An error occurred while uploading.
@@ -358,8 +358,7 @@ post:
       Scheduled post has been сreated. The post will be sent to <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
 
   timer:
-    welcome: |
-      Choose or send a period in hours after which the post will self-destruct.
+    welcome: Choose or send a period of time in hours after which the post will self-destruct.
     wrong_hour: Incorrect time. Only periods from 1 to 72 hours are allowed.
     save_timer: The self-destruct timer saved.
     timer_off: The self-destruct timer disabled.
@@ -508,8 +507,8 @@ keyboard:
       disable_notification_disable: 'Silent Broadcast: OFF'
       disable_notification_enable: 'Silent Broadcast: ON'
       
-      disable_web_page_preview_disable: 'Link Preview: ON'
-      disable_web_page_preview_enable: 'Link Preview: OFF'
+      disable_web_page_preview_disable: 'Link Previews: ON'
+      disable_web_page_preview_enable: 'Link Previews: OFF'
       
       parse_mode_markdown: 'Formatting Style: Markdown'
       parse_mode_html: 'Formatting Style: HTML'
@@ -517,7 +516,7 @@ keyboard:
       default_reactions_disable: 'Default Reactions: OFF'
       default_reactions_enable: 'Default Reactions: ON'
 
-    faq: Help
+    faq: Controller Help
     
     control_channel: Go to Channel Settings
     return_to_channels: « Back to Channels List
@@ -546,8 +545,8 @@ keyboard:
 
     silent_enable: 'Notify: ON'
     silent_disable: 'Notify: OFF'
-    preview_enable: 'Link Preview: ON'
-    preview_disable: 'Link Preview: OFF'
+    preview_enable: 'Link Previews: ON'
+    preview_disable: 'Link Previews: OFF'
     
     send:
       self_destruct_timer: "${+hours
