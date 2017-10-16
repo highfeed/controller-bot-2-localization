@@ -218,8 +218,6 @@ post:
       Vous pouvez utiliser soit /markdown-style ou /HTML-style pour le formatage des messages.
     start: |
       Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
-
-      If you have any questions, take a look at the <a href="http://telegra.ph/Controller-Help-03-20">Controller Help</a>.
     settings: |
       Send /markdown or /HTML to get a hint. You can also use built-in formatting options of your Telegram client.
     clear: Opération éffectuée! Tous les messages ont été supprimés.

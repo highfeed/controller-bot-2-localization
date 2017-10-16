@@ -218,8 +218,6 @@ post:
       Envie /markdown ou /HTML para obter dicas. Você também pode usar as opções de formatação integradas no seu cliente Telegram.
     start: |
       Me envie uma ou várias mensagens que você deseja incluir na postagem. Pode ser qualquer coisa — um texto, foto, video, até mesmo um sticker.
-
-      Se você tiver alguma dúvida, dê uma olhada em <a href="http://telegra.ph/Controller-Help-03-20">Controller Help</a>.
     settings: |
       Envie /markdown ou / HTML para obter dicas. Você também pode usar as opções de formatação integradas no seu cliente Telegram.
     clear: Sucesso! Todas as mensagens foram excluídas.
