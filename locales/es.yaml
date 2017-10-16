@@ -309,6 +309,15 @@ post:
           ${reactions.length ? 'Current default reactions: ' + reactions.join(' ') : ''}
         saved: Default reactions saved.
         deleted: Default reactions disabled.
+    image:
+      welcome: Send me a photo to attach it as link preview.
+      only_link_or_photo: Send me a photo or a link.
+      error: |
+        An error occurred while uploading.
+
+        Message us at @ControllerSupportBot to report an issue.
+      save: The photo attached.
+      cleared: Attached photo deleted.
         
   preview:
     ok: |
@@ -366,7 +375,16 @@ post:
     limit_year: No se puede elegir un tiempo superior al actual por 1 año o más. Quién sabe lo que va a pasar ... :)
     ok: |
       Se ha creado una publicación programada. El mensaje se enviará a <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} el <b>${date}</b>.
-      
+    edit: |
+      Scheduled post has been edited.  The post will be sent to <b>«${channel.name}»</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
+
+  timer:
+    welcome: |
+      Choose or send a period in hours after which the post will self-destruct.
+    wrong_hour: Incorrect time. Only periods from 1 to 72 hours are allowed.
+    save_timer: The self-destruct timer saved.
+    timer_off: The self-destruct timer disabled.
+
 posts:
   edit:
     welcome: Forward to me a message from your channel you want to edit.
@@ -519,19 +537,20 @@ keyboard:
 
       default_reactions_disable: 'Default Reactions: OFF'
       default_reactions_enable: 'Default Reactions: ON'
+
+    faq: Controller Help
     
     control_channel: Ir a las opciones del canal
     return_to_channels: « Volver a la lista de canales
     
     continue: Continuar »
     
-    delete: Borrar Mensaje
+    add_image: Attach Photo
+    clear_image: Delete Attached Photo
     
     add_inline: Añadir Botones URL
-    save_inline: Guardar Botones URL
     clear_inline: Borrar Botones URL
-    cancel_inline: Cancelar
-    
+
     add_reactions: Añadir Reacciones
     clear_reactions: Borrar Reacciones
     
@@ -541,10 +560,21 @@ keyboard:
     done: Enviar
     cancel: Cancelar
 
+    more: ⇣ Show Actions
+
+    delete: Borrar Mensaje
+
     silent_enable: 'Notify: ON'
     silent_disable: 'Notify: OFF'
+    preview_enable: 'Link Previews: ON'
+    preview_disable: 'Link Previews: OFF'
     
     send:
+      self_destruct_timer: "${+hours
+        ? 'Self-Destruct Timer: ' + hours + 'h'
+        : 'Set Self-Destruct Timer'
+      }"
+      hours: ${hour}h
       send_now: Enviar Ahora
       sent: View Post in Channel
       create_scheduled: Encolar
