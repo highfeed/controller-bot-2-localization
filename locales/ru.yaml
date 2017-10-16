@@ -639,7 +639,7 @@ keyboard:
 
     send:
       self_destruct_timer: "${+hours
-        ? 'Удаление по таймеру через: ' + hours + 'h'
+        ? 'Удаление по таймеру через: ' + hours + 'ч'
         : 'Задать таймер для удаления'
       }"
       hours: ${hour}ч
