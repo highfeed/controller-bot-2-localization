@@ -24,7 +24,7 @@ start:
   welcome: |
     <b>Controller Bot</b> is a bot for channel owners that helps you to create rich posts, view stats and accomplish other tasks. Read more <a href="http://telegra.ph/What-is-Controller-Bot-08-05">here</a>.
     
-    /addchannel - add a new channel
+    /add - add a new channel
     
     /help - answers to basic questions
     /feedback - how to contact the devs
@@ -48,14 +48,16 @@ start:
     You can control me by sending these commands:
     
     /channels - manage channels
-    /addchannel - add a new channel
+    /add - add a new channel
 
     /create - create a new post
     /manage - manage posts
+    /edit - edit posts
        
     /stats - get stats for a channel
+
     /feedback - how to contact the devs
-    
+    /lang - change language
     /rate - rate bot
     
     /cancel - cancel the current operation
@@ -352,10 +354,12 @@ post:
       If you send only time, the post will be enqueued at the current day by default. To enqueue the post at any other day send time+date. For example, <code>16 30 6 8 -> 16:30, Aug 6</code>
     error_date: Incorrect date or time. Choose 'Help' to get a hint.
     invalid_date: Incorrect date.
-    limit: 'You need to choose a time more than the current by 1 minute or more. The current date and time is ${current_date}'
-    limit_year: Unable to choose a time over than the current by 1 year or more. Who knows what is going to happen... :)
+    limit: You need to choose a time more than the current by 1 minute or more. The current date and time is ${current_date}
+    limit_year: 'Unable to choose a time over than the current by 1 year or more. Who knows what is going to happen... :)'
     ok: |
       Scheduled post has been сreated. The post will be sent to <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
+    edit: |
+      Scheduled post has been edited.  The post will be sent to <b>«${channel.name}»</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
 
   timer:
     welcome: Choose or send a period of time in hours after which the post will self-destruct.
@@ -527,7 +531,6 @@ keyboard:
     clear_image: Delete Attached Photo
     
     add_inline: Add URL Buttons
-    save_inline: Save URL Buttons
     clear_inline: Delete URL Buttons
     
     add_reactions: Add Reactions
