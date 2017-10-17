@@ -339,15 +339,15 @@ post:
       
     help: |
       <b>The following time formats are supported:</b>
-      <pre>6      -> 06:00
-      5 3    -> 05:03
-      15:30  -> 15:30
-      1530   -> 15:30</pre>
+      <pre>"6" → 06:00
+      "5 3" → 05:03
+      "15:30" → 15:30
+      "1530" → 15:30</pre>
       
       <b>The following date formats are supported:</b>
-      <pre>6      -> 6 of the current month
-      9 6    -> May 9
-      8 7 17 -> Jun 8, 2017</pre>
+      <pre>"6" → 6 of the current month
+      "9 12" → December 9
+      "8 7 18" → Jule 8, 2018</pre>
       
       You can also use colons and dots instead of spaces for separation. 
       
