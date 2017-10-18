@@ -112,7 +112,7 @@ channels:
         Чтобы добавить канал, вы должны выполнить следующие два шага:
 
         1. Добавить @${username} <a href="http://telegra.ph/Add-Bot-to-Admins-Controller-FAQ-03-22">администратором</a> вашего канала.
-        2. Затем отправьте мне любое сообщение из вашего канала (вы также можете отправить @username или <a href="http://telegra.ph/How-to-add-a-chat-Controller-FAQ-10-12">id</a>).
+        2. Затем перешлите мне любое сообщение из вашего канала (вы также можете отправить @username или <a href="http://telegra.ph/How-to-add-a-chat-Controller-FAQ-10-12">id</a>).
       get_admins: |
         <b>Вы не добавили бота администратором в канал.</b> 
         
