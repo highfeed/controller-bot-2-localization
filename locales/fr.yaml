@@ -217,9 +217,9 @@ post:
 
       Vous pouvez utiliser soit /markdown-style ou /HTML-style pour le formatage des messages.
     start: |
-      Send me one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker.
+      Envoyez-moi un ou plusieurs messages que vous souhaitez inclure dans votre publication. Ca peut être n'importe quoi — un texte, une photo, une video, ou un sticker.
     settings: |
-      Send /markdown or /HTML to get a hint. You can also use built-in formatting options of your Telegram client.
+      Envoyez /markdown or /HTML pour de l'aide. Vous pouvez aussi utiliser les options de formatage intégrées de votre client Telegram.
     clear: Opération éffectuée! Tous les messages ont été supprimés.
     message_deleted: Opération éffectuée! Le message a été supprimé.
     not_posts: |
