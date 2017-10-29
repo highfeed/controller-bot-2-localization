@@ -308,14 +308,14 @@ post:
         saved: Reazioni predefinite salvate.
         deleted: Reazioni predefinite disabilitate.
     image:
-      welcome: Send me a photo to attach it as a link preview.
-      only_link_or_photo: Send me a photo or a link.
+      welcome: Inviami un'immagine da allegare come anteprima.
+      only_link_or_photo: Inviami un'immagine o l'url di un'immagine.
       error: |
-        An error occurred while uploading.
+        C'è stato un errore durante l'upload.
 
-        Message us at @ControllerSupportBot to report an issue.
-      save: The photo attached.
-      cleared: Attached photo deleted.
+        Contattaci su @ControllerSupportBot per segnalare un problema.
+      save: L'immagine è stata allegata.
+      cleared:L'immagine è stata eliminata.
         
   preview:
     ok: |
@@ -374,13 +374,13 @@ post:
     ok: |
       Il post è stato programmato. Il post verrà inviato su <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} il <b>${date}</b>.
     edit: |
-      Scheduled post has been edited.  The post will be sent to <b>«${channel.name}»</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
+      Il Post programmato è stato modificato. Il post verrà inviato su <b>«${channel.name}»</b>${channel.username ? ' @' + channel.username : ''} il <b>${date}</b>.
 
   timer:
-    welcome: Choose or send a period of time in hours after which the post will self-destruct.
-    wrong_hour: Incorrect time. Only periods from 1 to 72 hours are allowed.
-    save_timer: The self-destruct timer saved.
-    timer_off: The self-destruct timer disabled.
+    welcome: Scegli, o invia, dopo quante ore vuoi che il post si autodistrugga.
+    wrong_hour: Tempo scorretto. Sono permessi periodi tra l'1 e le 72 ore.
+    save_timer: Timer di Autodistruzione salvato.
+    timer_off: Time di Autodistruzione disabilitato.
 
 posts:
   edit:
