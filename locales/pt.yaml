@@ -33,7 +33,6 @@ start:
   choose_language_with_credits: |
     Por favor, escolha um idioma.
   
-
     Spanish — Roberdcr
     French — Teladi Fisher
     Italian — @Myosotis85
@@ -53,6 +52,7 @@ start:
     
     /create - enviar uma nova mensagem
     /manage - gerenciador de postagens
+    /edit - alterar postagens
        
     /stats - obter estatísticas de um canal
     /feedback - entre em contato com um de nossos desenvolvedores
