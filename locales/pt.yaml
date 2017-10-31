@@ -55,8 +55,9 @@ start:
     /edit - alterar postagens
        
     /stats - obter estatísticas de um canal
-    /feedback - entre em contato com um de nossos desenvolvedores
     
+    /feedback - entre em contato com um de nossos desenvolvedores
+    /lang - alterar idioma
     /rate - avaliar bot
     
     /cancel - Cancelar a operação atual
