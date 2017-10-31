@@ -14,7 +14,7 @@ bots:
   error_add: Token inválido. Tente obter um novo ou use um token de outro bot.
   bot_already_added: Isso me parece familiar. Você já tem este bot conectado.
   help: |
-    🔹 Por que preciso conectar um bot?
+     Por que preciso conectar um bot?
     
     Para oferecer uma melhor experiência ao usuário, este procedimento é necessário para evitar alguns limites do Bot API e garantir velocidade e estabilidade. Você pode conectar um único bot e usá-lo em todos os seus canais. 
     
@@ -22,33 +22,17 @@ bots:
 
 start:
   welcome: |
-    <b>Controller Bot</b> — Excelente bot para donos de canais. Auxilia no envio de mensagens formatadas e postagens programadas para canais.
+    <b>Controller Bot</b> é um excelente bot para donos de canais. Ele ajuda a você criar posts personalizados, visualizar estatísticas e realizar outras tarefas. Saiba mais <a href="http://telegra.ph/What-is-Controller-Bot-08-05">aqui</a>.
+
+    /add - adicione um novo canal
     
-    <b>Formatted Posts.</b> Envie mensagens com texto em negrito, itálico, textos monoespaçados e links inline.
-    
-    <b>Scheduled Posts.</b> Crie um número ilimitado de postagens programadas para o seu canal.
-    
-    <b>URL Buttons.</b> Adicione botões personalizados em suas postagens para abrir links.
-    
-    <b>Admins.</b> Você pode adicionar administradores para ajudá-lo a enviar e gerenciar postagens programadas em seu canal.
-    
-    <b>Stats.</b> Analise e controle facilmente o número de membros inscritos em canais num determinado período de tempo.
-    
-    <b>Reactions</b>. Adicione nas suas postagens botões com emoticons e colete reações dos membros do seu canal.
-        
-    Posso enviar mensagens silenciadas e desativar a pré-visualizações de links, além de suportar todos os tipos de mensagem e formatações integradas dos clientes Telegram.
-    
-    <b>Como usar?</b>
-    Envie /addchannel, escolha 'Add Channel' e siga as instruções para adicionar um novo canal.
-    
-    Envie uma mensagem para @ControllerSupportBot para relatar um problema, ou entrar em contato com um de nossos desenvolvedores.
-    
-    /rate — avaliar bot
-    /help — obter lista de comandos
+    /help — perguntas e respostas básicas 
+    /feedback - fale com nossos desenvolvedores
   do: OK. O que você quer fazer?
   choose_language: Por favor, escolha um idioma.
   choose_language_with_credits: |
     Por favor, escolha um idioma.
+  
 
     Spanish — Roberdcr
     French — Teladi Fisher
@@ -149,12 +133,12 @@ channels:
     
     timezone: |
       Fuso horário atual:
-      ${city ? '🔹 GMT ' + (gmt > 0 ? '+' + gmt : gmt) + '\n🔹 ' + timezone_id + ' — ' + city : '🔹 None'}
+      ${city ? ' GMT ' + (gmt > 0 ? '+' + gmt : gmt) + '\n ' + timezone_id + ' — ' + city : ' None'}
     
        Me envie o nome da cidade perto de você.
     check_timezone: |
-      🔹 GMT ${timezone.gmtOffset > 0 ? '+' + timezone.gmtOffset : timezone.gmtOffset} (${timezone.timeZoneId})
-      🔹 ${countryName}, ${name}
+       GMT ${timezone.gmtOffset > 0 ? '+' + timezone.gmtOffset : timezone.gmtOffset} (${timezone.timeZoneId})
+       ${countryName}, ${name}
      
       Localização está correta? Se não, tente me enviar o nome de outra cidade próxima a você.
     error_timezone: Desculpe, eu não consigo encontrar sua cidade. Tente me enviar o nome de outra cidade próxima.
@@ -202,11 +186,11 @@ post:
       : 'O criador do canal deve ir nas configurações de canal e corrigir os problemas.'
     }
   problem_items: 
-    timezone_is_not_set: 🔹 o fuso horário não está definido
-    bot_is_not_connection: 🔹 o canal não está conectado a um bot
-    channel_not_found: 🔹 o canal não foi encontrado
-    bot_is_not_admin: 🔹 bot conectado não foi adicionado aos administradores do canal
-    bot_was_deleted: 🔹 the connected bot is no longer exist, or its token was revoked
+    timezone_is_not_set:  o fuso horário não está definido
+    bot_is_not_connection:  o canal não está conectado a um bot
+    channel_not_found:  o canal não foi encontrado
+    bot_is_not_admin:  bot conectado não foi adicionado aos administradores do canal
+    bot_was_deleted:  the connected bot is no longer exist, or its token was revoked
     
   start: |
     Inicie o @ControllerBot para conectar um novo canal e começar a criar postagens.
@@ -296,13 +280,13 @@ post:
       welcome: |
         Me envie um ou mais emoticons que serão usados como botões de reações (limite máximo 6 emoji).
       not_found_smiles: |
-        Me envie um ou mais emoticons. Por exemplo: `👍👎`
+        Me envie um ou mais emoticons. Por exemplo: ``
       save: Reações salvas. Você pode continuar me enviando mensagens.
       cleared: Sucesso! Reações removidas.
       notify: Os contadores estarão disponíveis após o envio.
       default_reactions:
         welcome: |
-          Você pode definir reações que serão automaticamente adicionadas às novas mensagens de uma postagem. Me envie um ou mais emoticons. Por exemplo: `👍👎`
+          Você pode definir reações que serão automaticamente adicionadas às novas mensagens de uma postagem. Me envie um ou mais emoticons. Por exemplo: ``
 
           ${reactions.length ? 'Current default reactions: ' + reactions.join(' ') : ''}
         saved: Reações padrões salvas.
@@ -340,7 +324,7 @@ post:
     confirm_send: >
       Tem certeza de que deseja enviar <b>${pluralize(posts, 'message', 'messages', 'messages')}</b> para
       <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''}?
-    waiting: 🕒 Enviando...
+    waiting:  Enviando...
     ok: Feito!
     
   schedule:
