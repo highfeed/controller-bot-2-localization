@@ -280,7 +280,7 @@ post:
       welcome: |
         لطفا برای من چند عدد شکلک ارسال کنید تا آن ها را در دکمه های لایک قرار بدم (حداکثر 6 شکلک)
       not_found_smiles: |
-        Send me one or more emoticons. For example: `👍👎`
+        لطفا یک یا چند شکلک ارسال کنید. مثال: `👍👎`
       save: دکمه لایک ها ذخیره شدند. شما می توانید ادامه دهید.
       cleared: انجام شد! دکمه لایک حذف شد.
       notify: شمارش لایک ها بعد از ارسال پست انجام می شود.
@@ -288,7 +288,7 @@ post:
         welcome: |
           شما می توانید به پست های خودتون شکلک اضافه کنید؛ این شکلک ها اتوماتیک به پست شما می چسبند. برای شروع چند تا شکلک بفرستید. برای مثال: `👍👎`
 
-          ${reactions.length ? 'Current default reactions: ' + reactions.join(' ') : ''}
+          ${reactions.length ? 'واکنش پیشفرض: ' + reactions.join(' ') : ''}
         saved: شکلک های پیشفرض ذخیره شد..
         deleted: شکلک های پیشفرض غیر فعال شد.
     image:
@@ -354,39 +354,39 @@ post:
     error_date: ارسال تاریخ یا زمان اشتباه است! روی راهنما بزنید تا اطلاعات بیشتری دریافت کنید.
     invalid_date: تاریخ اشتباه است.
     limit: شما باید زمان بیشتر از 1 دقیقه بزنید. زمان و تاریخ درست: ${current_date}
-    limit_year: 'Unable to choose a time over than the current by 1 year or more. Who knows what is going to happen... :)'
+    limit_year: 'شما نمی توانید تاریخ بیشتر از 1 سال بزنید. کی میدونه تا اون موقع چی میگذره... :)'
     ok: |
       پست زمانبندی ساخته شد. پست مورد نظر شما به کانال <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} در تاریخ <b>${date}</b> ارسال خواهد شد.
     edit: |
       پست زمانبندی شما تغییر کرد.  پست مورد نظر شما به کانال <b>«${channel.name}»</b>${channel.username ? ' @' + channel.username : ''} در تاریخ <b>${date}</b> ارسال خواهد شد.
 
   timer:
-    welcome: Choose or send a period of time in hours after which the post will self-destruct.
-    wrong_hour: Incorrect time. Only periods from 1 to 72 hours are allowed.
-    save_timer: The self-destruct timer saved.
-    timer_off: The self-destruct timer disabled.
+    welcome: لطفا زمانی که قصد دارید پست بعد از ارسال آن حذف شود را به ساعت ارسال کنید.
+    wrong_hour: زمان ارسال شده صحیح نمی باشد! فقط زمان بین 1 تا 72 ساعت مجاز می باشد.
+    save_timer: تایمر حذف خودکار فعال شد.
+    timer_off: تایمر حذف خودکار ، غیر فعال شد.
 
 posts:
   edit:
-    welcome: Forward to me a message from your channel you want to edit.
+    welcome: پستی که قصد ویرایش کردن آن را دارید برای من فوروارد کنید.
     only_channel_post: |
-      Sorry, only messages from channels are available for editing.
+      متاسفم! فقط پیام هایی که از کانال فوروارد شده اند قابل ویرایش هستند.
     channel_not_found: |
-      This channel is not available. The channel and the bot via which message was sent must be connected to Controller Bot. Please check everything twice and try again.
+      این کانال در دسترس نمی باشد! لطفا همه چیز را مجدد چک کنید و دوباره امتحان کنید.
     unsupported_type: |
-      Unable to edit this message. You can edit only text messages and captions.
+      این پیام قابل ویرایش نیست! فقط متن ها و متن های زیر پست ها قابل ویرایش هستند.
     post_not_found: |
-      This post is not available. The channel and the bot via which message was sent must be connected to Controller Bot. Please check everything twice and try again.
+      این پست پیدا نشد! لطفا همه چیز را مجدد چک کنید و دوباره امتحان کنید.
     bot_unauthorized: |
-      Unable to edit this message. The bot via which message was sent is no longer exist, or its token was revoked.
+      این پست قابل ویرایش نیست! رباتی که با آن این پست ارسال شده است!، در دسترس نیست.
     editing: |
-      Message type: ${type_text}.${type == 'text' ? '\nFormatting style: ' + parse_mode : ''}
+      نوع پیام: ${type_text}.${type == 'text' ? '\nنوع فرمت: ' + parse_mode : ''}
 
-      Send a new text to edit this ${type == 'text' ? 'message' : 'caption. No more 200 characters are allowed'}.
-    not_changed: Something went wrong :( Please try again.
-    edited: Success! Message has been edited.
+      متن جدید برای ویرایش را ارسال کنید. ${type == 'text' ? 'message' : 'کپشن بیشتر از 200 کاراکتر پشتیبانی نمی شود.'}.
+    not_changed: مشکلی پیش آمده است :( لطفا بعدا امتحان کنید.
+    edited: انجام شد! پیام با موفقیت ویرایش شد.
 
-  edit_time: Send time+date to re-enqueue the post at any other day.
+  edit_time: لطفا زمان + تاریخ مورد نظر را ارسال کنید تا تاریخ قبلی ویرایش شود.
 
   types:
     text: متن
@@ -410,7 +410,7 @@ posts:
   view_scheduled_post: |
     پست در کانال ${channel.name}${channel.username ? ' @' + channel.username : ''} و در تاریخ <b>${date}</b> ارسال خواهد شد.
 
-    You have ${pluralize(posts, 'message', 'messages', 'messages')} in this post:
+    شما ${pluralize(posts, 'message', 'messages', 'messages')} در این پست:
     ${messages}
   confirm_delete_post: شما مطمئن هستید می خواهید پست زمان بندی شده را حذف کنید؟
   scheduled_post_was_deleted: انجام شد! پست زمان بندی شده حذف شد.
