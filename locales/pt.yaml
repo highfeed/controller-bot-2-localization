@@ -14,7 +14,7 @@ bots:
   error_add: Token inválido. Tente obter um novo ou use um token de outro bot.
   bot_already_added: Isso me parece familiar. Você já tem este bot conectado.
   help: |
-     Por que preciso conectar um bot?
+    Por que preciso conectar um bot?
     
     Para oferecer uma melhor experiência ao usuário, este procedimento é necessário para evitar alguns limites do Bot API e garantir velocidade e estabilidade. Você pode conectar um único bot e usá-lo em todos os seus canais. 
     
@@ -141,7 +141,7 @@ channels:
        GMT ${timezone.gmtOffset > 0 ? '+' + timezone.gmtOffset : timezone.gmtOffset} (${timezone.timeZoneId})
        ${countryName}, ${name}
      
-      Localização está correta? Se não, tente me enviar o nome de outra cidade próxima a você.
+       Localização está correta? Se não, tente me enviar o nome de outra cidade próxima a você.
     error_timezone: Desculpe, eu não consigo encontrar sua cidade. Tente me enviar o nome de outra cidade próxima.
     error_request_timezone: Ocorreu um erro :( Por favor, tente novamente. Envie /feedback caso o erro continue por algum motivo.
     save_timezone: OK, seu fuso horário foi salvo.

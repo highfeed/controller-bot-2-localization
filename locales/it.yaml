@@ -315,7 +315,7 @@ post:
 
         Contattaci su @ControllerSupportBot per segnalare un problema.
       save: L'immagine è stata allegata.
-      cleared:L'immagine è stata eliminata.
+      cleared: L'immagine è stata eliminata.
         
   preview:
     ok: |
