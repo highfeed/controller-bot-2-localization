@@ -293,14 +293,14 @@ post:
         saved: Reações padrões salvas.
         deleted: Reações padrões excluídas
     image:
-      welcome: Send me a photo to attach it as a link preview.
-      only_link_or_photo: Send me a photo or a link.
+      welcome: Envie-me uma foto para anexá-la como uma preview de link.
+      only_link_or_photo: Envie-me uma foto ou um link.
       error: |
         An error occurred while uploading.
 
         Message us at @ControllerSupportBot to report an issue.
-      save: The photo attached.
-      cleared: Attached photo deleted.
+      save: A foto foi anexada.
+      cleared: A Foto anexada foi excluída.
         
   preview:
     ok: |
@@ -362,10 +362,10 @@ post:
           Scheduled post has been edited.  The post will be sent to <b>«${channel.name}»</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
 
   timer:
-    welcome: Choose or send a period of time in hours after which the post will self-destruct.
-    wrong_hour: Incorrect time. Only periods from 1 to 72 hours are allowed.
-    save_timer: The self-destruct timer saved.
-    timer_off: The self-destruct timer disabled.
+    welcome: Escolha ou envie um período de tempo em horas após o qual a postagem se autodestruirá.
+    wrong_hour: Tempo incorreto. Apenas períodos de 1 a 72 horas são permitidos.
+    save_timer: O timer de autodestruição foi salvo.
+    timer_off: O temporizador de autodestruição desativado.
 
 posts:
   edit:
@@ -554,7 +554,7 @@ keyboard:
     send:
       self_destruct_timer: "${+hours
         ? 'Self-Destruct Timer: ' + hours + 'h'
-        : 'Set Self-Destruct Timer'
+        : 'Definir temporizador de autodestruição'
       }"
       hours: ${hour}h
       send_now: Enviar Agora
