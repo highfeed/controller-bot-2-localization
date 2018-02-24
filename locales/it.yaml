@@ -378,7 +378,7 @@ post:
 
   timer:
     welcome: Scegli, o invia, dopo quante ore vuoi che il post si autodistrugga.
-    wrong_hour: Tempo scorretto. Sono permessi periodi tra l'1 e le 72 ore.
+    wrong_hour: Tempo scorretto. Sono permessi periodi tra l'1 e le 48 ore.
     save_timer: Timer di Autodistruzione salvato.
     timer_off: Time di Autodistruzione disabilitato.
 

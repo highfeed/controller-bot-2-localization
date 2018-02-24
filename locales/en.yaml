@@ -363,7 +363,7 @@ post:
 
   timer:
     welcome: Choose or send a period of time in hours after which the post will self-destruct.
-    wrong_hour: Incorrect time. Only periods from 1 to 72 hours are allowed.
+    wrong_hour: Incorrect time. Only periods from 1 to 48 hours are allowed.
     save_timer: The self-destruct timer saved.
     timer_off: The self-destruct timer disabled.
       
