@@ -529,6 +529,10 @@ keyboard:
     add_image: چسباندن عکس
     clear_image: حذف عکس چسبانده شده
 
+    open_comments: Open Comments
+    add_comments: Add Comments
+    delete_comments: Delete Comments
+
     add_inline: اضافه کردن دکمه های لینک دار
     clear_inline: حذف دکمه های لینک دار
 

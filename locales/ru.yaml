@@ -610,6 +610,10 @@ keyboard:
     add_image: Прикрепить фото
     clear_image: Открепить фото
 
+    open_comments: Открыть комментарии
+    add_comments: Добавить комментарии
+    delete_comments: Удалить комментарии
+
     add_inline: Добавить URL-кнопки
     clear_inline: Удалить URL-кнопки
 

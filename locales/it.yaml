@@ -545,6 +545,10 @@ keyboard:
     add_image: Attach Photo
     clear_image: Delete Attached Photo
 
+    open_comments: Open Comments
+    add_comments: Add Comments
+    delete_comments: Delete Comments
+
     add_inline: Aggiungi Bottoni URL
     clear_inline: Elimina Bottoni URL
 
