@@ -384,7 +384,7 @@ post:
 
 posts:
   edit:
-    welcome: Inoltrami un messaggio dal tuo canale che vuoi modificare.
+    welcome: Inoltrami il messaggio che vuoi modificare dal tuo canale.
     only_channel_post: |
       Scusa, è possibile modificare solo messaggi dai canali.
     channel_not_found: |
@@ -416,7 +416,7 @@ posts:
     location: posizione
     venue: sede
     video_note: video messaggio
-  welcome_schedule: Scegli un canale di cui gestire la programmazione.
+  welcome_schedule: Scegli il canale di cui gestire la programmazione.
   select_type: Visualizza o elimina i post programmati.
   not_schedule_posts: |
     Non ci sono ancora post programmati per questo canale.
@@ -542,12 +542,12 @@ keyboard:
     
     continue: Continua »
 
-    add_image: Attach Photo
-    clear_image: Delete Attached Photo
+    add_image: Allega un'Immagine
+    clear_image: Elimina l'Immagine Allegata
 
-    open_comments: Open Comments
-    add_comments: Add Comments
-    delete_comments: Delete Comments
+    open_comments: Apri i Commenti
+    add_comments: Aggiungi un Commento
+    delete_comments: Elimina i Commenti
 
     add_inline: Aggiungi Bottoni URL
     clear_inline: Elimina Bottoni URL
@@ -561,19 +561,19 @@ keyboard:
     done: Invia
     cancel: Annulla
 
-    more: ⇣ Show Actions
+    more: ⇣ Mostra Altro
 
     delete: Elimina Messaggi
 
-    silent_enable: 'Notify: ON'
-    silent_disable: 'Notify: OFF'
-    preview_enable: 'Link Previews: ON'
-    preview_disable: 'Link Previews: OFF'
+    silent_enable: 'Notifica: ON'
+    silent_disable: 'Notifica: OFF'
+    preview_enable: 'Anteprima Link: ON'
+    preview_disable: 'Anteprima Link: OFF'
     
     send:
       self_destruct_timer: "${+hours
-        ? 'Self-Destruct Timer: ' + hours + 'h'
-        : 'Set Self-Destruct Timer'
+        ? 'Timer Autodistruzione: ' + hours + 'h'
+        : 'Timer Autodistruzione Impostato'
       }"
       hours: ${hour}h
       send_now: Invia Ora
