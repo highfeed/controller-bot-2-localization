@@ -545,9 +545,9 @@ keyboard:
     add_image: Прикріпити фото
     clear_image: Видалити прикріплене фото
 
-    open_comments: Open Comments
-    add_comments: Add Comments
-    delete_comments: Delete Comments
+    open_comments: Відкрити коментарі
+    add_comments: Додати коментарі
+    delete_comments: Видалити коментарі
 
     add_inline: Додати кнопки-посилання
     clear_inline: Видалити кнопки-посилання
