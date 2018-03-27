@@ -535,15 +535,15 @@ keyboard:
       default_reactions_disable: 'Default Reactions: OFF'
       default_reactions_enable: 'Default Reactions: ON'
 
-    faq: Controller Help
+    faq: Aide sur Controller
 
     control_channel: Aller aux paramètres de chaîne
     return_to_channels: « Retourner à la liste des chaînes
 
     continue: Continuer »
 
-    add_image: Attach Photo
-    clear_image: Delete Attached Photo
+    add_image: Ajouter Photo
+    clear_image: Supprimer Photo
 
     open_comments: Ouvrir Commentaires
     add_comments: Ajouter Commentaires
@@ -561,7 +561,7 @@ keyboard:
     done: Envoyer
     cancel: Annuler
 
-    more: ⇣ Show Actions
+    more: ⇣ Montrer options
 
     delete: Supprimer message
 
@@ -577,7 +577,7 @@ keyboard:
       }"
       hours: ${hour}h
       send_now: Envoyer maintenant
-      sent: View Post in Channel
+      sent: Voir le message dans la chaîne
       create_scheduled: Mettre en file d'attente
 
       send: Envoyer
@@ -601,15 +601,15 @@ keyboard:
   posts:
     edit:
       original: View Original
-      clear_caption: Delete Caption
-      save: Save Changes
-      cancel: Cancel
-      open_edited_post: View Post in Channel
+      clear_caption: Supprimer Caption
+      save: Sauvegarder
+      cancel: Annuler
+      open_edited_post: Voir le message dans la chaîne
 
     edit_sent_posts: Editer les messages envoyés
     view_schedule: Gérer les messages planifiés
     view: Afficher le message
-    edit_time: Edit Time
+    edit_time: Editer l'heure
     delete: Supprimer le message
     yes: Oui
     cancel: Non
