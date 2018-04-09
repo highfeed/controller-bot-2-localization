@@ -546,7 +546,7 @@ keyboard:
     clear_image: Elimina l'Immagine Allegata
 
     open_comments: Apri i Commenti
-    add_comments: Aggiungi un Commento
+    add_comments: Aggiungi i Commenti
     delete_comments: Elimina i Commenti
 
     add_inline: Aggiungi Bottoni URL
