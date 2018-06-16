@@ -359,7 +359,7 @@ post:
     ok: |
       A postagem programada foi criada. A mensagem será enviada para <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} em <b>${date}</b>.
     edit: |
-          Scheduled post has been edited.  The post will be sent to <b>«${channel.name}»</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
+          O post agendado foi editado. A postagem será enviada para <b>«${channel.name}»</b>${channel.username ? ' @' + channel.username : ''} em <b>${date}</b>.
 
   timer:
     welcome: Choose or send a period of time in hours after which the post will self-destruct.
