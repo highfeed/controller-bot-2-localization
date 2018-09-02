@@ -178,7 +178,7 @@ post:
   error_check_channel: Ocorreu um erro :( Por favor, tente novamente. Envie /feedback para nos informar se, por algum motivo, o erro continue.
   channel_not_found: O canal não existe, ou você não tem acesso a ele. Voltar para @ControllerBot e tente novamente.
   problems: |
-    Não é possível criar uma nova postagem em ${channel.name}. The next issues found:
+    Não é possível criar uma nova postagem em ${channel.name}. Os seguintes problemas foram encontrados:
     
     ${problems}
     
@@ -289,18 +289,18 @@ post:
         welcome: |
           Você pode definir reações que serão automaticamente adicionadas às novas mensagens de uma postagem. Me envie um ou mais emoticons. Por exemplo: ``
 
-          ${reactions.length ? 'Current default reactions: ' + reactions.join(' ') : ''}
-        saved: Reações padrões salvas.
-        deleted: Reações padrões excluídas
+          ${reactions.length ? 'Padrão de reações atuais: ' + reactions.join(' ') : ''}
+        saved: Padrão de Reações salvas.
+        deleted: Padrão de Reações excluídas
     image:
-      welcome: Send me a photo to attach it as a link preview.
-      only_link_or_photo: Send me a photo or a link.
+      welcome: Me envie uma foto para anexá-la como pré-visualização do link.
+      only_link_or_photo: Me envie uma photo ou um link.
       error: |
-        An error occurred while uploading.
+        Ocorreu um erro ao fazer o upload. :/
 
-        Message us at @ControllerSupportBot to report an issue.
-      save: The photo attached.
-      cleared: Attached photo deleted.
+        Nos envie uma mensagem @ControllerSupportBot para relatar o erro.
+      save: Foto anexada.
+      cleared: Foto anexada excluída.
         
   preview:
     ok: |
@@ -359,13 +359,13 @@ post:
     ok: |
       A postagem programada foi criada. A mensagem será enviada para <b>${channel.name}</b>${channel.username ? ' @' + channel.username : ''} em <b>${date}</b>.
     edit: |
-          Scheduled post has been edited.  The post will be sent to <b>«${channel.name}»</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
+          Post agendado foi editada.  O post será enviado para <b>«${channel.name}»</b>${channel.username ? ' @' + channel.username : ''} on <b>${date}</b>.
 
   timer:
-    welcome: Choose or send a period of time in hours after which the post will self-destruct.
-    wrong_hour: Incorrect time. Only periods from 1 to 48 hours are allowed.
-    save_timer: The self-destruct timer saved.
-    timer_off: The self-destruct timer disabled.
+    welcome: Escolha ou envie um período de tempo (em horas) para o post se autodestruir.
+    wrong_hour: Tempo incorreto. São permitidos apenas períodos de tempo entre 1 a 48 horas.
+    save_timer: O tempo de autodestruição foi salvo.
+    timer_off: O tempo de autodestruição foi desativado.
 
 posts:
   edit:
@@ -441,7 +441,7 @@ statistics:
     Você ainda não tem canais adicionados.
 
     Envie /addchannel para adicionar um novo canal.
-  selected_channel: 'Here it is: ${channel.name}. O que você quer fazer com as estatísticas?'
+  selected_channel: 'Aqui está: ${channel.name}. O que você quer fazer com as estatísticas?'
   channel_not_found: Este canal não está disponível.
   select_periods: Escolha um período que deseja obter estatísticas.
   loading_data: 🕒 Processando os dados e criando gráficos...
@@ -527,12 +527,12 @@ keyboard:
     
     continue: Continuar »
 
-    add_image: Attach Photo
-    clear_image: Delete Attached Photo
+    add_image: Anexar Foto
+    clear_image: Excluir Foto Anexada
 
-    open_comments: Open Comments
-    add_comments: Add Comments
-    delete_comments: Delete Comments
+    open_comments: Abrir Comentários
+    add_comments: Adicionar Comentários
+    delete_comments: Excluir Comentários
 
     add_inline: Adicionar Botões com URL
     clear_inline: Excluir Botões com URL
@@ -546,7 +546,7 @@ keyboard:
     done: Enviado
     cancel: Cancelado
 
-    more: ⇣ Show Actions
+    more: ⇣ Mostrar Ações
 
     delete: Excluir Mensagem
 
